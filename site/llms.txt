@@ -43,7 +43,7 @@ AI will simultaneously create unemployed knowledge workers and unfilled essentia
 Argument track:
 - index.html — The Gap: sizing the reskilling need, speed gap, capacity deficit
 - transitions.html — The Bridge: structural paradox, transition feasibility matrix, wage cliff, displaced worker flows
-- lenses.html — Editorial: the bottleneck has moved from skill acquisition to skill evaluation. Six practitioner and research lenses (Haslauer, Klinger, Ronacher/Pontella, Weber GAAP/SBC, Andreessen, Pontella native-cohort), self-audit heat-map of where each finds support across pages, three confounders the aggregate hides, candidate diagnostic metric (internal transition speed vs external turnover)
+- lenses.html — Editorial: the bottleneck has moved from skill acquisition to skill evaluation. Six practitioner and research lenses (Haslauer, Klinger, Ronacher/Poncela Cubeiro, Weber GAAP/SBC, Andreessen, Poncela Cubeiro native-cohort), self-audit heat-map of where each finds support across pages, three confounders the aggregate hides, candidate diagnostic metric (internal transition speed vs external turnover)
 
 Data drilldown track:
 - systems.html — Which Systems: 6 European models ranked, DACH deep dive, Singapore benchmark, policy interventions
