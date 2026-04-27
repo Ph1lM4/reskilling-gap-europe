@@ -1,0 +1,7 @@
+system,countries,n_countries,re_employment_5y_avg,almp_training_gdp_pct_avg,zone_c_share_central_pct,a_to_c_rate_low_pct,a_to_c_rate_central_pct,a_to_c_rate_high_pct,headline_low,headline_high,delta_central_vs_mid
+Nordic Flexicurity,DK+SE+FI+NO,4,0.945,0.37,10.51,7.8,9.9,12.0,8,12,-0.1
+Germanic Dual System,DE+AT+CH,3,0.903,0.293,8.75,6.3,7.9,9.5,3,6,3.4
+Continental Corporatist,FR+NL+BE,3,0.9,0.247,7.67,5.6,6.9,8.2,5,8,0.4
+Liberal Market,UK+IE,2,0.845,0.08,3.84,2.8,3.2,3.6,5,8,-3.3
+Central/Eastern European,PL+CZ+HU+RO,4,0.847,0.08,3.84,2.8,3.3,3.7,2,5,-0.2
+Southern European,IT+ES+PT+EL,4,0.795,0.178,6.08,4.0,4.8,5.7,2,5,1.3

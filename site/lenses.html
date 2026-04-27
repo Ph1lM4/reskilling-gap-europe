@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Views on Reskilling and What&rsquo;s Needed &mdash; Six lenses on the gap</title>
+<meta name="description" content="Six practitioner and research lenses on reskilling &mdash; what each reveals, what each can&rsquo;t see, and where they converge on a bottleneck that is no longer skill acquisition but skill evaluation.">
+<link rel="canonical" href="https://reskilling.nexalps.com/lenses.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Views on Reskilling and What&rsquo;s Needed">
+<meta property="og:description" content="Six lenses practitioners and researchers bring to the reskilling question &mdash; what each reveals, what each can&rsquo;t see, and what they converge on.">
+<meta property="og:url" content="https://reskilling.nexalps.com/lenses.html">
+<meta property="og:site_name" content="Nexalps">
+<meta property="og:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta name="twitter:title" content="Views on Reskilling and What&rsquo;s Needed">
+<meta name="twitter:description" content="Six lenses on reskilling &mdash; what each reveals, what each can&rsquo;t see, where they converge.">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Views on Reskilling and What&rsquo;s Needed","description":"Six practitioner and research lenses on reskilling, a self-honest account of what the data supports and what it can&rsquo;t see, converging on skill evaluation as the binding constraint.","url":"https://reskilling.nexalps.com/lenses.html","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["reskilling","skill evaluation","credentialing","institutional lag","views on reskilling","transition architecture","functional layers","native AI cohort"]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero.container{padding-top:64px;padding-bottom:20px}}
+
+/* Stat cards (framing-descriptive) */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+h3{font-size:17px;font-weight:600;letter-spacing:-0.01em;margin:24px 0 6px;line-height:1.35}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8;margin-bottom:14px}
+
+/* Frame accordion */
+.frame{margin:14px 0;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow:hidden}
+.frame>summary{list-style:none;cursor:pointer;padding:18px 22px;display:block;position:relative;padding-right:48px}
+.frame>summary::-webkit-details-marker{display:none}
+.frame>summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--muted);line-height:1;transition:transform .2s}
+.frame[open]>summary::after{content:"\2212"}
+.frame .frame-meta{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted-foreground);margin-bottom:4px}
+.frame summary h3{font-size:17px;font-weight:600;letter-spacing:-0.01em;margin:0;line-height:1.35;color:var(--foreground)}
+.frame .frame-body{padding:0 22px 22px}
+.frame .frame-body p{margin-bottom:12px}
+.frame .frame-body p:last-child{margin-bottom:0}
+.frame .support-block{margin-top:14px;padding:12px 14px;background:rgba(255,255,255,0.025);border-radius:var(--radius-sm);border-left:2px solid rgba(74,222,128,0.4)}
+.frame .gap-block{margin-top:8px;padding:12px 14px;background:rgba(255,255,255,0.025);border-radius:var(--radius-sm);border-left:2px solid rgba(161,161,170,0.4)}
+.frame .block-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted-foreground);margin-bottom:4px;display:block}
+.frame .support-block p, .frame .gap-block p{font-size:14px;line-height:1.65;margin:0}
+
+/* Heat-map table */
+.heatmap{width:100%;border-collapse:separate;border-spacing:2px;font-size:12px;margin:16px 0 8px;table-layout:fixed}
+.heatmap col.col-label{width:32%}
+.heatmap col.col-page{width:calc(68% / 6)}
+.heatmap th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);padding:6px 4px;background:transparent;vertical-align:bottom}
+.heatmap th.rot{text-align:center;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;height:90px;padding:4px 2px;font-size:10px}
+.heatmap td{padding:8px 2px;color:#d4d4d8;border-radius:var(--radius-sm);text-align:center;font-size:10.5px;font-weight:500;vertical-align:middle;overflow:hidden;text-overflow:ellipsis;letter-spacing:-0.005em}
+.heatmap td.label{text-align:left;font-weight:500;color:#e4e4e7;background:rgba(255,255,255,0.03);font-size:12px;padding:8px 10px;line-height:1.35;white-space:normal;letter-spacing:0}
+.heatmap td.cov-covered{background:rgba(74,222,128,0.14);color:#bbf7d0;border:1px solid rgba(74,222,128,0.28)}
+.heatmap td.cov-partial{background:rgba(249,115,22,0.10);color:#fdba74;border:1px solid rgba(249,115,22,0.22)}
+.heatmap td.cov-absent{background:rgba(255,255,255,0.02);color:var(--muted-foreground);border:1px solid rgba(255,255,255,0.05)}
+.heatmap-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--muted)}
+.heatmap-legend span{display:inline-flex;align-items:center;gap:6px}
+.heatmap-legend i{display:inline-block;width:12px;height:12px;border-radius:3px}
+.heatmap-wrap{margin:20px 0}
+@media(max-width:640px){.heatmap th.rot{height:80px;font-size:9px}.heatmap td{padding:6px 2px;font-size:10px}.heatmap td.label{font-size:11px;padding:6px 8px}.heatmap col.col-label{width:44%}.heatmap col.col-page{width:calc(56% / 6)}}
+
+/* Data table (reused) */
+.data-table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);padding:8px 12px;border-bottom:1px solid var(--border)}
+.data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border);vertical-align:top}
+.data-table tr:last-child td{border-bottom:none}
+@media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
+
+/* Highlight */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:15px;font-weight:600;margin:0 0 6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Conclusion block */
+.conclusion{margin:48px 0 32px;padding:28px 28px 24px;background:rgba(249,115,22,0.04);border:1px solid rgba(249,115,22,0.18);border-radius:var(--radius-lg)}
+.conclusion h2{margin-top:0;margin-bottom:6px}
+.conclusion p{font-size:15.5px;line-height:1.8;color:#e4e4e7}
+.conclusion p strong{color:var(--foreground)}
+.conclusion em{color:var(--ring);font-style:italic;font-weight:500}
+@media(max-width:640px){.conclusion{padding:20px}.conclusion p{font-size:15px}}
+
+/* Continue-row */
+.continue-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:40px 0 8px;padding:16px 0;border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border)}
+.continue-row .continue-lead{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted-foreground)}
+.continue-row a{font-size:13px;color:var(--muted);text-decoration:none;transition:color var(--transition)}
+.continue-row a:hover{color:var(--foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Unified body-prose links */
+main p a, main li a, main td a, main .highlight a, main .frame a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+main p a:visited, main li a:visited, main td a:visited, main .highlight a:visited, main .frame a:visited{color:var(--foreground)}
+main p a:hover, main li a:hover, main td a:hover, main .highlight a:hover, main .frame a:hover{color:var(--ring)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="transitions.html">Transitions</a>
+    <a href="lenses.html" aria-current="page">Lenses</a>
+    <span class="nav-sep"></span>
+    <a href="systems.html">Systems</a>
+    <a href="countries.html">Countries</a>
+    <a href="dach.html">DACH</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+    <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="transitions.html">Transitions</a>
+  <a href="lenses.html" aria-current="page">Lenses</a>
+  <a href="systems.html">Systems</a>
+  <a href="countries.html">Countries</a>
+  <a href="dach.html">DACH</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>Views on Reskilling and What&rsquo;s Needed</h1>
+  <p class="lede">Six lenses practitioners and researchers bring to the reskilling question &mdash; what each reveals, what each can&rsquo;t see, and what they converge on.</p>
+  <p style="font-size:15px;color:var(--muted);line-height:1.75;max-width:620px;margin-bottom:20px">Reskilling is among the slowest-moving, hardest-to-predict areas of labour-market analysis. Data alone does not get you there. Six lenses &mdash; from practitioners, researchers, and critics &mdash; surface what the data on the other pages hints at but does not prove. Each lens can be defended. None is the whole picture. What matters is where they converge.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; April 2026 &middot; Part 5 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Interpretive page. No new headline numbers. See <a href="sources.html">Sources</a> for the data appendix.</p>
+</header>
+
+<!-- LEAD ARGUMENT (editorial) -->
+<div class="container-narrow">
+<section class="conclusion" aria-label="Lead argument" style="margin-top:8px">
+  <h2 style="margin-top:0">The bottleneck has moved <span class="subtitle">From skill acquisition to skill evaluation</span></h2>
+
+  <p>The last time Europe reorganised skill acquisition at landmark scale was during the Enlightenment-era compulsory-schooling reforms. Those reforms assumed a world where knowledge was scarce and had to be delivered to people by institutions. In 2026 the opposite holds: knowledge is abundant and free, but gated behind credentials designed for scarcity.</p>
+
+  <p>The bottleneck has moved. It isn&rsquo;t skill <em>acquisition</em> &mdash; learners can access nearly any body of knowledge with focussed effort. It is skill <em>evaluation</em> &mdash; the mechanism by which acquired capability becomes legible to employers, institutions, and markets.</p>
+
+  <p>Certificates are increasingly a proxy for signal, not the signal itself. In regulated professions like medicine they remain necessary &mdash; but even there the system fails: a surgeon with years of trench experience can be blocked from practising in a host country because the credentialing chain does not recognise her qualification. Across a much broader range of jobs, certificates simply don&rsquo;t tell you whether the person holding one can do the work.</p>
+
+  <p>Universities remain the pinnacle of original research, but the academic career path &mdash; citation politics, thesis-advisor patronage, tenure incentives &mdash; rewards persistence and alignment over insight. Ghost-writing predetermined conclusions builds the CV that gets tenure; the brains doing actual breakthroughs don&rsquo;t always survive the machinery. And the mechanisms that <em>do</em> evaluate capability well &mdash; open-source contributions, portfolio-based hiring, live task assessments, verifiable work samples &mdash; remain niche because the institutions benefiting from current gatekeeping resist their adoption.</p>
+
+  <p>Europe has too little reskilling capacity, what it has is too rigid, and the tools available today won&rsquo;t close the gap. Meaning, Europe cannot reskill fast enough inside the current systems. The data says so.</p>
+
+  <p>What comes next will likely be harder than the discussion we currently have. Answering <strong>how we will measure and evaluate skill in an age where knowledge is free, experience is easily acquired, and the incumbent credentialing machinery is structurally too slow</strong> will get us a long way. Building more VET seats won&rsquo;t answer that question.</p>
+
+</section>
+</div>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="Framing summary">
+  <div class="stat-card">
+    <span class="stat-value">6</span>
+    <span class="stat-label">Lenses on reskilling</span>
+    <span class="stat-sublabel">Two structural, three confounders, one alternative hypothesis</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">3</span>
+    <span class="stat-label">Confounders the data misses</span>
+    <span class="stat-sublabel">Accounting artefact, curriculum mismatch, cohort bifurcation</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">1</span>
+    <span class="stat-label">Candidate diagnostic metric</span>
+    <span class="stat-sublabel">Internal transition speed vs external turnover</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">6</span>
+    <span class="stat-label">Practitioner sources</span>
+    <span class="stat-sublabel">Haslauer, Klinger, Ronacher, Pontella, Weber, Andreessen</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: THE SIX FRAMES -->
+<h2><span class="num">1.</span> The six lenses <span class="subtitle">Two structural decompositions, three confounders, one alternative hypothesis</span></h2>
+
+<p>The lenses below come from practitioners and researchers who watch the labour market from inside firms, classrooms, and conferences rather than from aggregate statistics alone. They were captured in the weeks before the Layer 5 content locked. Attribution dates are preserved so a reader can track what was known when. The first accordion is open by default; the rest expand on click.</p>
+
+<!-- FRAME 1 -->
+<details class="frame" open>
+  <summary>
+    <div class="frame-meta">Lens 1 &middot; Stefanie Haslauer &middot; 15 April 2026</div>
+    <h3>Three-part decomposition of what reskilling actually requires</h3>
+  </summary>
+  <div class="frame-body">
+    <p>Reskilling is not one process but three, and conflating them is the most common analytical error in the field. Step 1 is <strong>skill acquisition</strong> &mdash; the worker learns. This has arguably never been easier; it is rarely the binding constraint. Step 2 is <strong>credentialing and recognition</strong> &mdash; the capability becomes legible to an employer, usually via a certificate, degree, or recognised qualification. Step 3 is <strong>role translation</strong> &mdash; the certified capability actually moves into a paid role, either inside the worker&rsquo;s current firm or through the external labour market. Each step has its own failure mode and its own intervention. Treating reskilling as a single process makes all three failures look like the same problem, and the same policy &mdash; more training &mdash; gets applied to all of them.</p>
+    <div class="support-block">
+      <span class="block-label">What the Layer 5 data supports</span>
+      <p>The <a href="dach.html">DACH deep dive</a> names role translation as the binding step in the Beruf system explicitly. The channels table on the <a href="index.html">Overview</a> and the A&rarr;C transition rates on <a href="systems.html">Systems</a> map to steps 1 and 2 &mdash; throughput and certification &mdash; with visible friction between them.</p>
+    </div>
+    <div class="gap-block">
+      <span class="block-label">What the Layer 5 data can&rsquo;t see</span>
+      <p>Step 3 &mdash; internal role movement inside firms &mdash; has the thinnest evidence because firm-level mobility data sits behind HR systems that do not aggregate. The site cannot separate &ldquo;credentials produced&rdquo; from &ldquo;roles translated&rdquo; at scale.</p>
+    </div>
+  </div>
+</details>
+
+<!-- FRAME 2 -->
+<details class="frame">
+  <summary>
+    <div class="frame-meta">Lens 2 &middot; Andreas Klinger &middot; 21 April 2026</div>
+    <h3>Three functional layers of work within any role</h3>
+  </summary>
+  <div class="frame-body">
+    <p>Cutting orthogonal to Haslauer, Klinger decomposes the work itself into three functional layers. <strong>Decision</strong> work &mdash; judgment, escalation, taste &mdash; is robust to LLMs because current systems lack time-sense and the trained taste that comes from accumulated context. <strong>Coordination</strong> work &mdash; translation, synthesis, onboarding, handoff management &mdash; is the most exposed layer, and it is what middle management sits on. <strong>Execution</strong> work &mdash; doing the thing &mdash; is reshaped rather than removed; workers execute with AI rather than instead of AI. The two frames stack: Haslauer is process-based (how capability moves through the system); Klinger is functional-based (what work the capability does once it lands).</p>
+    <div class="support-block">
+      <span class="block-label">What the Layer 5 data supports</span>
+      <p>The <a href="transitions.html">Transitions</a> speed-gap table shows coordination-heavy roles (admin clerks, customer-service, writers/translators) with the widest disruption-versus-response gaps &mdash; consistent with coordination being the most compressed layer.</p>
+    </div>
+    <div class="gap-block">
+      <span class="block-label">What the Layer 5 data can&rsquo;t see</span>
+      <p>No page on the site indexes reskilling programmes to destination-layer (decision / coordination / execution) explicitly. A programme aimed at skill acquisition for coordination-layer work may fail on arrival, and aggregated channel-throughput data cannot distinguish that from programmes that land well.</p>
+    </div>
+  </div>
+</details>
+
+<!-- FRAME 3 -->
+<details class="frame">
+  <summary>
+    <div class="frame-meta">Lens 3 &middot; Armen Ronacher &amp; Christina Pontella &middot; AIE Europe, April 2026</div>
+    <h3>Responsibility concentration under production decentralisation</h3>
+  </summary>
+  <div class="frame-body">
+    <p>AI decentralises production: non-engineers ship code, marketers write campaigns, operators draft contracts. But accountability does not decentralise. Review, sign-off, and formal responsibility stay concentrated in the roles the organisation holds legally liable &mdash; engineering, legal, compliance, medical. The visible effect is that authoring load falls, review load rises sharply, and headcount stays flat. Middle managers become bottlenecks for work products they no longer produce. Programmes that address only the dispersing production side &mdash; broad AI literacy, tooling access, prompt training &mdash; risk measurement theatre: the workforce appears reskilled while accountability-bearing functions continue to bottleneck throughput.</p>
+    <div class="support-block">
+      <span class="block-label">What the Layer 5 data supports</span>
+      <p>Nothing directly. The frame is logically consistent with the observed gap between training throughput and measured transition outcomes on <a href="systems.html">Systems</a>, but that is inference, not evidence.</p>
+    </div>
+    <div class="gap-block">
+      <span class="block-label">What the Layer 5 data can&rsquo;t see</span>
+      <p>Review load redistribution is not measured in any channel the site aggregates. A reskilling intervention testable against whether review load redistributes after completion sits entirely outside the available data.</p>
+    </div>
+  </div>
+</details>
+
+<!-- FRAME 4 -->
+<details class="frame">
+  <summary>
+    <div class="frame-meta">Lens 4 &middot; Joanna Weber &middot; 15 April 2026</div>
+    <h3>GAAP and stock-based-compensation accounting as layoff confounder</h3>
+  </summary>
+  <div class="frame-body">
+    <p>Tech layoffs are the loudest signal most reskilling programmes respond to, and they may be partially an accounting artefact. Under GAAP, stock-based compensation lands in operating expenses even when the cash has already cleared earlier; a firm can show GAAP losses while underlying cash performance is healthy. &ldquo;Tech downturn&rdquo; narratives built from GAAP headlines can therefore overstate the underlying demand shock and mistime the reskilling response. This is a data-quality caveat, not a methodology dispute: nothing here argues that AI-era layoffs are not real. The argument is narrower &mdash; if a reskilling programme&rsquo;s timing is driven by layoff-count signals that are partly accounting-driven, intake will run counter-cyclical to actual demand rather than with it.</p>
+    <div class="support-block">
+      <span class="block-label">What the Layer 5 data supports</span>
+      <p>Nothing directly. Layer 5 does not read US tech-layoff data as a primary input for European reskilling capacity sizing, which sidesteps the confounder for the headline numbers.</p>
+    </div>
+    <div class="gap-block">
+      <span class="block-label">What the Layer 5 data can&rsquo;t see</span>
+      <p>Firm-level accounting-versus-cash distinctions never enter the aggregate European series the site uses. A future programme that does respond to layoff-count signals would inherit this confounder unaddressed.</p>
+    </div>
+  </div>
+</details>
+
+<!-- FRAME 5 -->
+<details class="frame">
+  <summary>
+    <div class="frame-meta">Lens 5 &middot; Marc Andreessen &middot; 20VC, April 2026</div>
+    <h3>Curriculum-market mismatch as alternative hypothesis</h3>
+  </summary>
+  <div class="frame-body">
+    <p>The collapse in hiring for recent graduates is widely read as AI displacement. Andreessen offers a testable alternative: the skill set produced by the last decade of higher education does not match current labour-market needs, and AI is cover rather than cause. If he is partially right, reskilling programmes aimed at &ldquo;AI literacy&rdquo; for displaced graduates will miss &mdash; the binding gap is judgment, production quality, and domain depth rather than AI-specific skills. Treat this as an alternative hypothesis rather than a rebuttal: the two can be simultaneously partially true. The operational question is whether the diagnosed problem is <em>skill-acquisition-wrong-content</em> (AI literacy missing) or <em>skill-acquisition-wrong-destination</em> (AI literacy in place but destination roles are not absorbing).</p>
+    <div class="support-block">
+      <span class="block-label">What the Layer 5 data supports</span>
+      <p>The <a href="transitions.html">Transitions</a> entry-level hiring-slowdown data (Massenkoff &amp; McCrory 2026) is the closest indirect signal &mdash; graduate hiring collapse is observed; the cause is not identified from the series alone.</p>
+    </div>
+    <div class="gap-block">
+      <span class="block-label">What the Layer 5 data can&rsquo;t see</span>
+      <p>Nothing on the site separates curriculum-mismatch from AI-displacement as competing causes of the graduate hiring collapse. Both remain live hypotheses against the observed data.</p>
+    </div>
+  </div>
+</details>
+
+<!-- FRAME 6 -->
+<details class="frame">
+  <summary>
+    <div class="frame-meta">Lens 6 &middot; Christina Pontella &middot; AIE Europe, April 2026</div>
+    <h3>Native-AI-cohort bifurcation and the age-50 inversion</h3>
+  </summary>
+  <div class="frame-body">
+    <p>The age-50 cliff from historical-disruption evidence is well documented: recovery probability roughly halves after 50, and geographic scarring lasts decades. Layer 3 already carries that finding. Pontella points to a second cohort effect running in the opposite direction &mdash; the native-AI cohort, the first group for whom mature AI tools predate their career. That cohort enters high-productivity roles without a transitional skill gap. The reskilling implication is that aggregated programme outcomes will mislead: if the distribution is genuinely bimodal &mdash; natives thriving at one end, the over-50 cohort hitting the historical cliff at the other &mdash; the middle cohort (25&ndash;50) carries the full transition cost and the aggregate mean sits on nobody.</p>
+    <div class="support-block">
+      <span class="block-label">What the Layer 5 data supports</span>
+      <p>The <a href="countries.html">Countries</a> page and <a href="dach.html">DACH deep dive</a> treat the 55&ndash;64 cohort as a retirement buffer, which indirectly confirms the older-cohort half of the bifurcation. The native-cohort half sits in <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions</a> via the age-50 series.</p>
+    </div>
+    <div class="gap-block">
+      <span class="block-label">What the Layer 5 data can&rsquo;t see</span>
+      <p>Native-cohort outcomes are not separated from middle-cohort outcomes in any channel on the site. Programmes measured against aggregate rates may look successful while the cohort most in need has failed.</p>
+    </div>
+  </div>
+</details>
+
+<!-- S2: HEAT-MAP -->
+<h2><span class="num">2.</span> Where each lens finds support in our data <span class="subtitle">Supported, hinted, or outside the data&rsquo;s reach</span></h2>
+
+<p>Each cell reads &ldquo;this lens finds supporting evidence on this page&rdquo;. <strong>Supported</strong> means the page explicitly names or operationally applies the lens. <strong>Hinted</strong> means the lens is implicitly present through a derivation that touches it but does not name it. <strong>Unsupported</strong> means the data we collected does not speak to that lens &mdash; not that the lens is wrong.</p>
+
+<div class="heatmap-wrap">
+<table class="heatmap" aria-label="Heat-map of where each lens finds support across site pages">
+  <colgroup>
+    <col class="col-label">
+    <col class="col-page">
+    <col class="col-page">
+    <col class="col-page">
+    <col class="col-page">
+    <col class="col-page">
+    <col class="col-page">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Lens &times; page</th>
+      <th scope="col" class="rot">Overview</th>
+      <th scope="col" class="rot">Countries</th>
+      <th scope="col" class="rot">Transitions</th>
+      <th scope="col" class="rot">Systems</th>
+      <th scope="col" class="rot">DACH</th>
+      <th scope="col" class="rot">Sources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="label">1. Haslauer 3-part decomposition</td>
+      <td class="cov-partial" title="Channels table covers steps 1 and 2; step 3 role translation is hinted, not named">Hinted</td>
+      <td class="cov-partial" title="A→C rate implicitly proxies step 3 outcomes">Hinted</td>
+      <td class="cov-partial" title="Wage cliff and feasibility matrix are step-3 friction, not named as such">Hinted</td>
+      <td class="cov-partial" title="A→C rates by system aggregate step 3 outcomes">Hinted</td>
+      <td class="cov-covered" title="Beruf discussion: role translation is named as the binding step">Supported</td>
+      <td class="cov-absent">Unsupported</td>
+    </tr>
+    <tr>
+      <td class="label">2. Klinger 3 functional layers</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-partial" title="Speed-gap data shows coordination-heavy roles with widest gaps — consistent with coordination compression">Hinted</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+    </tr>
+    <tr>
+      <td class="label">3. Ronacher/Pontella responsibility concentration</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+    </tr>
+    <tr>
+      <td class="label">4. Weber GAAP/SBC confounder</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+    </tr>
+    <tr>
+      <td class="label">5. Andreessen curriculum-mismatch alternative</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-partial" title="Massenkoff & McCrory 2026 graduate hiring slowdown is observed; cause not separated">Hinted</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+    </tr>
+    <tr>
+      <td class="label">6. Pontella native-cohort bifurcation</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-partial" title="55–64 retirement buffer is discussed but native-cohort bifurcation is not named">Hinted</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-absent">Unsupported</td>
+      <td class="cov-partial" title="Retirement-offset mechanics discussed; native-cohort not named">Hinted</td>
+      <td class="cov-absent">Unsupported</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="heatmap-legend" aria-hidden="true">
+  <span><i style="background:rgba(74,222,128,0.14);border:1px solid rgba(74,222,128,0.28)"></i> Supported &mdash; page explicitly names or operationally applies the lens</span>
+  <span><i style="background:rgba(249,115,22,0.10);border:1px solid rgba(249,115,22,0.22)"></i> Hinted &mdash; lens is implicitly present via a derivation that touches it</span>
+  <span><i style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05)"></i> Unsupported &mdash; the data we collected does not speak to this lens</span>
+</div>
+
+<p style="margin-top:16px">The lenses that find the broadest support are Haslauer and Pontella&rsquo;s cohort bifurcation, where the site&rsquo;s occupational and demographic data touches the frame directly. Klinger&rsquo;s functional layers surface only through the transitions speed-gap data. The Ronacher/Pontella responsibility-concentration lens and the Weber accounting confounder are almost entirely outside the data the site collects &mdash; they are lenses we think are right but cannot yet test against what we have. That is the value of the self-audit: it shows which conclusions on the other pages lean on the data, and which lean on the lens.</p>
+
+<!-- S3: CONFOUNDERS -->
+<h2><span class="num">3.</span> Confounders the site partly ignores <span class="subtitle">Three cohort and distribution effects that aggregate numbers hide</span></h2>
+
+<h3>Age-50 cliff running opposite to the native-AI cohort</h3>
+<p>Layer 3 carries the age-50 finding: recovery probability roughly halves after 50, geographic scarring lasts decades. Lens 6 sits beside it &mdash; the native-AI cohort moves in the opposite direction. Current Layer 5 pages treat the over-55 cohort only as a retirement buffer (a quantity that leaves the labour force) rather than as a cohort whose reskilling outcomes are systematically worse if they stay. Aggregated reskilling rates that do not separate the two cohorts average across a distribution that is plausibly bimodal. The site does not currently present that separation.</p>
+
+<h3>Geographic scarring</h3>
+<p>Local labour-market scarring from previous industrial transitions has run 30&ndash;50 years in the Layer 3 evidence base. Reskilling effectiveness is not geographically uniform; the same programme delivered in a scarred region and a non-scarred region produces different outcomes with the same inputs. Layer 5 inherits this finding rather than re-deriving it &mdash; see the <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions layer</a> for the underlying series. Within the reskilling pages, geography shows up only in the country-level cuts, which sit above the scale at which scarring operates.</p>
+
+<h3>Bifurcation in outcomes</h3>
+<p>Reskilling outcomes likely bifurcate by worker decile rather than clustering around a mean. Top-decile workers ride the AI-fluent specialist track upward; bottom-decile workers find entry-level options opening as the floor gets lower; middle-tier workers face the hardest path because the target role category is itself shrinking. A mean-centred analysis will miss the distribution shape. Current pages report central estimates with confidence bands (where derivable) but do not explicitly present the bimodal read. That is a gap.</p>
+
+<!-- S4: CANDIDATE DIAGNOSTIC METRIC -->
+<h2><span class="num">4.</span> Candidate diagnostic metric <span class="subtitle">Internal transition speed vs external turnover</span></h2>
+
+<p>Aggregate reskilling statistics measure the system. They do not measure the firm. The candidate metric below is firm-level rather than aggregate, harder to collect, and plausibly more predictive of reskilling ROI than programme design on its own.</p>
+
+<p><strong>Internal transition speed</strong> is the elapsed time from capability formation (a worker completes training or is certified) to internal role change (the same worker moves into a role that uses that capability). <strong>External turnover</strong> is the rate at which newly-capable workers leave the firm before internal translation happens. When external turnover substantially exceeds internal transition speed, the firm&rsquo;s transition architecture is broken: the firm pays to produce capability and the market captures it. Retraining spend in that firm loses most of its ROI to attrition.</p>
+
+<p>The reason this matters and is not already a standard reskilling KPI is that it is operationally hard to measure. It requires linked HR data: training completion, internal posting outcomes, and tenure-at-exit, all joined on worker identity. Most firms track the three separately. Most aggregate studies have no line of sight into any of them. If Layer 5&rsquo;s follow-on work is able to collect this metric even on a small firm sample, it may separate firms whose reskilling actually lands from firms running measurement theatre &mdash; in a way that no aggregate participation or completion rate can. That is the bet underlying its inclusion here, and the reason it earns a stat card above rather than being left in a footnote.</p>
+
+<div class="highlight">
+  <h3>Why this sits above programme design</h3>
+  <p>Two firms can run identical reskilling programmes with identical completion rates and produce opposite ROIs if their internal-transition-to-external-turnover ratio differs by an order of magnitude. Until firm-level mobility data is present in the reskilling evidence base, programme-design comparisons will explain less variance than they appear to.</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>From the argument to the systems</h3>
+  <p>If skill evaluation is the binding constraint, the question is which systems narrow the evaluation gap fastest. Six European reskilling models ranked across speed, scale, quality, equity, and funding.</p>
+  <div class="btn-row">
+    <a href="systems.html" class="btn btn-primary">See the system scorecard &rarr;</a>
+    <a href="index.html" class="btn btn-outline">&larr; Back to the gap</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Can Europe Reskill Fast Enough? v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="transitions.html">Transitions</a> &middot; <a href="lenses.html">Lenses</a> &middot; <a href="systems.html">Systems</a> &middot; <a href="countries.html">Countries</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+
+</main>
+
+<script>
+// Burger menu
+const burgerBtn=document.getElementById('burger-btn'),burgerPanel=document.getElementById('burger-panel');
+burgerBtn.addEventListener('click',()=>{const open=burgerBtn.classList.toggle('open');burgerPanel.classList.toggle('open');burgerBtn.setAttribute('aria-expanded',open)});
+
+// CTA tracking
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(window.posthog)posthog.capture('cta_clicked',{href:btn.getAttribute('href'),text:btn.textContent.trim()});
+  });
+});
+// Scroll depth + outbound click
+setTimeout(function(){
+  if(typeof posthog==='undefined')return;
+  var thresholds=[25,50,75,100], fired={};
+  window.addEventListener('scroll',function(){
+    var h=document.body.scrollHeight-window.innerHeight;
+    if(h<=0)return;
+    var pct=Math.round((window.scrollY/h)*100);
+    thresholds.forEach(function(t){if(pct>=t&&!fired[t]){fired[t]=true;posthog.capture('scroll_depth',{percent:t,page:'framing'})}});
+  },{passive:true});
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){a.addEventListener('click',function(){posthog.capture('outbound_click',{url:a.href,text:a.textContent.trim().slice(0,80),page:'framing'})})});
+},500);
+// Track frame accordion opens
+document.querySelectorAll('details.frame').forEach(function(d){
+  d.addEventListener('toggle',function(){
+    if(d.open && window.posthog){
+      var h = d.querySelector('summary')?.textContent?.trim().slice(0,80) || 'unknown';
+      posthog.capture('frame_open',{frame:h,page:'framing'});
+    }
+  });
+});
+</script>
+</body>
+</html>

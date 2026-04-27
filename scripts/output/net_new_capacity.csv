@@ -1,0 +1,4 @@
+scenario,total_throughput,job_to_job_flow,training_required_subset,absorption_share,absorbed_job_to_job,green_commitment,demographic_replacement,net_new_capacity
+Low absorption (65%),3340000,20094000,3215040,0.65,2089776,250000,180000,820224
+Central absorption (78%),3340000,20094000,3215040,0.78,2507731,250000,180000,402269
+High absorption (90%),3340000,20094000,3215040,0.9,2893536,250000,180000,16464

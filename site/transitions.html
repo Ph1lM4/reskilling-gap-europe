@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bridge Nobody Can Walk &mdash; European Reskilling &amp; AI</title>
+<meta name="description" content="Skills distance 6.8/10. Certification walls 12-42 months. Wage cliff -25% to -40%. Why fewer than 8% of displaced Zone A workers will transition to Zone C shortage occupations.">
+<link rel="canonical" href="https://reskilling.nexalps.com/transitions.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Bridge Nobody Can Walk">
+<meta property="og:description" content="Skills distance 6.8/10. Certification walls 12-42 months. Wage cliff -25% to -40%. The structural paradox of AI displacement.">
+<meta property="og:url" content="https://reskilling.nexalps.com/transitions.html">
+<meta property="og:site_name" content="Nexalps">
+<meta property="og:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta name="twitter:title" content="The Bridge Nobody Can Walk">
+<meta name="twitter:description" content="Skills distance 6.8/10. Certification walls 12-42 months. Wage cliff -25% to -40%. Why fewer than 8% of displaced Zone A workers transition to Zone C.">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"The Bridge Nobody Can Walk: AI Displacement Transition Feasibility","description":"Skills distance, certification walls, wage cliffs, and status barriers converge: fewer than 8% of displaced Zone A workers will transition to Zone C.","url":"https://reskilling.nexalps.com/transitions.html","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/"}}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{--background:#09090b;--foreground:#fafafa;--card:#0a0a0c;--card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;--accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);--ring:#f97316;--radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;--font:'Geist',system-ui,-apple-system,sans-serif;--transition:150ms cubic-bezier(0.4,0,0.2,1)}
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}.site-nav-links a:hover{color:var(--foreground)}.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}.burger.open span:nth-child(2){opacity:0}.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}.burger-panel a:hover{color:var(--foreground)}.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero.container{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);padding:8px 12px;border-bottom:1px solid var(--border)}
+.data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border)}
+.data-table tr:last-child td{border-bottom:none}
+@media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}.footer a:hover{color:var(--foreground)}
+/* Unified body-prose links */
+main p a, main li a, main td a, main .highlight a, main .author-note a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+main p a:visited, main li a:visited, main td a:visited, main .highlight a:visited, main .author-note a:visited{color:var(--foreground)}
+main p a:hover, main li a:hover, main td a:hover, main .highlight a:hover, main .author-note a:hover{color:var(--ring)}
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+.feasibility{display:inline-block;padding:2px 8px;border-radius:9999px;font-size:11px;font-weight:600}
+.feasibility-very-high,.feasibility-high{background:rgba(34,197,94,0.12);color:#86efac;border:1px solid rgba(34,197,94,0.2)}
+.feasibility-moderate-high,.feasibility-moderate{background:rgba(234,179,8,0.12);color:#fde047;border:1px solid rgba(234,179,8,0.2)}
+.feasibility-low-moderate,.feasibility-low,.feasibility-very-low{background:rgba(239,68,68,0.12);color:#fca5a5;border:1px solid rgba(239,68,68,0.2)}
+.wage-pos{color:#4ade80;font-weight:600}.wage-neg{color:#fca5a5;font-weight:600}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="transitions.html" aria-current="page">Transitions</a>
+    <a href="lenses.html">Lenses</a>
+    <span class="nav-sep"></span>
+    <a href="systems.html">Systems</a>
+    <a href="countries.html">Countries</a>
+    <a href="dach.html">DACH</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+    <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="transitions.html" aria-current="page">Transitions</a>
+  <a href="lenses.html">Lenses</a>
+  <a href="systems.html">Systems</a>
+  <a href="countries.html">Countries</a>
+  <a href="dach.html">DACH</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+</div>
+
+<main id="main" role="main">
+<header class="hero container">
+  <h1>The Bridge Nobody Can Walk</h1>
+  <p class="lede">AI displaces knowledge workers. Europe needs care workers and tradespeople. The bridge between surplus and shortage is structurally unwalkable for most &mdash; blocked by skills distance, certification walls, wage cliffs, and status barriers.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/">Philipp Maul</a> &middot; <a href="https://nexalps.com">Nexalps</a> &middot; April 2026 &middot; Part 5 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">63 primary sources</a> including Gathmann &amp; Sch&ouml;nberg, Jacobson/LaLonde/Sullivan, Bertheau et al., Cedefop and IAB.</p>
+</header>
+
+<section class="stats-bar container" role="region" aria-label="Transition statistics">
+  <div class="stat-card">
+    <span class="stat-value">6.8 / 10</span>
+    <span class="stat-label">Skills distance A&rarr;C</span>
+    <span class="stat-sublabel">vs 3.6/10 for A&rarr;A+</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">12&ndash;42 mo</span>
+    <span class="stat-label">Certification wall</span>
+    <span class="stat-sublabel">Zone C mandatory; Zone A+ has none</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">&minus;25 to &minus;40%</span>
+    <span class="stat-label">Wage cliff (A&rarr;C)</span>
+    <span class="stat-sublabel">vs +20 to +55% for A&rarr;A+</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: STRUCTURAL PARADOX -->
+<h2><span class="num">1.</span> The Structural Paradox <span class="subtitle">Surplus and shortage, side by side</span></h2>
+
+<p>AI will simultaneously create unemployed knowledge workers and unfilled essential-service positions. The core task clusters of Zone A (clerical, admin, business-support) and Zone C (healthcare, trades, construction, early childhood education) share almost no overlap. Zone A is built on routine cognitive tasks &mdash; information processing, scheduling, digital documentation. Zone C demands non-routine manual-physical tasks and deep emotional labour.</p>
+
+<p>Gathmann and Sch&ouml;nberg&rsquo;s foundational 2010 study established that <strong>task-specific human capital accounts for up to 52% of overall wage growth</strong>. Workers overwhelmingly move to occupations with similar task requirements. The Zone A&rarr;Zone C transition violates this principle fundamentally.</p>
+
+<p>One important nuance: <strong>care work is closer to knowledge work than trades are.</strong> Customer service clerks moving to care assistant roles face a distance of 5/10, driven by transferable interpersonal skills. Any Zone A occupation to electrician or construction worker rates 8&ndash;9/10 &mdash; near-total skill discontinuity.</p>
+
+<!-- ZONE REFERENCE CARDS -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0">
+  <div style="padding:14px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)">
+    <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:2px">Zone A &mdash; High AI Exposure</div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.5">Clerical, admin, customer service, data entry. 25&ndash;30M workers. AI displaces 60&ndash;80% of tasks. Surplus.</div>
+  </div>
+  <div style="padding:14px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)">
+    <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:2px">Zone A+ &mdash; Augmented Knowledge Work</div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.5">Compliance, AI ops, data science, governance. Wage-positive. No cert walls. Where most displaced workers go.</div>
+  </div>
+  <div style="padding:14px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)">
+    <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:2px">Zone B &mdash; Medium AI Exposure</div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.5">Software, marketing, management, HR. 40&ndash;50M workers. AI transforms 20&ndash;35% of tasks. Partial offset via productivity.</div>
+  </div>
+  <div style="padding:14px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)">
+    <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:2px">Zone C &mdash; Low AI Exposure</div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.5">Healthcare, trades, construction, care, ECE. 90&ndash;100M workers. 8&ndash;12M unfilled by 2030. Shortage.</div>
+  </div>
+  <div style="padding:14px 16px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)">
+    <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:2px">Zone D &mdash; AI-Enhanced Demand</div>
+    <div style="font-size:12px;color:var(--muted);line-height:1.5">AI/ML engineering, data science, cybersecurity. 3&ndash;5M workers. Chronic undersupply. New roles.</div>
+  </div>
+</div>
+
+<!-- S2: TRANSITION FEASIBILITY MATRIX -->
+<h2><span class="num">2.</span> Transition Feasibility Matrix <span class="subtitle">Every A&rarr;A+ path scores higher than every A&rarr;C path</span></h2>
+
+<div class="chart-box" role="img" aria-label="Bubble chart showing transition feasibility. X-axis is skills distance 0-10, Y-axis is earnings change -50% to +60%. Green bubbles cluster in the top-left (easy, wage-positive A to A+ transitions). Red/orange bubbles cluster in the bottom-right (hard, wage-negative A to C transitions).">
+  <h3>Transition Feasibility &mdash; Skills Distance vs Earnings Change</h3>
+  <div id="bubble-chart"></div>
+</div>
+
+<h3 style="font-size:14px;font-weight:600;color:var(--muted);margin:24px 0 8px;text-transform:uppercase;letter-spacing:0.04em">Zone A &rarr; Zone C (cross-zone, high friction)</h3>
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+<table class="data-table">
+  <thead><tr><th scope="col">From</th><th scope="col">To</th><th scope="col">Skills Dist.</th><th scope="col">Training</th><th scope="col">Wage (DE)</th><th scope="col">Feasibility</th></tr></thead>
+  <tbody>
+    <tr><td>Admin/secretarial</td><td>Care assistant</td><td>6/10</td><td>3&ndash;12 mo</td><td class="wage-neg">&minus;33%</td><td><span class="feasibility feasibility-moderate">Moderate</span></td></tr>
+    <tr><td>Customer service</td><td>Care assistant</td><td>5/10</td><td>3&ndash;12 mo</td><td class="wage-neg">&minus;25%</td><td><span class="feasibility feasibility-moderate-high">Moderate-High</span></td></tr>
+    <tr><td>Admin/secretarial</td><td>Registered nurse</td><td>8/10</td><td>24&ndash;36 mo</td><td class="wage-neg">&minus;17%</td><td><span class="feasibility feasibility-low">Low</span></td></tr>
+    <tr><td>Business admin</td><td>Electrician</td><td>8/10</td><td>12&ndash;24 mo</td><td class="wage-neg">&minus;28%</td><td><span class="feasibility feasibility-low">Low</span></td></tr>
+    <tr><td>General clerk</td><td>Plumber/HVAC</td><td>8/10</td><td>12&ndash;24 mo</td><td class="wage-neg">&minus;8%</td><td><span class="feasibility feasibility-low-moderate">Low-Mod</span></td></tr>
+    <tr><td>Legal/social prof</td><td>Early childhood edu</td><td>5/10</td><td>6&ndash;36 mo</td><td class="wage-neg">&minus;36%</td><td><span class="feasibility feasibility-low">Low</span></td></tr>
+    <tr><td>Admin/secretarial</td><td>Construction</td><td>9/10</td><td>6&ndash;12 mo</td><td class="wage-neg">&minus;36%</td><td><span class="feasibility feasibility-very-low">Very Low</span></td></tr>
+    <tr><td>Numerical clerk</td><td>Truck/logistics</td><td>6/10</td><td>3&ndash;6 mo</td><td class="wage-neg">&minus;9%</td><td><span class="feasibility feasibility-moderate">Moderate</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3 style="font-size:14px;font-weight:600;color:var(--muted);margin:24px 0 8px;text-transform:uppercase;letter-spacing:0.04em">Zone A &rarr; Zone A+ (within-zone, lower friction)</h3>
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+<table class="data-table">
+  <thead><tr><th scope="col">From</th><th scope="col">To</th><th scope="col">Skills Dist.</th><th scope="col">Training</th><th scope="col">Wage (DE)</th><th scope="col">Feasibility</th></tr></thead>
+  <tbody>
+    <tr><td>Business admin</td><td>Compliance specialist</td><td>2/10</td><td>3&ndash;12 mo</td><td class="wage-pos">+20%</td><td><span class="feasibility feasibility-very-high">Very High</span></td></tr>
+    <tr><td>Legal professional</td><td>AI governance</td><td>2/10</td><td>1&ndash;2 mo</td><td class="wage-pos">+15%</td><td><span class="feasibility feasibility-very-high">Very High</span></td></tr>
+    <tr><td>Business admin</td><td>AI-augmented ops</td><td>2/10</td><td>1&ndash;3 mo</td><td class="wage-pos">+25%</td><td><span class="feasibility feasibility-very-high">Very High</span></td></tr>
+    <tr><td>Admin/secretarial</td><td>AI-augmented ops</td><td>3/10</td><td>3&ndash;6 mo</td><td class="wage-pos">+25%</td><td><span class="feasibility feasibility-high">High</span></td></tr>
+    <tr><td>Customer service</td><td>AI-human hybrid designer</td><td>5/10</td><td>3&ndash;6 mo</td><td class="wage-pos">+22%</td><td><span class="feasibility feasibility-moderate-high">Mod-High</span></td></tr>
+    <tr><td>Business admin</td><td>Data engineer/AI</td><td>5/10</td><td>6&ndash;18 mo</td><td class="wage-pos">+42%</td><td><span class="feasibility feasibility-moderate">Moderate</span></td></tr>
+    <tr><td>Numerical clerk</td><td>Data analyst</td><td>5/10</td><td>3&ndash;6 mo</td><td class="wage-pos">+35%</td><td><span class="feasibility feasibility-moderate-high">Mod-High</span></td></tr>
+    <tr><td>Admin/secretarial</td><td>Data/AI specialist</td><td>6/10</td><td>12&ndash;18 mo</td><td class="wage-pos">+47%</td><td><span class="feasibility feasibility-moderate">Moderate</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- S3: THE WAGE CLIFF -->
+<h2><span class="num">3.</span> The Wage Cliff <span class="subtitle">Rational workers choose A+ every time</span></h2>
+
+<p>The earnings data reveal a structural incentive problem that may be more consequential than skills distance or certification barriers. Workers exhibit strong reference-dependent preferences, anchoring to their prior salary. Reservation wages decline approximately <strong>5% per year</strong> during unemployment. If the typical A&rarr;C wage cliff is &minus;30%, it takes <strong>six years of unemployment</strong> before a displaced professional would accept a care assistant salary.</p>
+
+<div class="chart-box" role="img" aria-label="Diverging horizontal bar chart. Each row is a transition path. Bars extend left for wage losses (A to C, orange-red) and right for wage gains (A to A-plus, green). Germany wage deltas shown; France and UK ranges in the table below.">
+  <h3>Wage cliff (A&rarr;C) vs wage lift (A&rarr;A+) &mdash; Germany</h3>
+  <div id="wage-cliff-chart"></div>
+  <p style="font-size:12px;color:var(--muted-foreground);margin-top:10px;line-height:1.6">Germany shown as the primary series &mdash; its wage-cliff is the steepest of the three because Zone A salaries are higher and care-sector wages remain compressed. France and UK ranges in the table below.</p>
+</div>
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+<table class="data-table">
+  <thead><tr><th scope="col">Transition Path</th><th scope="col">Germany</th><th scope="col">France</th><th scope="col">UK</th></tr></thead>
+  <tbody>
+    <tr><td>Admin (&euro;42K) &rarr; Care assistant</td><td class="wage-neg">&minus;33%</td><td class="wage-neg">&minus;20%</td><td class="wage-neg">&minus;12%</td></tr>
+    <tr><td>Business admin (&euro;50K) &rarr; Electrician</td><td class="wage-neg">&minus;28%</td><td class="wage-neg">&minus;24%</td><td class="wage-neg">&minus;6%</td></tr>
+    <tr><td>Business admin (&euro;50K) &rarr; Care assistant</td><td class="wage-neg">&minus;44%</td><td class="wage-neg">&minus;43%</td><td class="wage-neg">&minus;36%</td></tr>
+    <tr><td>Legal/cultural (&euro;55K) &rarr; ECE</td><td class="wage-neg">&minus;36%</td><td class="wage-neg">&minus;48%</td><td class="wage-neg">&minus;38%</td></tr>
+    <tr style="border-top:2px solid var(--border)"><td>Admin (&euro;42K) &rarr; Data analyst</td><td class="wage-pos">+31%</td><td class="wage-pos">+33%</td><td class="wage-pos">+35%</td></tr>
+    <tr><td>Business admin &rarr; Compliance</td><td class="wage-pos">+20%</td><td class="wage-pos">+19%</td><td class="wage-pos">+25%</td></tr>
+    <tr><td>Bookkeeper (&euro;42K) &rarr; Data scientist</td><td class="wage-pos">+55%</td><td class="wage-pos">+44%</td><td class="wage-pos">+50%</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p style="font-size:14px;color:var(--muted);margin-top:8px;line-height:1.6">Germany faces the steepest cliffs because Zone A salaries are relatively high while care-sector wages remain compressed. The UK&rsquo;s trades pay comparatively well, making some Zone C transitions nearly wage-neutral for lower-paid clerks.</p>
+
+<!-- S4: DISPLACED WORKER FLOW -->
+<h2><span class="num">4.</span> Where Displaced Workers Actually Go <span class="subtitle">The dominant flow is A&rarr;A+, not A&rarr;C</span></h2>
+
+<div class="chart-box" role="img" aria-label="Sankey diagram showing 100 displaced Zone A workers flowing to 7 destinations. The largest flow (40-60%) goes to 'not successfully transitioning'. Zone A+ absorbs 15-25%. Zone C total is only 5-10%.">
+  <h3>Displaced Worker Flow &mdash; 100 Zone A Workers Over 5 Years</h3>
+  <div id="sankey-chart"></div>
+</div>
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+<table class="data-table">
+  <thead><tr><th scope="col">Destination</th><th scope="col">Share</th><th scope="col">Rationale</th></tr></thead>
+  <tbody>
+    <tr><td style="color:#4ade80;font-weight:600">Zone A+ (augmented knowledge work)</td><td>15&ndash;25%</td><td>Shortest bridge, no cert wall, wage-positive</td></tr>
+    <tr><td style="color:#4ade80">Lateral moves within Zone A</td><td>10&ndash;15%</td><td>Similar roles in less-automated organisations</td></tr>
+    <tr><td style="color:#a1a1aa">Absorbed by retirement</td><td>10&ndash;15%</td><td>55+ cohort; clerical workers retire earliest</td></tr>
+    <tr><td style="color:#f97316">Zone C &mdash; care work</td><td>3&ndash;6%</td><td>Most feasible cross-zone; transferable interpersonal skills</td></tr>
+    <tr><td style="color:#f97316">Zone C &mdash; skilled trades</td><td>0.5&ndash;2%</td><td>Near-total discontinuity; gender mismatch; physical demands</td></tr>
+    <tr><td style="color:#f97316">Zone C &mdash; other</td><td>1&ndash;3%</td><td>ECE for social/cultural profs; transport for clerks</td></tr>
+    <tr><td style="color:#ef4444;font-weight:600">Not successfully transitioning</td><td>40&ndash;60%</td><td>Underemployment, long-term unemployment, labour force exit</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- S5: MANUFACTURING PARALLEL -->
+<h2><span class="num">5.</span> The Manufacturing Parallel <span class="subtitle">Decades of scarring from a shorter bridge</span></h2>
+
+<p>The 1970&ndash;2000 manufacturing-to-services transition displaced over 6&nbsp;million workers in the UK alone. Despite involving a <strong>shorter skills bridge</strong> than the current AI-to-care/trades challenge, it produced devastating consequences. Jacobson, LaLonde, and Sullivan found <strong>25% long-term earnings losses</strong> that never recovered. Bertheau et al. show 5&ndash;20% of displaced workers unable to find employment five years later.</p>
+
+<p>The geographic evidence is sobering. The Ruhr&rsquo;s unemployment stood at 10.1% versus 6.0% nationally as recently as 2020, six decades after the coal crisis began. Britain&rsquo;s former industrial towns contained 776,000 working-age adults on incapacity benefits in 2019 &mdash; a hidden unemployment reservoir from 1980s displacement. <a href="https://disruptions.nexalps.com/outcomes.html" target="_blank" rel="noopener">Layer 3</a> covers these cases in depth.</p>
+
+<!-- Stat cards anchoring the manufacturing-parallel numbers -->
+<div class="stats-bar" style="padding:4px 0 12px">
+  <div class="stat-card" style="padding:12px 16px">
+    <span class="stat-value" style="font-size:20px">10.1% &middot; 6.0%</span>
+    <span class="stat-label">Ruhr vs Germany, 2020</span>
+    <span class="stat-sublabel">Unemployment, six decades after the coal crisis began</span>
+  </div>
+  <div class="stat-card" style="padding:12px 16px">
+    <span class="stat-value" style="font-size:20px">776,000</span>
+    <span class="stat-label">UK incapacity benefits, 2019</span>
+    <span class="stat-sublabel">Working-age adults in former industrial towns</span>
+  </div>
+  <div class="stat-card" style="padding:12px 16px">
+    <span class="stat-value" style="font-size:20px">&minus;25%</span>
+    <span class="stat-label">Long-term earnings loss</span>
+    <span class="stat-sublabel">Jacobson, LaLonde &amp; Sullivan &mdash; never recovered</span>
+  </div>
+</div>
+
+<p>The critical difference: knowledge workers moving to trades face a <strong>perceived status downgrade</strong>. Manufacturing workers moving to services often perceived a lateral or upward move. Identity research predicts workers will resist downward-status transitions with disproportionate force, even when the economics favour it.</p>
+
+<!-- COUNTER-ARGUMENTS -->
+<div class="highlight">
+  <h3>Four counter-arguments worth considering</h3>
+  <p><strong>1. Care overlap:</strong> Care work&rsquo;s emotional labour requirements overlap with knowledge workers&rsquo; communication skills &mdash; a genuine transferable asset manufacturing workers lacked.<br>
+  <strong>2. Demographic pull:</strong> Employers in care and trades are desperate for workers, creating demand-side conditions the 1980s never had.<br>
+  <strong>3. Financial support:</strong> Sweden&rsquo;s 80% income replacement during retraining proves the model works at individual level &mdash; the question is scale.<br>
+  <strong>4. The A+ escape valve:</strong> Knowledge workers can stay in their domain and augment with AI &mdash; manufacturing workers had no such option when their factories closed.</p>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>Why does this matter?</h3>
+  <p>The data shows the bridge is unwalkable for most. The Lenses page interprets why &mdash; six practitioner and research views converge on a single binding constraint, and it isn&rsquo;t reskilling capacity.</p>
+  <div class="btn-row">
+    <a href="lenses.html" class="btn btn-primary">Read the Lenses page &rarr;</a>
+    <a href="index.html" class="btn btn-outline">&larr; Back to the gap</a>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer container" role="contentinfo">
+  Can Europe Reskill Fast Enough? v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="transitions.html">Transitions</a> &middot; <a href="lenses.html">Lenses</a> &middot; <a href="systems.html">Systems</a> &middot; <a href="countries.html">Countries</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+</main>
+
+<div class="chart-tooltip" id="tooltip" style="display:none"></div>
+
+<script>
+const burgerBtn=document.getElementById('burger-btn'),burgerPanel=document.getElementById('burger-panel');
+burgerBtn.addEventListener('click',()=>{const open=burgerBtn.classList.toggle('open');burgerPanel.classList.toggle('open');burgerBtn.setAttribute('aria-expanded',open)});
+
+d3.json('reskilling-data.json').then(data=>{
+  const tooltip=d3.select('#tooltip');
+
+  // CHART 3: Bubble Matrix
+  (function(){
+    const container=document.getElementById('bubble-chart');
+    if(!container)return;
+    const w=Math.min(container.clientWidth||700,700),h=460;
+    const margin={top:16,right:30,bottom:80,left:60};
+    const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+    const allTransitions=[
+      ...data.transitions.a_to_c.map(d=>({...d,zone:'A→C',wage:d.wage_change_de})),
+      ...data.transitions.a_to_aplus.map(d=>({...d,zone:'A→A+',wage:d.wage_change}))
+    ];
+
+    const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+    const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+    const x=d3.scaleLinear().domain([0,10]).range([0,iw]);
+    const y=d3.scaleLinear().domain([-55,60]).range([ih,0]);
+    const r=d3.scaleSqrt().domain([1,36]).range([6,22]);
+
+    // Threshold lines
+    g.append('line').attr('x1',x(4)).attr('x2',x(4)).attr('y1',0).attr('y2',ih)
+      .attr('stroke','rgba(239,68,68,0.3)').attr('stroke-dasharray','4,4');
+    g.append('text').attr('x',x(4)-8).attr('y',ih-6).attr('text-anchor','end').attr('fill','#86efac').attr('font-size','10px').attr('font-weight','600').text('\u2190 Walkable');
+    g.append('text').attr('x',x(4)+8).attr('y',ih-6).attr('text-anchor','start').attr('fill','#fca5a5').attr('font-size','10px').attr('font-weight','600').text('Unwalkable \u2192');
+
+    g.append('line').attr('x1',0).attr('x2',iw).attr('y1',y(0)).attr('y2',y(0))
+      .attr('stroke','rgba(255,255,255,0.15)').attr('stroke-dasharray','4,4');
+    g.append('text').attr('x',iw-50).attr('y',y(0)-6).attr('fill','#71717a').attr('font-size','10px').text('0% earnings');
+
+    // Zone shading
+    g.append('rect').attr('x',0).attr('y',0).attr('width',x(4)).attr('height',y(0))
+      .attr('fill','rgba(34,197,94,0.04)');
+    g.append('rect').attr('x',x(4)).attr('y',y(0)).attr('width',iw-x(4)).attr('height',ih-y(0))
+      .attr('fill','rgba(239,68,68,0.04)');
+
+    // Bubbles
+    g.selectAll('circle').data(allTransitions).join('circle')
+      .attr('cx',d=>x(d.skills_distance))
+      .attr('cy',d=>y(d.wage))
+      .attr('r',d=>r(d.training_months_high||d.training_months_low||6))
+      .attr('fill',d=>d.zone==='A→A+'?'rgba(74,222,128,0.6)':'rgba(249,115,22,0.6)')
+      .attr('stroke',d=>d.zone==='A→A+'?'#4ade80':'#f97316')
+      .attr('stroke-width',1.5)
+      .on('mouseenter',function(event,d){
+        tooltip.style('display','block')
+          .html(`<strong>${d.from} → ${d.to}</strong><br>Skills: ${d.skills_distance}/10 · Wage: ${d.wage>0?'+':''}${d.wage}%<br>Training: ${d.training_months_low||'?'}–${d.training_months_high||'?'} months · ${d.feasibility}`)
+          .style('left',(event.pageX+12)+'px').style('top',(event.pageY-12)+'px');
+      })
+      .on('mouseleave',()=>tooltip.style('display','none'));
+
+    // Axes
+    g.append('g').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).ticks(10)).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+    g.append('g').call(d3.axisLeft(y).ticks(8).tickFormat(d=>(d>0?'+':'')+d+'%')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+    g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+    g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
+
+    // Axis labels
+    svg.append('text').attr('x',margin.left+iw/2).attr('y',h-6).attr('text-anchor','middle').attr('fill','#71717a').attr('font-size','12px').text('Skills Distance (1–10)');
+    svg.append('text').attr('transform','rotate(-90)').attr('x',-(margin.top+ih/2)).attr('y',14).attr('text-anchor','middle').attr('fill','#71717a').attr('font-size','12px').text('Earnings Change (%)');
+
+    // Legend (below chart, outside data area)
+    const leg=g.append('g').attr('transform',`translate(0,${ih+32})`);
+    leg.append('circle').attr('cx',8).attr('cy',0).attr('r',6).attr('fill','rgba(74,222,128,0.6)').attr('stroke','#4ade80');
+    leg.append('text').attr('x',20).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('A \u2192 A+ (within-zone)');
+    leg.append('circle').attr('cx',160).attr('cy',0).attr('r',6).attr('fill','rgba(249,115,22,0.6)').attr('stroke','#f97316');
+    leg.append('text').attr('x',172).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('A \u2192 C (cross-zone)');
+    leg.append('circle').attr('cx',310).attr('cy',0).attr('r',4).attr('fill','none').attr('stroke','#71717a');
+    leg.append('circle').attr('cx',322).attr('cy',0).attr('r',8).attr('fill','none').attr('stroke','#71717a');
+    leg.append('text').attr('x',336).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('Size = training duration');
+  })();
+
+  // CHART 3b: Wage Cliff diverging bars (DE primary series)
+  (function(){
+    const container=document.getElementById('wage-cliff-chart');
+    if(!container)return;
+    const rows=[
+      {path:'Admin (\u20AC42K) \u2192 Care assistant',       de:-33, fr:-20, uk:-12, kind:'cliff'},
+      {path:'Business admin (\u20AC50K) \u2192 Electrician', de:-28, fr:-24, uk:-6,  kind:'cliff'},
+      {path:'Business admin (\u20AC50K) \u2192 Care assist.',de:-44, fr:-43, uk:-36, kind:'cliff'},
+      {path:'Legal/cultural (\u20AC55K) \u2192 ECE',         de:-36, fr:-48, uk:-38, kind:'cliff'},
+      {path:'Admin (\u20AC42K) \u2192 Data analyst',         de:31,  fr:33,  uk:35,  kind:'lift'},
+      {path:'Business admin \u2192 Compliance',              de:20,  fr:19,  uk:25,  kind:'lift'},
+      {path:'Bookkeeper (\u20AC42K) \u2192 Data scientist',  de:55,  fr:44,  uk:50,  kind:'lift'}
+    ];
+    const w=Math.min(container.clientWidth||700,700);
+    const rowH=40;
+    const h=rows.length*rowH+60;
+    const margin={top:28,right:30,bottom:36,left:230};
+    const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+    const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+    const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+    const x=d3.scaleLinear().domain([-55,60]).range([0,iw]);
+    const y=d3.scaleBand().domain(rows.map(d=>d.path)).range([0,ih]).padding(0.3);
+    const barH=y.bandwidth();
+
+    // Gridlines
+    g.append('g').selectAll('line').data(x.ticks(6)).join('line')
+      .attr('x1',d=>x(d)).attr('x2',d=>x(d)).attr('y1',0).attr('y2',ih)
+      .attr('stroke','rgba(255,255,255,0.04)');
+
+    // Zero axis
+    g.append('line').attr('x1',x(0)).attr('x2',x(0)).attr('y1',-4).attr('y2',ih+4)
+      .attr('stroke','rgba(255,255,255,0.25)');
+
+    rows.forEach(d=>{
+      const yPos=y(d.path);
+      const isCliff=d.de<0;
+      const barX=isCliff?x(d.de):x(0);
+      const barW=Math.abs(x(d.de)-x(0));
+      const colour=isCliff?'#ef4444':'#4ade80';
+      g.append('rect').attr('x',barX).attr('y',yPos).attr('width',barW).attr('height',barH)
+        .attr('rx',2).attr('fill',colour).attr('opacity',0.85)
+        .on('mousemove',e=>{
+          tooltip.style('display','block').html(
+            `<strong>${d.path}</strong><br>DE: ${d.de>0?'+':''}${d.de}%<br>FR: ${d.fr>0?'+':''}${d.fr}%&nbsp;&middot;&nbsp;UK: ${d.uk>0?'+':''}${d.uk}%`
+          ).style('left',(e.pageX+12)+'px').style('top',(e.pageY-12)+'px');
+        })
+        .on('mouseleave',()=>tooltip.style('display','none'));
+      // Value label
+      const lbl=(d.de>0?'+':'')+d.de+'%';
+      g.append('text')
+        .attr('x',isCliff?barX-6:barX+barW+6)
+        .attr('y',yPos+barH/2).attr('dy','0.35em')
+        .attr('text-anchor',isCliff?'end':'start')
+        .attr('fill','#fafafa').attr('font-size','11px').attr('font-weight','600')
+        .text(lbl);
+    });
+
+    // X axis
+    g.append('g').attr('transform',`translate(0,${ih})`)
+      .call(d3.axisBottom(x).ticks(6).tickFormat(d=>(d>0?'+':'')+d+'%'))
+      .select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+    g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+    g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
+
+    // Y axis
+    g.append('g').call(d3.axisLeft(y).tickSize(0)).select('.domain').remove();
+    g.selectAll('.tick text').attr('fill','#a1a1aa').attr('font-size','11px');
+
+    // Legend (top)
+    const legend=g.append('g').attr('transform','translate(0,-12)');
+    legend.append('rect').attr('width',10).attr('height',10).attr('rx',2).attr('fill','#ef4444').attr('opacity',0.85);
+    legend.append('text').attr('x',14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('A \u2192 C (wage cliff)');
+    legend.append('rect').attr('x',130).attr('width',10).attr('height',10).attr('rx',2).attr('fill','#4ade80').attr('opacity',0.85);
+    legend.append('text').attr('x',144).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('A \u2192 A+ (wage lift)');
+  })();
+
+  // CHART 4: Sankey-style flow (original design, fixed colors + height)
+  (function(){
+    const container=document.getElementById('sankey-chart');
+    if(!container)return;
+
+    // Simplified color scheme: green=A/A+, orange=Zone C, grey=retirement, red=not transitioning
+    const flows=[
+      {destination:'Zone A+',share_low:15,share_high:25,color:'#4ade80'},
+      {destination:'Zone A \u2014 lateral moves',share_low:10,share_high:15,color:'#4ade80'},
+      {destination:'Retirement',share_low:10,share_high:15,color:'#71717a'},
+      {destination:'Zone C (care, trades, other)',share_low:5,share_high:11,color:'#f97316'},
+      {destination:'Not transitioning',share_low:40,share_high:60,color:'#ef4444'}
+    ];
+
+    const w=Math.min(container.clientWidth||700,700),h=560;
+    const margin={top:20,right:20,bottom:50,left:20};
+    const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+    const barW=80;
+
+    const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+    const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+    const totalMid=flows.reduce((s,f)=>s+(f.share_low+f.share_high)/2,0);
+    const y=d3.scaleLinear().domain([0,totalMid]).range([0,ih]);
+    let cumY=0;
+
+    // Source bar (left)
+    g.append('rect').attr('x',0).attr('y',0).attr('width',barW).attr('height',ih)
+      .attr('fill','#f97316').attr('rx',4).attr('opacity',0.8);
+    g.append('text').attr('x',barW/2).attr('y',ih/2).attr('text-anchor','middle').attr('fill','#000')
+      .attr('font-size','14px').attr('font-weight','700').text('100');
+    g.append('text').attr('x',barW/2).attr('y',ih/2+18).attr('text-anchor','middle').attr('fill','#000')
+      .attr('font-size','11px').text('displaced');
+
+    // Destination bars (right)
+    const destX=iw-220;
+    flows.forEach(f=>{
+      const mid=(f.share_low+f.share_high)/2;
+      const barH=y(mid);
+      const yPos=cumY;
+
+      // Flow path
+      g.append('path')
+        .attr('d',`M${barW},${yPos+barH/2} C${barW+(destX-barW)/2},${yPos+barH/2} ${barW+(destX-barW)/2},${yPos+barH/2} ${destX},${yPos+barH/2}`)
+        .attr('fill','none').attr('stroke',f.color).attr('stroke-width',Math.max(barH*0.6,2)).attr('opacity',0.3);
+
+      // Dest bar segment
+      g.append('rect').attr('x',destX).attr('y',yPos).attr('width',barW*0.6).attr('height',Math.max(barH-2,2))
+        .attr('fill',f.color).attr('rx',2).attr('opacity',0.8);
+
+      // Label — right of dest bar
+      g.append('text').attr('x',destX+barW*0.6+8).attr('y',yPos+barH/2+4)
+        .attr('fill','#d4d4d8').attr('font-size','11px')
+        .text(`${f.destination} (${f.share_low}\u2013${f.share_high}%)`);
+
+      cumY+=barH;
+    });
+
+    // Legend below chart
+    const sankLeg=g.append('g').attr('transform',`translate(0,${ih+16})`);
+    [{color:'#4ade80',label:'Zone A / A+ transition'},{color:'#f97316',label:'Cross-zone (Zone C)'},{color:'#71717a',label:'Natural attrition'},{color:'#ef4444',label:'Not transitioning'}].forEach((item,i)=>{
+      const xOff=i*155;
+      sankLeg.append('rect').attr('x',xOff).attr('width',10).attr('height',10).attr('rx',2).attr('fill',item.color).attr('opacity',0.85);
+      sankLeg.append('text').attr('x',xOff+14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text(item.label);
+    });
+  })();
+
+  // PostHog
+  document.querySelectorAll('.chart-box').forEach(box=>{
+    box.addEventListener('mouseenter',()=>{
+      if(window.posthog)posthog.capture('chart_interacted',{chart:box.querySelector('h3')?.textContent||'unknown'});
+    },{once:true});
+  });
+});
+
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(window.posthog)posthog.capture('cta_clicked',{href:btn.getAttribute('href'),text:btn.textContent.trim(),page:'transitions'});
+  });
+});
+
+// Scroll depth + outbound click
+setTimeout(function(){
+  if(typeof posthog==='undefined')return;
+  var thresholds=[25,50,75,100], fired={};
+  window.addEventListener('scroll',function(){
+    var h=document.body.scrollHeight-window.innerHeight;
+    if(h<=0)return;
+    var pct=Math.round((window.scrollY/h)*100);
+    thresholds.forEach(function(t){if(pct>=t&&!fired[t]){fired[t]=true;posthog.capture('scroll_depth',{percent:t,page:'transitions'})}});
+  },{passive:true});
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){a.addEventListener('click',function(){posthog.capture('outbound_click',{url:a.href,text:a.textContent.trim().slice(0,80),page:'transitions'})})});
+},500);
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+Creative Commons Attribution 4.0 International License (CC-BY-4.0)
+
+Copyright (c) 2026 Philipp Maul - Nexalps
+
+This license applies to the structured analysis and data outputs of this
+project, specifically: site/reskilling-data.json, the eight derivation CSV
+outputs in scripts/output/ (retirement_offset, task_coverage_split,
+channel_throughput, net_new_capacity, skills_distance, speed_gap,
+system_radar, a_to_c_rates), the page narratives across site/index.html,
+site/transitions.html, site/lenses.html, site/systems.html,
+site/countries.html, site/dach.html and site/sources.html, the six-system
+typology and reform-velocity composite, the DACH deep-dive analysis, the
+five-channel reskilling capacity framework, and the taxonomy and
+methodology used throughout the site.
+
+You are free to:
+
+  Share - copy and redistribute the material in any medium or format
+  Adapt - remix, transform, and build upon the material for any purpose,
+          even commercially
+
+Under the following terms:
+
+  Attribution - You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+
+  No additional restrictions - You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+Upstream data sources and their licenses:
+
+- Eurostat (lfsa_egai2d, lfsi_esgan, trng_aes_100, trng_aes_102,
+  trng_cvt_01s, trng_cvt_12s, trng_lfse_01, trng_lfs_01, educ_uoe_enra02,
+  educ_uoe_enrt03, lfsa_etpgan, SES, and related indicators): Licensed
+  under the Eurostat copyright policy. See
+  https://ec.europa.eu/eurostat/web/main/help/copyright-notice
+
+- Cedefop (Skills Forecast 2025 including Employment_occupation_detail_qualification.xlsx
+  and Replacement_demand_occupation series, Key Indicators on VET,
+  Future-ready VET 2023 publication 9204, Future of VET 2020 synthesis):
+  Licensed under the Cedefop copyright and reuse policy. See
+  https://www.cedefop.europa.eu/en/about-cedefop/copyright
+
+- OECD (Skills Outlook 2023, Social Expenditure Database SOCX ALMP
+  training-category, OECD effective retirement age series): Licensed
+  under the OECD terms of use. See
+  https://www.oecd.org/termsandconditions/
+
+- ILO Generative AI and Jobs: A Refined Global Index of Occupational
+  Exposure (2025): Licensed under Creative Commons CC-BY 4.0 IGO. See
+  https://creativecommons.org/licenses/by/4.0/igo/
+
+- IMF Exposure to AI and Occupational Mobility cross-country analysis
+  (2024): Licensed under the IMF copyright and usage policy. See
+  https://www.imf.org/external/terms.htm
+
+- Anthropic Economic Index (observed Claude usage data, 2025) and
+  Massenkoff & McCrory 2026 Anthropic Research: Hugging Face dataset
+  redistributed under the original Anthropic terms; raw observational
+  data retained for reproducibility. See https://huggingface.co/datasets/Anthropic/EconomicIndex
+
+- Microsoft Working with AI: Applicability Framework (2025): Cited
+  under fair-use academic referencing; SOC applicability table
+  reproduced as summary figures with attribution.
+  https://arxiv.org/abs/2507.07935
+
+- Bertheau et al. 2022 (IZA Discussion Paper No. 15033, "The Unequal
+  Consequences of Job Loss across Countries"): IZA discussion-paper
+  series under IZA's distribution policy; local PDF retained at
+  scripts/data/bertheau/iza_dp15033.pdf for reproducibility.
+
+- Academic and peer-reviewed scholarship (Gathmann & Schönberg 2010
+  Journal of Labor Economics; Jacobson, LaLonde & Sullivan 1993
+  American Economic Review; Card, Kluve & Weber 2018 Journal of the
+  European Economic Association meta-analysis; Cockx et al. 2021
+  reservation-wage research; Dauth, Findeisen & Südekum 2021 Journal
+  of the European Economic Association; IAB-Kurzbericht Braunschweig
+  et al. 2023; Rhein et al. 2013 IAB occupational-mobility baseline;
+  Katy Jordan MOOC completion-rate meta-synthesis): Copyrighted works
+  cited under fair-use academic referencing; no text reproduced, only
+  findings summarised with attribution.
+
+- National statistical offices and labour-market trackers (Destatis /
+  BIBB / Bundesagentur für Arbeit Arbeitsmarktberichte / IAB / Germany;
+  Statistik Austria / WKO / BMBWF / AMS / Lehrlingsstatistik / Austria;
+  BFS / SBFI / ICT-Berufsbildung Schweiz / Switzerland; ONS / United
+  Kingdom; DARES Emploi / France; CSO Ireland): Each under the terms
+  of its respective publisher. Summary figures cited; no raw datasets
+  redistributed.
+
+- EURES / European Labour Authority Labour Shortages and Surpluses in
+  Europe 2024; EU Pact for Skills Annual Report 2024; EU Recovery and
+  Resilience Facility Scoreboard; Digital Skills and Jobs Platform
+  State of the Digital Decade indicators; European Skills Agenda
+  2020-2025 progress and Union of Skills follow-up (March 2025);
+  European Commission Employment and Social Developments in Europe
+  2025 (ESDE): Cited under fair-use academic referencing with
+  attribution; no raw datasets redistributed.
+
+- Country programme data (Germany Qualifizierungschancengesetz /
+  Qualifizierungsgeld; Austria AMS Qualifizierungsförderung; France
+  CPF Compte Personnel de Formation and France Compétences Rapport
+  d'activité 2024; Switzerland WeBiG and EFZ adult pathway): Public
+  programme reporting, summary figures cited with attribution.
+
+- Bruegel Reskilling and Mobility round-up (2024); Skills2Capabilities
+  Comparative Report (2024); UHR/Eurydice Adult Education and Training
+  in Europe Building Inclusive Pathways (2021); Fosway Group Digital
+  Learning Realities Research 2025; SkillsFuture Singapore
+  Year-In-Review 2024 and Skills Demand for the Future Economy 2025:
+  Institutional and policy reports cited under fair-use academic
+  referencing with attribution.
+
+- Market and journalistic sources (Technavio Europe Corporate Training
+  Market 2025; Career Karma State of the Bootcamp Market 2024;
+  McKinsey Superagency in the Workplace 2025; MDPI VET comparative
+  analyses 2024; Trading Economics employment series; Visual Capitalist
+  / ArconRecruitment Microsoft AI Job Exposure rankings; PayScope AI
+  Job Exposure 2026): Cited under fair-use journalistic and academic
+  referencing; summary figures only.
+
+- ESCO v1.1 occupationSkillRelations, skillsHierarchy,
+  broaderRelationsSkillPillar and occupations files: European
+  Commission ESCO classification under the European Union's open-data
+  policy and the European Commission decision on the reuse of its
+  documents. See https://esco.ec.europa.eu/en/about-esco/legal-notice
+
+- Practitioner views contributed to the Lenses page (Stefanie
+  Haslauer LinkedIn thread 15 April 2026; Andreas Klinger YouTube
+  video and Substack 21 April 2026; Armen Ronacher and Christina
+  Pontella AIE Europe 2026 conference talks; Joanna Weber LinkedIn
+  comment thread 15 April 2026; Marc Andreessen interview on 20VC
+  with Harry Stebbings April 2026): Public commentary cited with
+  attribution; no text reproduced beyond the short quotations
+  necessary to identify each lens.

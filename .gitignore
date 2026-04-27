@@ -1,0 +1,17 @@
+# Local AI assistant configs
+.claude/
+
+# OS junk
+.DS_Store
+.DS_Store?
+._*
+
+# Python
+scripts/__pycache__/
+*.pyc
+
+# Raw research data — original sources are public and linked in site/sources.html
+scripts/data/
+
+# Internal pre-build framing brief (cross-references second-brain paths that aren't public)
+FRAMING-INPUTS.md

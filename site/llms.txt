@@ -1,0 +1,74 @@
+# Can Europe Reskill Fast Enough?
+# https://reskilling.nexalps.com
+
+## What this is
+Product 5 of 7 in the Nexalps European AI Labour Market suite. This site presents the reskilling gap analysis: can Europe's education, vocational training, and corporate learning systems retrain workers fast enough to manage the AI transition?
+countries.html is the per-country drilldown (DE, FR, IT, ES, UK, AT, CH): gross exposure, retirement offset, net 2030/2035 need, retirement buffer share, per-capita intensity against Layer-4 working-age population, and the A→C transition rate inherited from each country's system model.
+
+## Core thesis
+Europe knows which jobs AI will reshape, where demand is going, what happened historically, and that its workforce is shrinking. But when you size the reskilling need against actual system capacity, the numbers don't work. 7.55 million workers need deep reskilling by 2035. Annual net new throughput: ~450K. Backlog clearance: 15+ years. The bridge between surplus knowledge workers and unfilled care/trade roles is structurally unwalkable for most.
+
+## Key findings
+- 38.72M EU-27 workers in high-exposure roles (10-year horizon)
+- 8.67M absorbed by retirement by 2035 (demographic buffer)
+- 30.05M net reskilling need by 2035
+- 7.55M need deep reskilling (cross-occupational transition)
+- 15M need upskilling (within-occupation adaptation)
+- Current annual throughput: ~3.34M (already saturated by baseline churn)
+- Net new capacity for AI transition: ~450K/year
+- AI disrupts tasks in 1-3 years; systems respond in 5-9 years
+- Skills distance Zone A→C: 6.8/10 vs Zone A→A+: 3.6/10
+- Certification walls: 12-42 months (Zone C) vs 0 months (Zone A+)
+- Wage cliff: -25% to -40% (Zone C) vs +20% to +55% (Zone A+)
+- Zone A→C transition rate: 5-10% (most go to A+ instead)
+- 40-60% of displaced workers will not successfully transition
+- Nordic flexicurity achieves 8-12% cross-zone transition
+- Southern Europe manages 2-5%
+- MOOC completion rates: 3-15% (cannot be primary channel)
+- Gathmann & Schönberg: 52% of human capital is task-specific
+- Jacobson/LaLonde/Sullivan: 25% permanent earnings loss for displaced workers
+
+## The structural paradox
+AI will simultaneously create unemployed knowledge workers and unfilled essential-service positions. The dominant flow is Zone A→A+ (wage-positive, low-barrier) rather than Zone A→C (wage-negative, high-barrier). This means the demographic shortage in care, trades, and construction does not improve — it worsens.
+
+## Six European system models ranked
+1. Nordic Flexicurity (DK, SE, FI) — 8-12% A→C rate
+2. Germanic Dual System (DE, AT, CH) — 3-6% A→C rate
+3. Continental Corporatist (FR, NL, BE) — 5-8% A→C rate
+4. Liberal Market (UK, IE) — 5-8% A→C rate
+5. Central/Eastern European (PL, CZ, HU, RO) — 2-5% A→C rate
+6. Southern European (IT, ES, PT, GR) — 2-5% A→C rate
+
+## Pages
+Argument track:
+- index.html — The Gap: sizing the reskilling need, speed gap, capacity deficit
+- transitions.html — The Bridge: structural paradox, transition feasibility matrix, wage cliff, displaced worker flows
+- lenses.html — Editorial: the bottleneck has moved from skill acquisition to skill evaluation. Six practitioner and research lenses (Haslauer, Klinger, Ronacher/Pontella, Weber GAAP/SBC, Andreessen, Pontella native-cohort), self-audit heat-map of where each finds support across pages, three confounders the aggregate hides, candidate diagnostic metric (internal transition speed vs external turnover)
+
+Data drilldown track:
+- systems.html — Which Systems: 6 European models ranked, DACH deep dive, Singapore benchmark, policy interventions
+- countries.html — Country drilldown: DE/FR/IT/ES/UK/AT/CH load, retirement buffer, per-capita intensity, A→C rates
+- dach.html — DACH deep dive: DE/AT/CH reskilling capacity, grounded retirement offsets, Germanic Dual sensitivity (Derivation Appendix G), client positioning for companies in DACH
+
+Reference:
+- sources.html — Sources & methodology with tier badges
+
+## Data sources (by tier)
+63 primary sources across 3 quality tiers. Full index at sources.html.
+Tier 1 (academic/institutional, 30 sources): Gathmann & Schönberg 2010, Jacobson/LaLonde/Sullivan 1993, Bertheau et al. 2022, Dauth/Findeisen/Südekum 2021, IAB-Kurzbericht 2023, ILO 2025, Anthropic Economic Index 2025, Microsoft Working with AI 2025, Eurostat LFS/SES/AES/trng_lfse_01/trng_lfs_01/educ_uoe_enrt03, Cedefop Skills Forecast 2025 + Future-ready VET 2023 + VET completion rates, OECD Skills Outlook 2023, OECD SOCX ALMP training spend, EURES 2024, Lehrlingsstatistik Austria + BFS Schweiz VET
+Tier 2 (policy/practitioner, 18 sources): SkillsFuture Singapore 2024, France CPF data, BIBB Berufsbildungsbericht 2025, ICT-Berufsbildung Schweiz 2033, Pact for Skills 2024, Fosway Group 2025, BA Arbeitsmarktberichte + DARES Emploi national LMP trackers, EU Recovery and Resilience Facility Scoreboard, Digital Skills and Jobs Platform, European Skills Agenda 2020-2025 progress + Union of Skills 2025
+Tier 3 (market/journalistic, 10 sources): Technavio Corporate Training, Career Karma Bootcamp Report, McKinsey AI in the Workplace 2025
+
+## Connection to other products
+- Layer 1: ai-exposure.nexalps.com (which jobs AI hits)
+- Layer 2: job-market.nexalps.com (where demand is going)
+- Layer 3: disruptions.nexalps.com (what happened every other time)
+- Layer 4: demographics.nexalps.com (Europe is running out of workers)
+- Layer 5: reskilling.nexalps.com (this site — can Europe reskill fast enough?)
+
+## Author
+Philipp Maul — https://www.linkedin.com/in/pmaul/
+Nexalps — https://nexalps.com
+
+## License
+Code: MIT. Data and analysis: CC BY 4.0.

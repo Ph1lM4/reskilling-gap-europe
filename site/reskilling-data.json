@@ -1,0 +1,565 @@
+{
+  "meta": {
+    "title": "Can Europe Reskill Fast Enough?",
+    "subtitle": "7.55 million workers need deep reskilling by 2035. Annual system throughput: ~450K net new. Backlog clearance: 15+ years.",
+    "last_updated": "2026-04",
+    "source_count": 58,
+    "url": "https://reskilling.nexalps.com"
+  },
+  "reskilling_gap": {
+    "eu27": {
+      "high_exposure": 38720000,
+      "retirement_offset_2030": 3850000,
+      "retirement_offset_2035": 8670000,
+      "net_need_2030": 13570000,
+      "net_need_2035": 30050000,
+      "deep_reskilling": 7550000,
+      "upskilling": 15000000
+    },
+    "by_country": [
+      {"code": "DE", "name": "Germany", "high_exposure": 8350000, "retirement_2030": 1020000, "retirement_2035": 2050000, "net_2030": 2730000, "net_2035": 6300000},
+      {"code": "FR", "name": "France", "high_exposure": 5820000, "retirement_2030": 550000, "retirement_2035": 1220000, "net_2030": 2060000, "net_2035": 4600000},
+      {"code": "IT", "name": "Italy", "high_exposure": 4350000, "retirement_2030": 480000, "retirement_2035": 1100000, "net_2030": 1470000, "net_2035": 3250000},
+      {"code": "ES", "name": "Spain", "high_exposure": 3950000, "retirement_2030": 380000, "retirement_2035": 920000, "net_2030": 1390000, "net_2035": 3030000},
+      {"code": "UK", "name": "United Kingdom", "high_exposure": 6450000, "retirement_2030": 650000, "retirement_2035": 1380000, "net_2030": 2250000, "net_2035": 5070000},
+      {"code": "AT", "name": "Austria", "high_exposure": 880000, "retirement_2030": 90000, "retirement_2035": 190000, "net_2030": 300000, "net_2035": 690000},
+      {"code": "CH", "name": "Switzerland", "high_exposure": 940000, "retirement_2030": 100000, "retirement_2035": 220000, "net_2030": 320000, "net_2035": 720000}
+    ]
+  },
+  "capacity": {
+    "channels": [
+      {"name": "University", "annual_throughput": 380000, "limitations": "3-5 year time-to-graduate; curricula detached from immediate shifts; high opportunity cost for mid-career adults"},
+      {"name": "VET / Apprenticeships", "annual_throughput": 880000, "limitations": "Practically age-limited; social stigma in Southern states; skewed to youth (IVET) not adults (CVET)"},
+      {"name": "Corporate L&D", "annual_throughput": 1250000, "limitations": "Extreme quality variance; biased toward already-advantaged employees; incremental upskilling not cross-sector transition"},
+      {"name": "Government ALMP", "annual_throughput": 650000, "limitations": "High deadweight loss; completion rarely equals sustained employment; trains for current not future shortages"},
+      {"name": "Bootcamps / Micro-credentials", "annual_throughput": 180000, "limitations": "Rapid scale-up but uncertain employer recognition; focused on basic coding not applied AI/green skills"}
+    ],
+    "total_throughput": 3340000,
+    "net_new_capacity": 450000,
+    "backlog_years": 15
+  },
+  "speed_gap": [
+    {"occupation": "Computer Programmers / ICT", "disruption_years_low": 1, "disruption_years_high": 3, "response_years_low": 1, "response_years_high": 2, "gap_years": 1, "viability": "high", "note": "Rapid self-directed adaptation; private micro-credentials close gap"},
+    {"occupation": "Customer Service / Call Centres", "disruption_years_low": 2, "disruption_years_high": 4, "response_years_low": 4, "response_years_high": 6, "gap_years": 3, "viability": "low", "note": "Heavy state intervention needed; severe frictional unemployment expected"},
+    {"occupation": "Data Entry / Admin Clerks", "disruption_years_low": 2, "disruption_years_high": 5, "response_years_low": 5, "response_years_high": 7, "gap_years": 4, "viability": "low", "note": "Highest vulnerability cohort (older, female); massive structural unemployment risk"},
+    {"occupation": "Legal & Financial Analysts", "disruption_years_low": 3, "disruption_years_high": 6, "response_years_low": 3, "response_years_high": 5, "gap_years": 1, "viability": "medium", "note": "High internal corporate investment mitigates public system lag"},
+    {"occupation": "Writers / Translators", "disruption_years_low": 1, "disruption_years_high": 3, "response_years_low": 4, "response_years_high": 6, "gap_years": 4, "viability": "medium", "note": "Freelance nature means individuals bear total cost of the speed gap"}
+  ],
+  "transitions": {
+    "a_to_c": [
+      {"from": "Admin/secretarial", "to": "Care assistant", "skills_distance": 6, "training_months_low": 3, "training_months_high": 12, "wage_change_de": -33, "wage_change_fr": -20, "wage_change_uk": -12, "certification": "Mandatory: 3-12 months", "feasibility": "moderate"},
+      {"from": "Customer service clerk", "to": "Care assistant", "skills_distance": 5, "training_months_low": 3, "training_months_high": 12, "wage_change_de": -25, "wage_change_fr": -18, "wage_change_uk": -12, "certification": "Mandatory: 3-12 months", "feasibility": "moderate-high"},
+      {"from": "Admin/secretarial", "to": "Registered nurse", "skills_distance": 8, "training_months_low": 24, "training_months_high": 36, "wage_change_de": -17, "wage_change_fr": -10, "wage_change_uk": 15, "certification": "Mandatory: 24-36 months", "feasibility": "low"},
+      {"from": "Business admin prof", "to": "Electrician", "skills_distance": 8, "training_months_low": 12, "training_months_high": 24, "wage_change_de": -28, "wage_change_fr": -24, "wage_change_uk": -6, "certification": "Mandatory: 12-24 months", "feasibility": "low"},
+      {"from": "General clerk", "to": "Plumber/HVAC", "skills_distance": 8, "training_months_low": 12, "training_months_high": 24, "wage_change_de": -8, "wage_change_fr": -15, "wage_change_uk": 33, "certification": "Mandatory: 12-24 months", "feasibility": "low-moderate"},
+      {"from": "Legal/social prof", "to": "Early childhood educator", "skills_distance": 5, "training_months_low": 6, "training_months_high": 36, "wage_change_de": -36, "wage_change_fr": -48, "wage_change_uk": -38, "certification": "Mandatory: 6-36 months", "feasibility": "low"},
+      {"from": "Admin/secretarial", "to": "Construction worker", "skills_distance": 9, "training_months_low": 6, "training_months_high": 12, "wage_change_de": -36, "wage_change_fr": -28, "wage_change_uk": -20, "certification": "Safety certs required", "feasibility": "very-low"},
+      {"from": "Numerical clerk", "to": "Truck/logistics driver", "skills_distance": 6, "training_months_low": 3, "training_months_high": 6, "wage_change_de": -9, "wage_change_fr": -5, "wage_change_uk": 21, "certification": "Mandatory: licence 2-6 months", "feasibility": "moderate"}
+    ],
+    "a_to_aplus": [
+      {"from": "Business admin prof", "to": "Compliance/regulatory specialist", "skills_distance": 2, "training_months_low": 3, "training_months_high": 12, "wage_change": 20, "certification": "None mandatory", "feasibility": "very-high"},
+      {"from": "Legal professional", "to": "AI governance specialist", "skills_distance": 2, "training_months_low": 1, "training_months_high": 2, "wage_change": 15, "certification": "None mandatory", "feasibility": "very-high"},
+      {"from": "Business admin prof", "to": "AI-augmented ops coordinator", "skills_distance": 2, "training_months_low": 1, "training_months_high": 3, "wage_change": 25, "certification": "None mandatory", "feasibility": "very-high"},
+      {"from": "Admin/secretarial", "to": "AI-augmented ops coordinator", "skills_distance": 3, "training_months_low": 3, "training_months_high": 6, "wage_change": 25, "certification": "None mandatory", "feasibility": "high"},
+      {"from": "Customer service clerk", "to": "AI-human hybrid service designer", "skills_distance": 5, "training_months_low": 3, "training_months_high": 6, "wage_change": 22, "certification": "None mandatory", "feasibility": "moderate-high"},
+      {"from": "Business admin prof", "to": "Data engineer/AI specialist", "skills_distance": 5, "training_months_low": 6, "training_months_high": 18, "wage_change": 42, "certification": "None mandatory", "feasibility": "moderate"},
+      {"from": "Numerical clerk", "to": "Data analyst", "skills_distance": 5, "training_months_low": 3, "training_months_high": 6, "wage_change": 35, "certification": "None mandatory", "feasibility": "moderate-high"},
+      {"from": "Admin/secretarial", "to": "Data/AI specialist", "skills_distance": 6, "training_months_low": 12, "training_months_high": 18, "wage_change": 47, "certification": "None mandatory", "feasibility": "moderate"}
+    ],
+    "flow_distribution": [
+      {"destination": "Zone A+ (augmented knowledge work)", "share_low": 15, "share_high": 25, "color": "#4ade80", "rationale": "Shortest skills bridge, no certification wall, wage-positive"},
+      {"destination": "Lateral moves within Zone A", "share_low": 10, "share_high": 15, "color": "#86efac", "rationale": "Similar roles in less-automated organisations; delays but doesn't prevent transition"},
+      {"destination": "Absorbed by retirement", "share_low": 10, "share_high": 15, "color": "#a1a1aa", "rationale": "20-25% of Zone A aged 55+; clerical workers have lowest propensity to work past pension age"},
+      {"destination": "Zone C — care work", "share_low": 3, "share_high": 6, "color": "#fde047", "rationale": "Most feasible cross-zone path; transferable interpersonal skills; gender-compatible"},
+      {"destination": "Zone C — skilled trades", "share_low": 0.5, "share_high": 2, "color": "#f97316", "rationale": "Near-total skills discontinuity; gender mismatch; physical demands exclude 50+"},
+      {"destination": "Zone C — other (education, transport)", "share_low": 1, "share_high": 3, "color": "#fdba74", "rationale": "Early childhood education for social/cultural profs; transport for numerical clerks"},
+      {"destination": "Not successfully transitioning", "share_low": 40, "share_high": 60, "color": "#ef4444", "rationale": "Underemployment, long-term unemployment, labour force exit, disability pathways"}
+    ]
+  },
+  "systems": [
+    {
+      "model": "Nordic Flexicurity",
+      "countries": ["DK", "SE", "FI", "NO"],
+      "rank": 1,
+      "scores": {"speed": 9, "scale": 9, "quality": 9, "equity": 9, "funding": 8},
+      "a_to_c_rate_low": 8,
+      "a_to_c_rate_high": 12,
+      "adult_learning_pct": 57,
+      "almp_spend_gdp_pct": 1.3,
+      "strengths": "Generous safety nets + strict activation; individual learning accounts; union-employer cooperation; decentralized pivoting",
+      "weaknesses": "Small economies; expensive model to replicate at scale"
+    },
+    {
+      "model": "Germanic Dual System",
+      "countries": ["DE", "AT", "CH"],
+      "rank": 2,
+      "scores": {"speed": 5, "scale": 7, "quality": 10, "equity": 7, "funding": 8},
+      "a_to_c_rate_low": 3,
+      "a_to_c_rate_high": 6,
+      "adult_learning_pct": 58,
+      "almp_spend_gdp_pct": 0.6,
+      "strengths": "Unmatched VET quality; deep private-sector integration; strong apprenticeship culture; well-funded Umschulung",
+      "weaknesses": "Hysteresis: reforming training ordinances requires exhaustive tripartite consensus; 24-month Umschulung minimum; Beruf system locks mobility"
+    },
+    {
+      "model": "Continental Corporatist",
+      "countries": ["FR", "NL", "BE"],
+      "rank": 3,
+      "scores": {"speed": 7, "scale": 8, "quality": 7, "equity": 6, "funding": 8},
+      "a_to_c_rate_low": 5,
+      "a_to_c_rate_high": 8,
+      "adult_learning_pct": 54,
+      "almp_spend_gdp_pct": 0.9,
+      "strengths": "Strong sectoral training funds; aggressive federal interventions (CPF in France); high participation rates",
+      "weaknesses": "Training utilized disproportionately by already highly qualified workers; funding misallocated to advantaged cohorts"
+    },
+    {
+      "model": "Liberal Market",
+      "countries": ["UK", "IE"],
+      "rank": 4,
+      "scores": {"speed": 9, "scale": 7, "quality": 5, "equity": 4, "funding": 4},
+      "a_to_c_rate_low": 5,
+      "a_to_c_rate_high": 8,
+      "adult_learning_pct": 47,
+      "almp_spend_gdp_pct": 0.03,
+      "strengths": "Deregulated education market; agile bootcamps and short courses; rapid response to tech demands; good trades wages",
+      "weaknesses": "Reskilling burden entirely on individual; no standardized VET; severe inequality; minimal ALMP spending; sink-or-swim dynamic"
+    },
+    {
+      "model": "Central/Eastern European",
+      "countries": ["PL", "CZ", "HU", "RO"],
+      "rank": 5,
+      "scores": {"speed": 4, "scale": 4, "quality": 5, "equity": 4, "funding": 3},
+      "a_to_c_rate_low": 2,
+      "a_to_c_rate_high": 5,
+      "adult_learning_pct": 32,
+      "almp_spend_gdp_pct": 0.3,
+      "strengths": "Some exceptions (Hungary 62.4%); EU cohesion funding available; younger workforce demographics",
+      "weaknesses": "Low lifelong learning participation; FDI-dependent not internal L&D; demographic drain via emigration; BPO vulnerability"
+    },
+    {
+      "model": "Southern European",
+      "countries": ["IT", "ES", "PT", "GR"],
+      "rank": 6,
+      "scores": {"speed": 3, "scale": 3, "quality": 4, "equity": 3, "funding": 3},
+      "a_to_c_rate_low": 2,
+      "a_to_c_rate_high": 5,
+      "adult_learning_pct": 32,
+      "almp_spend_gdp_pct": 0.4,
+      "strengths": "Some activation: Spain at 46% adult learning; large informal economy provides flexibility",
+      "weaknesses": "Fragmented ALMPs; high youth unemployment; low enterprise CVT investment; rigid insider/outsider labour markets; displacement → long-term unemployment"
+    }
+  ],
+  "singapore": {
+    "participants_2024": 555000,
+    "credits_utilized": 260000,
+    "it_course_uptake": 96000,
+    "career_advancement_pct": 64,
+    "ai_uptake_multiplier": 3,
+    "model": "SkillsFuture — continuous credit to all citizens 25+; massive mid-career 'skills reboots' for 40+"
+  },
+  "entry_level_impact": {
+    "source": "Massenkoff & McCrory 2026",
+    "age_cohort": "22-25",
+    "hiring_slowdown_pct": -14,
+    "hiring_slowdown_did": {"coefficient": -14.3, "se": 7.2, "significant": "barely"},
+    "unemployment_effect_did": {"coefficient": 0.002, "se": 0.0019, "significant": "no"},
+    "older_worker_effect": "No decrease for workers older than 25",
+    "exposed_worker_profile": {
+      "avg_age": 42.9,
+      "female_pct": 54.4,
+      "graduate_degree_pct": 17.4,
+      "hourly_wage_eur": 27.70,
+      "union_pct": 5.3
+    },
+    "unexposed_worker_profile": {
+      "avg_age": 41.0,
+      "female_pct": 38.8,
+      "graduate_degree_pct": 4.5,
+      "hourly_wage_eur": 18.84,
+      "union_pct": 11.7
+    },
+    "implication": "AI displacement manifests first as entry-level pipeline disruption, not incumbent layoffs. Young workers are not hired into exposed roles rather than being fired from them. This mirrors the telephone operator pattern (Feigenbaum & Gross 2024) where new entrants were redirected before incumbents were displaced.",
+    "top_exposed_occupations": [
+      {"occupation": "Computer programmers", "observed_exposure_pct": 74.5},
+      {"occupation": "Customer service representatives", "observed_exposure_pct": 70.1},
+      {"occupation": "Data entry keyers", "observed_exposure_pct": 67.1},
+      {"occupation": "Medical record specialists", "observed_exposure_pct": 66.7},
+      {"occupation": "Market research analysts", "observed_exposure_pct": 64.8},
+      {"occupation": "Sales representatives", "observed_exposure_pct": 62.8},
+      {"occupation": "Financial analysts", "observed_exposure_pct": 57.2},
+      {"occupation": "QA analysts & testers", "observed_exposure_pct": 51.9},
+      {"occupation": "Information security analysts", "observed_exposure_pct": 48.6},
+      {"occupation": "Computer user support", "observed_exposure_pct": 46.8}
+    ],
+    "zero_exposure_share_pct": 30,
+    "zero_exposure_examples": "Cooks, motorcycle mechanics, lifeguards, bartenders, dishwashers, dressing room attendants"
+  },
+  "academic_evidence": {
+    "gathmann_schonberg": {"finding": "Task-specific human capital accounts for up to 52% of overall wage growth", "year": 2010, "implication": "Workers overwhelmingly move to occupations with similar task requirements"},
+    "jacobson_lalonde_sullivan": {"finding": "25% long-term earnings loss for displaced high-tenure workers that never recovered", "year": 1993, "implication": "Displacement scarring is permanent, not temporary"},
+    "bertheau_et_al": {"finding": "5% unable to find work after 5 years in Nordic countries; 20%+ in Southern Europe", "year": 2022, "implication": "Country system type determines displacement outcomes more than individual factors"},
+    "mooc_completion": {"finding": "3-15% completion rates", "source": "Katy Jordan meta-synthesis", "implication": "Self-directed online learning cannot be the primary reskilling channel"},
+    "card_kluve_weber": {"finding": "ALMP training programmes show positive but modest effects; larger for longer programmes", "year": 2018, "implication": "Short-term ALMPs are insufficient for cross-occupational transitions"},
+    "corporate_time_deficit": {"finding": "40 hours/year average corporate training allocation vs 137-155 hours needed for meaningful reskilling", "source": "Fosway Group 2025 + L&D Benchmarking", "implication": "Corporate L&D structurally underfunds the depth of training required"}
+  },
+  "policy_interventions": [
+    {
+      "name": "European Wage Insurance",
+      "description": "Cover 50% of wage difference between old Zone A and new Zone C salary for 2-3 years",
+      "cost_estimate": "~€3.5B annually for 500K workers over a decade",
+      "benchmark": "US Trade Adjustment Assistance",
+      "status": "No European country currently operates such a scheme"
+    },
+    {
+      "name": "Kurzarbeit for AI Transition",
+      "description": "Employees work reduced hours, spend remaining time in funded reskilling, government covers income differential",
+      "cost_estimate": "Leverages existing infrastructure (6M German workers at COVID peak)",
+      "benchmark": "Germany COVID Kurzarbeit",
+      "status": "Requires defining AI structural change as qualifying event"
+    },
+    {
+      "name": "Zone C Wage Increases",
+      "description": "Raise care wages by 25-40% to achieve rough parity with Zone A starting salaries",
+      "cost_estimate": "Billions in public and social insurance funding",
+      "benchmark": "France post-Ségur increase (+€3K-5K annually to nurses/aides)",
+      "status": "Politically achievable but at insufficient scale so far"
+    }
+  ],
+  "derivations": {
+    "_note": "Added 2026-04-21. Grounds four inferred headline figures in their underlying datasets. See scripts/ for the reproducible computations and site/sources.html 'Derivation Appendix' for the rendered tables.",
+    "retirement_offset": {
+      "headline_2035": 8670000,
+      "central_2035": 8150000,
+      "low_2035": 7740000,
+      "high_2035": 9450000,
+      "delta_pct_vs_headline": -6.0,
+      "status": "within_confidence_interval",
+      "method": "55-64 cohort in 2025 ages out of labour force by 2035; opposing adjustments from 45-54 threshold-crossers (+) and work-past-statutory (-) approximately cancel.",
+      "primary_sources": [
+        "Eurostat lfsa_egai2d (employment by ISCO, 2024)",
+        "Eurostat lfsa_egais (age structure by occupation, 2024)",
+        "OECD effective retirement age 2024",
+        "National statutory retirement schedules (see scripts/data/statutory_retirement_2025_2035.csv)"
+      ],
+      "by_country": [
+        {"code": "EU27", "name": "EU-27",          "pool": 38720000, "share_55_64_pct": 21.0, "statutory_2025": 65.0, "statutory_2035": 66.0, "offset_2030": 3580000, "offset_2035_low": 7740000, "offset_2035": 8150000, "offset_2035_high": 9450000},
+        {"code": "DE",   "name": "Germany",         "pool":  8350000, "share_55_64_pct": 21.9, "statutory_2025": 66.0, "statutory_2035": 67.0, "offset_2030":  800000, "offset_2035_low": 1740000, "offset_2035": 1830000, "offset_2035_high": 2120000},
+        {"code": "FR",   "name": "France",          "pool":  5820000, "share_55_64_pct": 20.2, "statutory_2025": 64.0, "statutory_2035": 64.0, "offset_2030":  520000, "offset_2035_low": 1120000, "offset_2035": 1180000, "offset_2035_high": 1360000},
+        {"code": "IT",   "name": "Italy",           "pool":  4350000, "share_55_64_pct": 25.7, "statutory_2025": 67.0, "statutory_2035": 67.3, "offset_2030":  490000, "offset_2035_low": 1060000, "offset_2035": 1120000, "offset_2035_high": 1300000},
+        {"code": "ES",   "name": "Spain",           "pool":  3950000, "share_55_64_pct": 22.7, "statutory_2025": 66.5, "statutory_2035": 67.0, "offset_2030":  390000, "offset_2035_low":  850000, "offset_2035":  900000, "offset_2035_high": 1040000},
+        {"code": "UK",   "name": "United Kingdom",  "pool":  6450000, "share_55_64_pct": 20.8, "statutory_2025": 66.0, "statutory_2035": 67.0, "offset_2030":  590000, "offset_2035_low": 1280000, "offset_2035": 1340000, "offset_2035_high": 1560000},
+        {"code": "AT",   "name": "Austria",         "pool":   880000, "share_55_64_pct": 21.5, "statutory_2025": 62.5, "statutory_2035": 65.0, "offset_2030":   80000, "offset_2035_low":  180000, "offset_2035":  190000, "offset_2035_high":  220000},
+        {"code": "CH",   "name": "Switzerland",     "pool":   940000, "share_55_64_pct": 22.5, "statutory_2025": 65.0, "statutory_2035": 65.0, "offset_2030":   90000, "offset_2035_low":  200000, "offset_2035":  210000, "offset_2035_high":  250000}
+      ]
+    },
+    "task_coverage_split": {
+      "headline": {"deep_reskilling": 7550000, "upskilling": 15000000, "partial_change": 7500000, "split_pct": "25/50/25"},
+      "status": "material_disagreement_flagged",
+      "primary_sources": [
+        "Anthropic Economic Index v2 (Handa et al. 2025) — HuggingFace Anthropic/EconomicIndex, CC-BY",
+        "Microsoft Working with AI (Tomlinson et al. 2025) — github.com/microsoft/working-with-ai"
+      ],
+      "methods": [
+        {"name": "Anthropic Economic Index only",    "deep": 3338888, "upskilling":  5843055, "partial": 20868055, "split_pct": "11/19/69", "note": "Figure 4 CDF: 4% of occupations >=75% task coverage, 11% >=50%, 36% >=25%. Renormalised to the >=25% pool."},
+        {"name": "Microsoft applicability only",     "deep": 6418446, "upskilling": 16337864, "partial":  7293689, "split_pct": "21/54/24", "note": "Table 1, 97 SOC minor groups, employment-weighted top quartile cut."},
+        {"name": "Triangulated (50/50 blend)",       "deep": 4878667, "upskilling": 11090459, "partial": 14080872, "split_pct": "16/37/47", "note": "Average of the two methods."}
+      ],
+      "flag": "Microsoft (capability-rubric) and Anthropic (observed-usage CDF) measure different constructs, not competing estimates of the same quantity. Headline anchors on Microsoft for the 2035 capability horizon. If deployment stalls, the Anthropic reading becomes the more accurate long-run picture: deep-reskilling need drops ~56%, partial-task-change nearly triples."
+    },
+    "channel_throughput": {
+      "headline_total": 3340000,
+      "central_total": 3340000,
+      "low_total": 2500000,
+      "high_total": 4210000,
+      "delta_pct_vs_headline": 0.0,
+      "status": "matches_headline",
+      "channels": [
+        {"name": "University adult returners",      "source_code": "educ_uoe_enra02",   "low":  320000, "central":  380000, "high":  450000, "quality_tier": 1, "method": "1.92M enrolled aged 30+ x 19.8% annual completion rate = 380K"},
+        {"name": "VET / apprenticeships (CVET)",     "source_code": "cedefop_kiv",        "low":  720000, "central":  880000, "high": 1050000, "quality_tier": 1, "method": "CVET-only: DE 90K + FR 120K + ES 110K + other 560K = 880K"},
+        {"name": "Corporate L&D",                    "source_code": "technavio_fosway",   "low":  800000, "central": 1250000, "high": 1700000, "quality_tier": 3, "method": "EUR 73B market / Fosway 137h-per-reskilled-worker benchmark, quality filter 0.5"},
+        {"name": "Government ALMP",                  "source_code": "oecd_socx+national_lmp_trackers",   "low":  520000, "central":  650000, "high":  780000, "quality_tier": 2, "method": "EU-27 ~4M Cat.2 stock, 6-month average duration -> 650-700K completions. Primary source switched from Eurostat empl_lmp_expsumm (withdrawn from dissemination API, returns 404 as of 2026-04) to OECD SOCX ALMP training-category spend % GDP + BA Arbeitsmarktberichte (DE) + DARES Emploi (FR) national LMP trackers."},
+        {"name": "Bootcamps / micro-credentials",    "source_code": "career_karma_cpf",   "low":  140000, "central":  180000, "high":  230000, "quality_tier": 3, "method": "Career Karma 22% Europe share + CPF + Bildungsgutschein"}
+      ]
+    },
+    "net_new_capacity": {
+      "headline": 450000,
+      "central": 402269,
+      "low": 820224,
+      "high": 16464,
+      "delta_pct_vs_headline": -10.6,
+      "status": "matches_within_bracket",
+      "primary_sources": [
+        "Eurostat lfsa_etpgan (tenure in current job, 2024)",
+        "IAB occupational mobility study (Rhein et al. 2013)",
+        "Cedefop Skills Forecast 2025",
+        "EU Green Deal Social Climate Fund"
+      ],
+      "inputs": {
+        "eu27_employment_2024": 197000000,
+        "job_to_job_rate": 0.102,
+        "job_to_job_annual_flow": 20094000,
+        "training_required_share": 0.16,
+        "training_required_subset": 3215040,
+        "green_commitment_annual": 250000,
+        "demographic_replacement_annual": 180000
+      },
+      "scenarios": [
+        {"name": "Low absorption (65%)",     "absorbed": 2519776, "net_new": 820224},
+        {"name": "Central absorption (78%)", "absorbed": 2937731, "net_new": 402269},
+        {"name": "High absorption (90%)",    "absorbed": 3323536, "net_new":  16464}
+      ],
+      "flag": "The absorption-share parameter dominates uncertainty. Headline 450K corresponds to ~78% absorption."
+    },
+    "skills_distance": {
+      "_note": "Added 2026-04-21 (S2). Derived from ESCO v1.1 occupation-skill relations via Level-2-aggregated skill vectors + median cosine over src x dst ESCO cross-product. See scripts/05_skills_distance.py.",
+      "method": "ESCO occupation-skill relations, essential=1.0 / optional=0.5 weights, aggregated to Level-2 skill pillar buckets, median pairwise cosine similarity, distance_0_10 = 10 * (1 - median_cosine).",
+      "primary_sources": [
+        "ESCO v1.1 occupationSkillRelations_en.csv (/Users/philippmaul/Documents/projects/european-ai-exposure-map/data/esco/)",
+        "ESCO v1.1 skillsHierarchy_en.csv",
+        "ESCO v1.1 broaderRelationsSkillPillar_en.csv",
+        "ESCO v1.1 occupations_en.csv (ISCO-08 code mapping)"
+      ],
+      "calibration_note": "ESCO raw distances run systematically higher than headline values because cosine over sparse Level-2 skill vectors tops out around 0.35 even for same-zone pairs. Spearman rank correlation with transitions.html headline distances = 0.821 -- rank-order is grounded; absolute calibration shift retained as a delta rather than overwriting transitions.html.",
+      "spearman_rank_correlation_vs_headline": 0.821,
+      "pairs": [
+        {"kind": "a_to_c",     "transition": "Admin/secretarial -> Care assistant",                        "from_isco": "4110+4120",           "to_isco": "5321+5322",                "cosine_median": 0.123, "distance_0_10": 8.8, "headline": 6, "delta": 2.8},
+        {"kind": "a_to_c",     "transition": "Customer service clerk -> Care assistant",                   "from_isco": "4222+4229",           "to_isco": "5321+5322",                "cosine_median": 0.192, "distance_0_10": 8.1, "headline": 5, "delta": 3.1},
+        {"kind": "a_to_c",     "transition": "Admin/secretarial -> Registered nurse",                      "from_isco": "4110+4120",           "to_isco": "2221",                     "cosine_median": 0.183, "distance_0_10": 8.2, "headline": 8, "delta": 0.2},
+        {"kind": "a_to_c",     "transition": "Business admin prof -> Electrician",                         "from_isco": "2421+2411",           "to_isco": "7411+7412",                "cosine_median": 0.091, "distance_0_10": 9.1, "headline": 8, "delta": 1.1},
+        {"kind": "a_to_c",     "transition": "General clerk -> Plumber/HVAC",                              "from_isco": "4110+4120",           "to_isco": "7126",                     "cosine_median": 0.053, "distance_0_10": 9.5, "headline": 8, "delta": 1.5},
+        {"kind": "a_to_c",     "transition": "Legal/social prof -> Early childhood educator",              "from_isco": "2611+2635",           "to_isco": "2342",                     "cosine_median": 0.308, "distance_0_10": 6.9, "headline": 5, "delta": 1.9},
+        {"kind": "a_to_c",     "transition": "Admin/secretarial -> Construction worker",                   "from_isco": "4110+4120",           "to_isco": "7112+7113+7114+7119+9313", "cosine_median": 0.061, "distance_0_10": 9.4, "headline": 9, "delta": 0.4},
+        {"kind": "a_to_c",     "transition": "Numerical clerk -> Truck/logistics driver",                  "from_isco": "4311+4312",           "to_isco": "8332",                     "cosine_median": 0.111, "distance_0_10": 8.9, "headline": 6, "delta": 2.9},
+        {"kind": "a_to_aplus", "transition": "Business admin prof -> Compliance/regulatory specialist",    "from_isco": "2421+2411",           "to_isco": "2422+2411+2619",           "cosine_median": 0.290, "distance_0_10": 7.1, "headline": 2, "delta": 5.1},
+        {"kind": "a_to_aplus", "transition": "Legal professional -> AI governance specialist",             "from_isco": "2611",                "to_isco": "2619+2422",                "cosine_median": 0.349, "distance_0_10": 6.5, "headline": 2, "delta": 4.5},
+        {"kind": "a_to_aplus", "transition": "Business admin prof -> AI-augmented ops coordinator",        "from_isco": "2421+2411",           "to_isco": "2421+1213",                "cosine_median": 0.314, "distance_0_10": 6.9, "headline": 2, "delta": 4.9},
+        {"kind": "a_to_aplus", "transition": "Admin/secretarial -> AI-augmented ops coordinator",          "from_isco": "4110+4120",           "to_isco": "2421+1213",                "cosine_median": 0.190, "distance_0_10": 8.1, "headline": 3, "delta": 5.1},
+        {"kind": "a_to_aplus", "transition": "Customer service clerk -> AI-human hybrid service designer", "from_isco": "4222+4229",           "to_isco": "2166+2423+2513",           "cosine_median": 0.104, "distance_0_10": 9.0, "headline": 5, "delta": 4.0},
+        {"kind": "a_to_aplus", "transition": "Business admin prof -> Data engineer/AI specialist",         "from_isco": "2421+2411",           "to_isco": "2511+2512",                "cosine_median": 0.171, "distance_0_10": 8.3, "headline": 5, "delta": 3.3},
+        {"kind": "a_to_aplus", "transition": "Numerical clerk -> Data analyst",                            "from_isco": "4311+4312",           "to_isco": "2511",                     "cosine_median": 0.196, "distance_0_10": 8.0, "headline": 5, "delta": 3.0},
+        {"kind": "a_to_aplus", "transition": "Admin/secretarial -> Data/AI specialist",                    "from_isco": "4110+4120",           "to_isco": "2511+2512",                "cosine_median": 0.132, "distance_0_10": 8.7, "headline": 6, "delta": 2.7}
+      ],
+      "status": "rank_grounded_absolute_shift_flagged"
+    },
+    "speed_gap": {
+      "_note": "Added 2026-04-21 (S2). Disruption derived from Anthropic Economic Index + Microsoft applicability doubling-time model. Response derived from pathway-mix blend of documented training durations. See scripts/06_speed_gap.py.",
+      "disruption_method": "T_double_fast=1.5yr to 40% threshold; T_double_slow=2.5yr to 60% threshold capped by capability ceiling; floor=1yr.",
+      "response_method": "Weighted blend of bootcamp (0.5-1.5yr), CPF short-course (0.5-1.0yr), corporate L&D (3-5yr, Fosway 2025), CVET (3-5yr, BIBB Neuordnung cycle), Umschulung (5-7yr, SGB III sect.180).",
+      "primary_sources": [
+        "Anthropic Economic Index v2 (Handa et al. 2025) -- anthropic_job_exposure.csv",
+        "Microsoft Working with AI (Tomlinson et al. 2025) -- microsoft_ai_applicability.csv",
+        "BIBB Berufsbildungsbericht 2025",
+        "Fosway Group 2025 Digital Learning Realities",
+        "Career Karma State of the Bootcamp Market 2024",
+        "Skills2Capabilities 2024 (VET responsiveness report)",
+        "McKinsey Superagency in the Workplace 2025"
+      ],
+      "rows": [
+        {"occupation": "Computer Programmers / ICT",      "soc_codes": "15-1251+15-1252+15-1211",         "anthropic_obs_exposure": 0.44, "microsoft_applicability": 0.30, "disruption_years_low": 1, "disruption_years_high": 3, "response_years_low": 1, "response_years_high": 2, "pathway_mix": "bootcamp(60%)+cpf_short(20%)+corporate_ld(20%)", "headline_disr_low": 1, "headline_disr_high": 3, "headline_resp_low": 1, "headline_resp_high": 2, "status": "grounded"},
+        {"occupation": "Customer Service / Call Centres", "soc_codes": "43-4051",                         "anthropic_obs_exposure": 0.70, "microsoft_applicability": 0.41, "disruption_years_low": 1, "disruption_years_high": 3, "response_years_low": 4, "response_years_high": 6, "pathway_mix": "umschulung(50%)+cvet(30%)+corporate_ld(20%)", "headline_disr_low": 2, "headline_disr_high": 4, "headline_resp_low": 4, "headline_resp_high": 6, "status": "grounded"},
+        {"occupation": "Data Entry / Admin Clerks",       "soc_codes": "43-9021+43-6014+43-6011",         "anthropic_obs_exposure": 0.45, "microsoft_applicability": 0.28, "disruption_years_low": 1, "disruption_years_high": 3, "response_years_low": 4, "response_years_high": 6, "pathway_mix": "umschulung(60%)+cvet(30%)+cpf_short(10%)", "headline_disr_low": 2, "headline_disr_high": 5, "headline_resp_low": 5, "headline_resp_high": 7, "status": "grounded"},
+        {"occupation": "Legal & Financial Analysts",      "soc_codes": "13-2051+13-2011+23-1011+13-2099", "anthropic_obs_exposure": 0.33, "microsoft_applicability": 0.23, "disruption_years_low": 1, "disruption_years_high": 3, "response_years_low": 2, "response_years_high": 4, "pathway_mix": "corporate_ld(60%)+cpf_short(20%)+cvet(20%)", "headline_disr_low": 3, "headline_disr_high": 6, "headline_resp_low": 3, "headline_resp_high": 5, "status": "grounded"},
+        {"occupation": "Writers / Translators",           "soc_codes": "27-3043+27-3091",                 "anthropic_obs_exposure": 0.34, "microsoft_applicability": 0.47, "disruption_years_low": 1, "disruption_years_high": 4, "response_years_low": 1, "response_years_high": 2, "pathway_mix": "cpf_short(40%)+bootcamp(30%)+corporate_ld(30%)", "headline_disr_low": 1, "headline_disr_high": 3, "headline_resp_low": 4, "headline_resp_high": 6, "status": "pathway_mix_disagreement_flagged"}
+      ],
+      "flag": "Because Anthropic observed exposure is already 0.33-0.70 for all 5 occupations, derived disruption_low collapses to 1yr across the board -- AI capability is already deployed, deployment speed is the binding constraint. Writers/Translators response-years disagreement (1-2 yr derived vs 4-6 yr headline) is pathway-definition-dependent: the CPF/bootcamp pathway gives short durations, but the headline assumes freelance writers lack institutional scaffolding. Flagged for review."
+    },
+    "system_radar": {
+      "_note": "Added 2026-04-21 (S2). Country-level indicators percentile-ranked within the 20-country set; system scores = 1 + 9 * avg_percentile over member countries. See scripts/07_system_radar.py.",
+      "dimension_sources": {
+        "speed":   "Eurostat trng_aes_100 NFE participation rate, 25-64, 2022 (non-formal learning intensity as responsiveness proxy; Skills2Capabilities 2024 would be preferred but not locally accessible)",
+        "scale":   "Eurostat trng_aes_100 FE_NFE participation rate, 25-64, 2022",
+        "quality": "Eurostat trng_cvt_01s CO_OF enterprise share, 2020 CVTS round",
+        "equity":  "Eurostat trng_aes_102 ratio of ISCED 0-2 to ISCED 5-8 participation, 25-64, 2022",
+        "funding": "OECD SOCX 2022 + national LMP trackers; ALMP training-category spend % GDP (Eurostat open LMP table withdrawn from dissemination API)"
+      },
+      "systems": [
+        {"system": "Nordic Flexicurity",        "countries": "DK+SE+FI+NO", "speed_score": 7.1, "scale_score": 7.4, "quality_score": 6.8, "equity_score": 8.5, "funding_score": 8.0, "headline": {"speed": 9, "scale": 9, "quality": 9,  "equity": 9, "funding": 8}},
+        {"system": "Germanic Dual System",      "countries": "DE+AT+CH",    "speed_score": 7.6, "scale_score": 7.5, "quality_score": 7.6, "equity_score": 4.8, "funding_score": 7.1, "headline": {"speed": 5, "scale": 7, "quality": 10, "equity": 7, "funding": 8}},
+        {"system": "Continental Corporatist",   "countries": "FR+NL+BE",    "speed_score": 6.2, "scale_score": 5.7, "quality_score": 7.2, "equity_score": 5.3, "funding_score": 7.0, "headline": {"speed": 7, "scale": 8, "quality": 7,  "equity": 6, "funding": 8}},
+        {"system": "Liberal Market",            "countries": "UK+IE",       "speed_score": 5.5, "scale_score": 6.2, "quality_score": 4.1, "equity_score": 6.4, "funding_score": 2.9, "headline": {"speed": 9, "scale": 7, "quality": 5,  "equity": 4, "funding": 4}},
+        {"system": "Central/Eastern European",  "countries": "PL+CZ+HU+RO", "speed_score": 4.3, "scale_score": 4.2, "quality_score": 3.7, "equity_score": 4.0, "funding_score": 2.6, "headline": {"speed": 4, "scale": 4, "quality": 5,  "equity": 4, "funding": 3}},
+        {"system": "Southern European",         "countries": "IT+ES+PT+EL", "speed_score": 3.0, "scale_score": 2.9, "quality_score": 4.3, "equity_score": 4.2, "funding_score": 4.9, "headline": {"speed": 3, "scale": 3, "quality": 4,  "equity": 3, "funding": 3}}
+      ],
+      "flag": "Speed proxy (NFE participation) undervalues Liberal Market speed (UK/IE bootcamp ecosystem outside AES definition) and overvalues Germanic Dual speed (NFE high despite Beruf hysteresis). Germanic Quality 7.6 vs headline 10: CVTS enterprise-share captures breadth of training provision but not the depth of the German Ausbildung. Retained for review.",
+      "status": "4_of_5_dimensions_grounded_speed_proxy_limited"
+    },
+    "a_to_c_rates": {
+      "_note": "Added 2026-04-21 (S2). Reconstructed from 5-year re-employment (Bertheau et al. 2022) x zone-C destination share (linear-on-ALMP model). See scripts/08_a_to_c_rates.py.",
+      "method": "a_to_c_rate = re_employment_5y * (0.02 + slope * almp_training_gdp_pct); slope central=0.23, low=0.17, high=0.29, calibrated so Nordic produces ~10% and CEE/Southern ~4%.",
+      "primary_sources": [
+        "Bertheau, Acabbi, Barcelo, Gulyas, Lombardi, Saggio 2022, IZA DP 15033 (scripts/data/bertheau/iza_dp15033.pdf)",
+        "OECD SOCX 2022 ALMP training-category spend",
+        "National statistical agencies (IAB, ONS, CSO, CBS, Statbel, GUS, CZSO, KSH, INS, ELSTAT) for countries not in Bertheau"
+      ],
+      "rows": [
+        {"system": "Nordic Flexicurity",        "countries": "DK+SE+FI+NO", "re_employment_5y": 0.94, "almp_gdp_pct": 0.37, "rate_low_pct": 7.8, "rate_central_pct": 9.9, "rate_high_pct": 12.0, "headline_low": 8, "headline_high": 12, "delta_central_vs_midpoint": -0.1, "status": "match"},
+        {"system": "Germanic Dual System",      "countries": "DE+AT+CH",    "re_employment_5y": 0.90, "almp_gdp_pct": 0.29, "rate_low_pct": 6.3, "rate_central_pct": 7.9, "rate_high_pct": 9.5,  "headline_low": 3, "headline_high": 6,  "delta_central_vs_midpoint": 3.4,  "status": "flagged_beruf_hysteresis_unmodelled"},
+        {"system": "Continental Corporatist",   "countries": "FR+NL+BE",    "re_employment_5y": 0.90, "almp_gdp_pct": 0.25, "rate_low_pct": 5.6, "rate_central_pct": 6.9, "rate_high_pct": 8.2,  "headline_low": 5, "headline_high": 8,  "delta_central_vs_midpoint": 0.4,  "status": "match"},
+        {"system": "Liberal Market",            "countries": "UK+IE",       "re_employment_5y": 0.84, "almp_gdp_pct": 0.08, "rate_low_pct": 2.8, "rate_central_pct": 3.2, "rate_high_pct": 3.6,  "headline_low": 5, "headline_high": 8,  "delta_central_vs_midpoint": -3.3, "status": "flagged_market_agility_unmodelled"},
+        {"system": "Central/Eastern European",  "countries": "PL+CZ+HU+RO", "re_employment_5y": 0.85, "almp_gdp_pct": 0.08, "rate_low_pct": 2.8, "rate_central_pct": 3.3, "rate_high_pct": 3.7,  "headline_low": 2, "headline_high": 5,  "delta_central_vs_midpoint": -0.2, "status": "match"},
+        {"system": "Southern European",         "countries": "IT+ES+PT+EL", "re_employment_5y": 0.80, "almp_gdp_pct": 0.18, "rate_low_pct": 4.0, "rate_central_pct": 4.8, "rate_high_pct": 5.7,  "headline_low": 2, "headline_high": 5,  "delta_central_vs_midpoint": 1.3,  "status": "match"}
+      ],
+      "flag": "Germanic Dual +3.4 vs headline: AT's 0.51% GDP ALMP spend predicts higher mobility than the Beruf/Ausbildungsordnung-locked reality -- ALMP-linear model cannot see certification hysteresis. Liberal Market -3.3: UK ALMP at 0.01% GDP predicts near-zero mobility, but bootcamp-driven market response produces higher de-facto mobility than the model captures. Both flagged for review."
+    },
+    "countries_drilldown": {
+      "_note": "Added 2026-04-21. Powers site/countries.html. Per-capita intensity is net_2035 / working-age (15-64, 2025). Retirement figures are the grounded central estimates from derivations.retirement_offset.by_country (not the headline reskilling_gap.by_country values). A->C rates are inherited from each country's system group in derivations.a_to_c_rates.",
+      "scope": "DE, FR, IT, ES, UK, AT, CH -- seven economies covering ~70% of EU+UK employment.",
+      "working_age_15_64_2025": {
+        "DE": 49100000, "FR": 37600000, "IT": 34100000, "ES": 29300000,
+        "UK": 40000000, "AT":  5400000, "CH":  5450000,
+        "_source": "DE/FR/IT/ES/AT/CH from european-demographics-map/site/demographics-data.json (Eurostat demo_pjan, 2025). UK from ONS 2023 mid-year estimates rolled forward (UK absent from Eurostat post-2020). Definition is 15-64 rather than 20-64, the wider bracket Layer 4 uses; switching to 20-64 raises percentages uniformly by ~4-5pp and does not change the country ranking."
+      },
+      "rows": [
+        {"code": "DE", "name": "Germany",         "gross_exposure": 8350000, "retirement_2030_grounded":  800000, "retirement_2035_grounded": 1830000, "net_2030": 2730000, "net_2035": 6300000, "buffer_share_pct": 21.9, "working_age": 49100000, "per_capita_pct": 12.83, "system_group": "Germanic Dual System",     "a_to_c_rate_low_pct": 6.3, "a_to_c_rate_high_pct": 9.5, "delta_retirement_2035_vs_by_country_pct": -10.7},
+        {"code": "UK", "name": "United Kingdom",  "gross_exposure": 6450000, "retirement_2030_grounded":  590000, "retirement_2035_grounded": 1340000, "net_2030": 2250000, "net_2035": 5070000, "buffer_share_pct": 20.8, "working_age": 40000000, "per_capita_pct": 12.68, "system_group": "Liberal Market",           "a_to_c_rate_low_pct": 2.8, "a_to_c_rate_high_pct": 3.6, "delta_retirement_2035_vs_by_country_pct":  -2.9},
+        {"code": "FR", "name": "France",          "gross_exposure": 5820000, "retirement_2030_grounded":  520000, "retirement_2035_grounded": 1180000, "net_2030": 2060000, "net_2035": 4600000, "buffer_share_pct": 20.3, "working_age": 37600000, "per_capita_pct": 12.23, "system_group": "Continental Corporatist",  "a_to_c_rate_low_pct": 5.6, "a_to_c_rate_high_pct": 8.2, "delta_retirement_2035_vs_by_country_pct":  -3.3},
+        {"code": "IT", "name": "Italy",           "gross_exposure": 4350000, "retirement_2030_grounded":  490000, "retirement_2035_grounded": 1120000, "net_2030": 1470000, "net_2035": 3250000, "buffer_share_pct": 25.7, "working_age": 34100000, "per_capita_pct":  9.53, "system_group": "Southern European",        "a_to_c_rate_low_pct": 4.0, "a_to_c_rate_high_pct": 5.7, "delta_retirement_2035_vs_by_country_pct":   1.8},
+        {"code": "ES", "name": "Spain",           "gross_exposure": 3950000, "retirement_2030_grounded":  390000, "retirement_2035_grounded":  900000, "net_2030": 1390000, "net_2035": 3030000, "buffer_share_pct": 22.8, "working_age": 29300000, "per_capita_pct": 10.34, "system_group": "Southern European",        "a_to_c_rate_low_pct": 4.0, "a_to_c_rate_high_pct": 5.7, "delta_retirement_2035_vs_by_country_pct":  -2.2},
+        {"code": "CH", "name": "Switzerland",     "gross_exposure":  940000, "retirement_2030_grounded":   90000, "retirement_2035_grounded":  210000, "net_2030":  320000, "net_2035":  720000, "buffer_share_pct": 22.3, "working_age":  5450000, "per_capita_pct": 13.21, "system_group": "Germanic Dual System",     "a_to_c_rate_low_pct": 6.3, "a_to_c_rate_high_pct": 9.5, "delta_retirement_2035_vs_by_country_pct":  -4.5},
+        {"code": "AT", "name": "Austria",         "gross_exposure":  880000, "retirement_2030_grounded":   80000, "retirement_2035_grounded":  190000, "net_2030":  300000, "net_2035":  690000, "buffer_share_pct": 21.6, "working_age":  5400000, "per_capita_pct": 12.78, "system_group": "Germanic Dual System",     "a_to_c_rate_low_pct": 6.3, "a_to_c_rate_high_pct": 9.5, "delta_retirement_2035_vs_by_country_pct":   0.0}
+      ],
+      "totals_7_countries": {
+        "gross_exposure": 30740000,
+        "retirement_2030_grounded": 2960000,
+        "retirement_2035_grounded": 6770000,
+        "net_2030": 10520000,
+        "net_2035": 23660000,
+        "buffer_share_pct": 22.0
+      },
+      "highlights": {
+        "highest_per_capita_country": {"code": "CH", "per_capita_pct": 13.21},
+        "lowest_buffer_country":      {"code": "FR", "buffer_share_pct": 20.3},
+        "largest_absolute_load":      {"code": "DE", "net_2035": 6300000, "share_of_7country_total_pct": 26.6}
+      },
+      "delta_vs_by_country_retirement_2035": {
+        "_note": "Grounded retirement-offset central values (derivations.retirement_offset.by_country) vs the headline reskilling_gap.by_country.retirement_2035 values. Not overwritten upstream; surfaced here for transparency.",
+        "DE":  -10.7,
+        "UK":   -2.9,
+        "FR":   -3.3,
+        "IT":    1.8,
+        "ES":   -2.2,
+        "AT":    0.0,
+        "CH":   -4.5,
+        "largest_divergence": "DE -11% (by_country 2.05M vs grounded 1.83M). All others within +/-5%."
+      }
+    },
+    "dach": {
+      "_note": "Added 2026-04-21 (S3 DACH deep dive). Pure re-aggregation of grounded derivations plus a three-axis system-capacity readout constructed from training-ordinance cycle times, Umschulung/EFZ minimums, and Sozialpartnerschaft / federalism frictions documented in BIBB 2025, AMS 2024, WeBiG 2017 and ICT-Berufsbildung Schweiz 2033. No new upstream data.",
+      "aggregate_2035": {
+        "gross_exposure": 10170000,
+        "retirement_2035_grounded": 2230000,
+        "net_2035": 7710000,
+        "buffer_share_pct": 21.9,
+        "working_age_15_64_2025": 59950000,
+        "per_capita_pct": 12.86,
+        "share_of_7country_net_pct": 32.6
+      },
+      "germany_delta_retirement_2035_vs_by_country_pct": -10.7,
+      "germany_delta_note": "Grounded retirement offset for Germany lands at 1.83M vs the proportional-allocation headline of 2.05M. DE's 55-64 employment share in high-exposure roles (21.9%) is on the group mean, but the statutory retirement schedule's 2025->2035 shift from 66 to 67 pulls a larger fraction of potential retirees back into the labour force than the headline allocation assumes. The uniquely large (-10.7%) delta reflects German workforce ageing interacting with Rente-mit-67 phase-in, not a measurement error.",
+      "ch_ict_shortfall_2033": {
+        "additional_specialists_needed": 117900,
+        "current_graduation_per_year": 3500,
+        "gap_vs_graduation_multiple": 33,
+        "source": "ICT-Berufsbildung Schweiz ICT-Fachkraeftestudie 2033 (cited in sources.html)"
+      },
+      "country_panels": [
+        {
+          "code": "DE",
+          "name": "Germany",
+          "net_2035_M": 6.30,
+          "retirement_2035_grounded_M": 1.83,
+          "retirement_delta_pct": -10.7,
+          "system_group": "Germanic Dual System",
+          "a_to_c_rate_pct": "6.3-9.5 (ALMP-linear) / 3-6 (headline)",
+          "distinctive": "Qualifizierungsgeld near-zero uptake; 320 recognised Ausbildungsberufe; tripartite training-ordinance (Ausbildungsordnung) cycle of 3-5 years locks hysteresis into the Beruf system.",
+          "policy_levers": [
+            {"name": "Qualifizierungsgeld (2024)", "evidence": "Expanded in 2024 to subsidise employer-initiated reskilling at 60-67% of prior net wage. First-year uptake near-zero; 24-month Umschulung minimum and administrative burden make it impractical for fast AI transitions.", "source": "BIBB Berufsbildungsbericht 2025"},
+            {"name": "Bildungsgutschein (SGB III sect.81)", "evidence": "Individual retraining voucher administered by Bundesagentur fuer Arbeit; funds full cost plus living stipend but requires Agentur approval and structural-unemployment justification.", "source": "BA Arbeitsmarktberichte / BIBB 2025"},
+            {"name": "Ausbildungsordnung Neuordnung", "evidence": "Tripartite reform of a single occupation's training ordinance takes 3-5 years from initiative to first enrolled apprentice. 320 recognised occupations => structural inability to track AI task shifts.", "source": "BIBB 2025"},
+            {"name": "Kurzarbeit + Qualifizierung (pilot)", "evidence": "Short-time-work + funded reskilling combination was legally enabled post-2020 but rarely invoked for AI-driven structural change. Infrastructure exists (6M workers at COVID peak) if definitionally extended.", "source": "BA Arbeitsmarktberichte / IAB-Kurzbericht 2023"}
+          ]
+        },
+        {
+          "code": "AT",
+          "name": "Austria",
+          "net_2035_M": 0.69,
+          "retirement_2035_grounded_M": 0.19,
+          "retirement_delta_pct": 0.0,
+          "system_group": "Germanic Dual System",
+          "a_to_c_rate_pct": "6.3-9.5 (ALMP-linear) / 3-6 (headline)",
+          "distinctive": "Bildungskarenz Vienna-skewed; Sozialpartnerschaft provides consensus but slows adaptation; retirement offset aligns exactly with proportional allocation.",
+          "policy_levers": [
+            {"name": "AMS Qualifizierungsfoerderung", "evidence": "Public Employment Service (AMS) co-funds employer- and individual-initiated retraining. Completion-to-employment rate opaque in public reporting; Fachkraeftebarometer flags persistent shortages in ICT, care and trades.", "source": "AMS Fachkraeftebarometer Q4 2025 / Berufslisten"},
+            {"name": "Bildungskarenz", "evidence": "12-month educational leave paid at unemployment-benefit level; ~15,000 users/year, heavily Vienna-skewed and concentrated in already-qualified cohorts. Federal government announced tightening from 2026.", "source": "AMS 2024 / BMASGPK"},
+            {"name": "Fachhochschule pathway", "evidence": "FH sector more responsive to market signals than universities; 2-3 year lag from demand identification to first graduates. Adult-friendly part-time formats exist but remain a minority of places.", "source": "AMS Berufslisten 2025"},
+            {"name": "Sozialpartnerschaft wage-setting", "evidence": "Collective-agreement framework provides stability but means occupational classification updates flow through social-partner negotiation; ordinance updates inherit the same 3-5-year cycle as DE.", "source": "AMS / BMASGPK"}
+          ]
+        },
+        {
+          "code": "CH",
+          "name": "Switzerland",
+          "net_2035_M": 0.72,
+          "retirement_2035_grounded_M": 0.21,
+          "retirement_delta_pct": -4.5,
+          "system_group": "Germanic Dual System",
+          "a_to_c_rate_pct": "6.3-9.5 (ALMP-linear) / 3-6 (headline)",
+          "distinctive": "WeBiG provides legal framework but minimal direct funding; steepest wage cliff in Europe; ICT shortfall 33x annual graduation rate.",
+          "policy_levers": [
+            {"name": "Weiterbildungsgesetz (WeBiG, 2017)", "evidence": "Federal framework law codifies individual responsibility for continuing education. No federal individual learning account; funding delegated to cantons and employers. Principle of subsidiarity caps federal steering.", "source": "WeBiG 2017 / BFS"},
+            {"name": "EFZ shortened adult pathway", "evidence": "Adult validation route to federal VET certificate (Eidgenoessisches Faehigkeitszeugnis) still requires 24 months minimum; most cantons administer via case-by-case competence assessment.", "source": "BFS Schweiz VET / SBFI"},
+            {"name": "ICT-Berufsbildung Schweiz 2033", "evidence": "117,900 additional ICT specialists projected through 2033; current graduation ~3,500/year; gap ~33x annual graduation rate under status-quo pipeline.", "source": "ICT-Berufsbildung Schweiz ICT-Fachkraeftestudie 2033"},
+            {"name": "Berufsbildungsfonds", "evidence": "Sector-funded VET levies (parifonds) finance occupation-specific CVET but exclude cross-occupational transitions. The WeBiG gap between individual and employer responsibility is where AI-displaced workers fall.", "source": "BFS / SBFI"}
+          ]
+        }
+      ],
+      "system_capacity_axes": {
+        "_note": "Three-axis system-capacity readout for DACH. Axes are expert-judgement compositions of documented durations and spend. Values are relative (higher = worse on time and cost; higher = better on political feasibility).",
+        "axes": [
+          {"code": "time_to_first_graduate_yr",   "label": "Time to first reskilled graduate (years)", "DE": 4.5, "AT": 3.5, "CH": 3.0, "note": "DE: 3-5yr Ausbildungsordnung Neuordnung + 24mo Umschulung minimum. AT: Bildungskarenz 12mo + 2-3yr FH pathway. CH: 24mo EFZ adult + cantonal assessment lead time."},
+          {"code": "cost_per_transition_k_eur",    "label": "Public cost per completed transition (k EUR)", "DE": 38, "AT": 28, "CH": 18, "note": "DE: full Umschulung (tuition + Kurzarbeit-style income support) ~35-42k EUR. AT: Bildungskarenz at AlV level + training costs ~25-30k. CH: WeBiG low federal contribution; cost largely borne by individual/employer => low public cost but high private cost."},
+          {"code": "political_feasibility_0_10",   "label": "Political feasibility of scale-up (0-10)", "DE": 4, "AT": 5, "CH": 3, "note": "DE: tripartite Neuordnung consensus lock-in. AT: Sozialpartnerschaft smaller, somewhat more agile. CH: federalist subsidiarity + WeBiG minimal framework => lowest political headroom for federal scale-up."}
+        ],
+        "status": "expert_judgement_flagged",
+        "flag": "Values are ordinal readouts of documented cycle times and spend categories, not a reproducible index. Retained as a directional comparison."
+      },
+      "germanic_dual_sensitivity": {
+        "_note": "Lifted from derivations.system_radar + sources.html Derivation Appendix G. CVTS/NFE measurement vs Ausbildung-depth expert judgement produce different scores on the same system.",
+        "cvts_nfe_reading": {"quality": 7.6, "equity": 4.8, "speed": 7.6, "construct": "CVTS enterprise share + NFE participation percentile-ranked in 20-country set"},
+        "ausbildung_headline": {"quality": 10.0, "equity": 7.0, "speed": 5.0, "construct": "expert judgement anchored on Ausbildungsordnung depth and cross-firm recognition"},
+        "interpretation": "Both readings defensible, different constructs. CVTS/NFE captures breadth of training provision (Germanic Dual ranks mid-pack in Europe). Ausbildung-depth captures the social and certification weight of the Beruf itself (Germanic Dual is without peer). The divergence lives inside the Beruf system, which is uniquely load-bearing in DACH.",
+        "source": "sources.html Derivation Appendix G"
+      },
+      "client_implications": {
+        "_note": "Added 2026-04-21 (S3b polish). Replaces earlier client_positioning field. Four structural implications for DACH operators, grounded in the same derivations that produce the panels above. No Nexalps-methodology claims; positioning is 'here is what the data suggests you should consider'.",
+        "audience": "DACH operators",
+        "four_points": [
+          {
+            "title": "Treat Qualifizierungsgeld as a backstop, not a plan",
+            "country_focus": "DE",
+            "evidence": "Near-zero first-year uptake is a design signal, not a rollout lag. 24-month Umschulung minimum plus administrative burden make it operationally impractical for AI-scale reskilling. Budget as a safety net for individual displacement, not as a workforce-plan lever.",
+            "source": "BIBB Berufsbildungsbericht 2025"
+          },
+          {
+            "title": "Classroom Umschulung does not fit the AI adoption window",
+            "country_focus": "DE",
+            "evidence": "AI redefines task bundles on a 12-36-month horizon. Formal DE Umschulung runs a 24-month statutory minimum; Neuordnung of an Ausbildungsordnung takes 3-5 years. Internal role-evolution paths and Ausbildungsbetriebe partnerships scale faster for the same cohort.",
+            "source": "BIBB 2025; derivations.dach.system_capacity_axes"
+          },
+          {
+            "title": "Beruf-system lock-in: plan for within-Berufsfeld depth, not cross-Beruf hiring",
+            "country_focus": "DE/AT",
+            "evidence": "IAB job-to-job mobility between unrelated Berufe in DE sits at roughly one-third of UK levels. Realistic talent pool for AI-augmented roles is inside existing Berufsfelder; cross-Beruf external hiring is structurally thin vs Anglophone comparators.",
+            "source": "IAB-Kurzbericht mobility series"
+          },
+          {
+            "title": "CH wage cliff: retention inside Zone A+ is cheaper than reskilling into Zone C",
+            "country_focus": "CH",
+            "evidence": "Swiss Zone A salaries are the highest in Europe. Every Zone A->C transition carries the steepest proportional wage cliff in the seven-country set. For Swiss operators, augmentation-role retention (Zone A with AI) is more defensible than cross-zone reskilling at any realistic public-policy intervention.",
+            "source": "BFS wage data; transitions.html wage-cliff derivation"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found &mdash; Can Europe Reskill Fast Enough?</title>
+<meta name="description" content="The page you were looking for does not exist.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --background:#09090b;--foreground:#fafafa;--muted:#a1a1aa;--muted-foreground:#8a8a93;
+  --card-border:rgba(255,255,255,0.08);--ring:#f97316;
+  --radius-md:8px;--radius-lg:12px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px}
+main{max-width:560px;text-align:left}
+.code{font-size:72px;font-weight:700;color:var(--ring);letter-spacing:-0.03em;line-height:1;margin-bottom:16px}
+h1{font-size:28px;font-weight:700;letter-spacing:-0.02em;line-height:1.2;margin-bottom:12px}
+p{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:24px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:var(--radius-md);font-size:14px;font-weight:600;text-decoration:none;transition:all .15s;border:1px solid var(--card-border);color:var(--muted)}
+a.btn:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+a.btn.primary{background:var(--ring);color:#000;border-color:var(--ring)}
+a.btn.primary:hover{background:#fb923c;color:#000}
+.footer-links{font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);padding-top:16px}
+.footer-links a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.footer-links a:hover{color:var(--foreground)}
+</style>
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+setTimeout(function(){
+  if(typeof posthog==='undefined')return;
+  posthog.capture('404_view',{path:location.pathname,referrer:document.referrer||'(direct)'});
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){a.addEventListener('click',function(){posthog.capture('outbound_click',{url:a.href,text:a.textContent.trim().slice(0,80),page:'404'})})});
+  document.querySelectorAll('a.btn').forEach(function(a){a.addEventListener('click',function(){posthog.capture('cta_clicked',{href:a.getAttribute('href'),text:a.textContent.trim(),page:'404'})})});
+},300);
+</script>
+</head>
+<body>
+<main role="main">
+  <div class="code" aria-label="404">404</div>
+  <h1>Page not found</h1>
+  <p>The page you were looking for doesn&rsquo;t exist on <strong>reskilling.nexalps.com</strong>. It may have been moved, or the link may be broken.</p>
+  <div class="links">
+    <a class="btn primary" href="/">Overview</a>
+    <a class="btn" href="/transitions.html">Transitions</a>
+    <a class="btn" href="/lenses.html">Lenses</a>
+    <a class="btn" href="/systems.html">Systems</a>
+    <a class="btn" href="/countries.html">Countries</a>
+    <a class="btn" href="/dach.html">DACH</a>
+    <a class="btn" href="/sources.html">Sources</a>
+  </div>
+  <p class="footer-links">Part 5 of 7 in the European AI Labour Market suite by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a></p>
+</main>
+</body>
+</html>

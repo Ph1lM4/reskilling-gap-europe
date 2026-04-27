@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countries &mdash; European Reskilling &amp; AI</title>
+<meta name="description" content="Country-level drilldown of the European reskilling gap. Germany, France, Italy, Spain, UK, Austria, Switzerland: gross exposure, retirement buffer, net need, and working-age intensity.">
+<link rel="canonical" href="https://reskilling.nexalps.com/countries.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Countries &mdash; European Reskilling &amp; AI">
+<meta property="og:description" content="Who carries the load. 23.7M net reskilling need across 7 core economies. Southern Europe's retirement cushion is the smallest. DACH splits three ways.">
+<meta property="og:url" content="https://reskilling.nexalps.com/countries.html">
+<meta property="og:site_name" content="Nexalps">
+<meta property="og:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta name="twitter:title" content="Countries &mdash; European Reskilling &amp; AI">
+<meta name="twitter:description" content="23.7M net reskilling need across 7 core economies. Per-capita, DACH and UK carry the densest load.">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Countries &mdash; European Reskilling &amp; AI","description":"Country-level drilldown of the European reskilling gap for DE, FR, IT, ES, UK, AT, CH.","url":"https://reskilling.nexalps.com/countries.html","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{--background:#09090b;--foreground:#fafafa;--card:#0a0a0c;--card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;--accent:#27272a;--border:rgba(255,255,255,0.12);--ring:#f97316;--radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;--font:'Geist',system-ui,-apple-system,sans-serif;--transition:150ms cubic-bezier(0.4,0,0.2,1)}
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}.site-nav-links a:hover{color:var(--foreground)}.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}.burger.open span:nth-child(2){opacity:0}.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}.burger-panel a:hover{color:var(--foreground)}.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero.container{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+.chart-caption{font-size:12px;color:var(--muted-foreground);margin-top:10px;line-height:1.6}
+
+/* Data tables */
+.data-table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);padding:8px 12px;border-bottom:1px solid var(--border)}
+.data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border)}
+.data-table td.num,.data-table th.num{text-align:right;font-variant-numeric:tabular-nums}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr.total td{font-weight:700;color:var(--foreground);border-top:1px solid var(--border)}
+@media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}.footer a:hover{color:var(--foreground)}
+
+/* Unified body-prose links */
+main p a, main li a, main td a, main .highlight a, main .chart-caption a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+main p a:visited, main li a:visited, main td a:visited, main .highlight a:visited, main .chart-caption a:visited{color:var(--foreground)}
+main p a:hover, main li a:hover, main td a:hover, main .highlight a:hover, main .chart-caption a:hover{color:var(--ring)}
+
+/* Tooltip */
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html">Overview</a>
+    <a href="transitions.html">Transitions</a>
+    <a href="lenses.html">Lenses</a>
+    <span class="nav-sep"></span>
+    <a href="systems.html">Systems</a>
+    <a href="countries.html" aria-current="page">Countries</a>
+    <a href="dach.html">DACH</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+    <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html">Overview</a>
+  <a href="transitions.html">Transitions</a>
+  <a href="lenses.html">Lenses</a>
+  <a href="systems.html">Systems</a>
+  <a href="countries.html" aria-current="page">Countries</a>
+  <a href="dach.html">DACH</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>Countries &mdash; where the reskilling load lands</h1>
+  <p class="lede">The EU-27 aggregate of 30&nbsp;million is a single number. The country view shows who carries the bulk of the load, which workforces get the biggest demographic cushion, and which systems start from the least forgiving position.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; April 2026 &middot; Drilldown of <a href="index.html">Part 5</a></p>
+  <p class="byline">DE, FR, IT, ES, UK, AT, CH &mdash; seven economies, ~70% of EU+UK employment. Data: Eurostat LFS, Cedefop Skills Forecast 2025, OECD effective retirement age, Layer&nbsp;4 demographics.</p>
+</header>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="Summary statistics">
+  <div class="stat-card">
+    <span class="stat-value">23.66M</span>
+    <span class="stat-label">Total net need 2035</span>
+    <span class="stat-sublabel">Seven countries combined</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">CH &middot; 13.2%</span>
+    <span class="stat-label">Highest per-capita need</span>
+    <span class="stat-sublabel">Net 2035 / working-age (15&ndash;64)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">FR &middot; 20.3%</span>
+    <span class="stat-label">Smallest retirement buffer</span>
+    <span class="stat-sublabel">Share of exposure absorbed by 2035 retirements</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: COUNTRY COMPARISON TABLE -->
+<h2><span class="num">1.</span> The load per country <span class="subtitle">Gross exposure, retirement buffer, net need</span></h2>
+
+<p>Germany carries the largest absolute reskilling need in Europe &mdash; 6.3&nbsp;million workers by 2035, more than a quarter of the seven-country total. The UK is second, then France, then Italy and Spain. Austria and Switzerland are much smaller in absolute terms, but almost identical to the German-speaking core on a per-capita basis.</p>
+
+<p>The column that is easy to miss is <strong>retirement buffer share</strong> &mdash; the fraction of high-exposure roles that vacate naturally through 2035 retirements. Italy and Switzerland sit at the high end (25.7% and 22.3%). France and the UK are at the low end (20.3% and 20.8%): these are the two economies with the largest raw workforce to reskill and the weakest demographic tailwind to help.</p>
+
+<!-- S1a: EUROPE SCHEMATIC MAP -->
+<div class="chart-box" role="img" aria-label="Schematic map of Europe showing EU-27, UK, Switzerland and EEA countries. Seven focus countries (Germany, France, Italy, Spain, United Kingdom, Austria, Switzerland) highlighted in orange; other 25 countries shown in grey.">
+  <h3>Seven focus countries within EU-27 + UK + EEA</h3>
+  <div id="europe-map"></div>
+  <p class="chart-caption">Focus set (orange): DE, FR, IT, ES, UK, AT, CH. Together they cover ~70% of EU&nbsp;+&nbsp;UK&nbsp;+&nbsp;CH high-exposure employment, and align with Nexalps&rsquo; DACH and UK client footprint. Schematic positioning only &mdash; this is a wayfinding visual, not a geographic projection.</p>
+</div>
+
+<div class="chart-box" style="padding-top:20px" role="region" aria-label="Country comparison table">
+  <h3>Country table &mdash; high-exposure, retirement offset, net need</h3>
+  <div style="overflow-x:auto">
+  <table class="data-table" id="country-table">
+    <thead>
+      <tr>
+        <th scope="col">Country</th>
+        <th scope="col" class="num">High exposure</th>
+        <th scope="col" class="num">Retire 2030</th>
+        <th scope="col" class="num">Retire 2035</th>
+        <th scope="col" class="num">Net 2030</th>
+        <th scope="col" class="num">Net 2035</th>
+        <th scope="col" class="num">Buffer %</th>
+        <th scope="col" class="num">A&rarr;C rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Germany</td><td class="num">8.35M</td><td class="num">0.80M</td><td class="num">1.83M</td><td class="num">2.73M</td><td class="num">6.30M</td><td class="num">21.9%</td><td class="num">6.3&ndash;9.5%</td></tr>
+      <tr><td>United Kingdom</td><td class="num">6.45M</td><td class="num">0.59M</td><td class="num">1.34M</td><td class="num">2.25M</td><td class="num">5.07M</td><td class="num">20.8%</td><td class="num">2.8&ndash;3.6%</td></tr>
+      <tr><td>France</td><td class="num">5.82M</td><td class="num">0.52M</td><td class="num">1.18M</td><td class="num">2.06M</td><td class="num">4.60M</td><td class="num">20.3%</td><td class="num">5.6&ndash;8.2%</td></tr>
+      <tr><td>Italy</td><td class="num">4.35M</td><td class="num">0.49M</td><td class="num">1.12M</td><td class="num">1.47M</td><td class="num">3.25M</td><td class="num">25.7%</td><td class="num">4.0&ndash;5.7%</td></tr>
+      <tr><td>Spain</td><td class="num">3.95M</td><td class="num">0.39M</td><td class="num">0.90M</td><td class="num">1.39M</td><td class="num">3.03M</td><td class="num">22.8%</td><td class="num">4.0&ndash;5.7%</td></tr>
+      <tr><td>Switzerland</td><td class="num">0.94M</td><td class="num">0.09M</td><td class="num">0.21M</td><td class="num">0.32M</td><td class="num">0.72M</td><td class="num">22.3%</td><td class="num">6.3&ndash;9.5%</td></tr>
+      <tr><td>Austria</td><td class="num">0.88M</td><td class="num">0.08M</td><td class="num">0.19M</td><td class="num">0.30M</td><td class="num">0.69M</td><td class="num">21.6%</td><td class="num">6.3&ndash;9.5%</td></tr>
+      <tr class="total"><td>Total</td><td class="num">30.74M</td><td class="num">2.96M</td><td class="num">6.77M</td><td class="num">10.52M</td><td class="num">23.66M</td><td class="num">22.0%</td><td class="num">&mdash;</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="chart-caption">Retirement columns use the grounded central estimates from <a href="sources.html#derivation-appendix">derivations.retirement_offset</a> (Eurostat&nbsp;lfsa_egai2d&nbsp;&times; 55&ndash;64&nbsp;age&nbsp;share, OECD effective retirement age, statutory schedules). Differences vs the headline <code>by_country.retirement_2035</code>: DE&nbsp;&minus;11%, CH&nbsp;&minus;5%, UK&nbsp;&minus;3%, FR&nbsp;&minus;3%, ES&nbsp;&minus;2%, IT&nbsp;+2%, AT&nbsp;0%. Net columns retained from headline (they include other adjustments beyond retirement offset). A&rarr;C rate is the country&rsquo;s system-group range from the <a href="systems.html">six-system model</a>.</p>
+</div>
+
+<!-- S2: GROUPED BAR CHART -->
+<h2><span class="num">2.</span> Stacked exposure vs net need <span class="subtitle">Gross roles, retirement absorbed, and what remains</span></h2>
+
+<p>The bars below replicate the EU-27 waterfall on the <a href="index.html">overview page</a>, three times over per country: gross exposure in orange, retirement offset in grey (negative), net need in red. For every country the net bar is still roughly three-quarters the height of the gross bar &mdash; the demographic buffer is real but nowhere near sufficient on its own.</p>
+
+<div class="chart-box" role="img" aria-label="Grouped horizontal bar chart showing gross exposure, retirement offset, and net reskilling need by 2035 for seven countries.">
+  <h3>Exposure &rarr; retirement offset &rarr; net need by 2035 (millions)</h3>
+  <div id="country-bars"></div>
+</div>
+
+<!-- S3: PER-CAPITA VIEW -->
+<h2><span class="num">3.</span> Per-capita intensity <span class="subtitle">Net reskilling need as a share of the working-age workforce</span></h2>
+
+<p>Scaling by working-age population tells a different story than the absolute numbers. Switzerland, Germany, Austria and the UK cluster between 12.7% and 13.2% &mdash; more than one in every eight working-age adults in those economies sits in the net reskilling cohort. Italy&rsquo;s share is lowest at 9.5% &mdash; not because Italy&rsquo;s exposure is small in structural terms, but because its ageing workforce absorbs a larger fraction of that exposure through retirement.</p>
+
+<div class="chart-box" role="img" aria-label="Horizontal bar chart ranking countries by net reskilling need as a percentage of working-age population.">
+  <h3>Net need 2035 as % of working-age population (15&ndash;64)</h3>
+  <div id="per-capita-chart"></div>
+  <p class="chart-caption">Working-age population: DE, FR, IT, ES, AT, CH from <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Layer&nbsp;4 demographics-data.json</a> (Eurostat demo_pjan, 2025, 15&ndash;64). UK from ONS 2023 mid-year estimates rolled forward (UK absent from Eurostat post-2020). Definition is 15&ndash;64 rather than 20&ndash;64, the wider bracket Layer&nbsp;4 uses; switching to 20&ndash;64 raises the percentages uniformly by ~4&ndash;5&nbsp;pp and does not change the country ranking.</p>
+</div>
+
+<!-- S4: RETIREMENT BUFFER SCATTER -->
+<h2><span class="num">4.</span> Buffer vs load <span class="subtitle">The two dimensions that shape each country&rsquo;s reskilling task</span></h2>
+
+<p>This scatter maps each country on two axes. The horizontal axis is the retirement buffer share &mdash; how much of the exposure vacates naturally by 2035. The vertical axis is the absolute net need after that buffer. A country in the top-left (France, UK) has the least favourable combination: large workforce to reskill, small demographic cushion. A country in the bottom-right (Italy) is small on the absolute load but gets the largest natural cushion. DACH sits in the middle band on both.</p>
+
+<div class="chart-box" role="img" aria-label="Scatter plot. X-axis is retirement buffer share percent. Y-axis is net reskilling need in millions. Each country is a labelled dot.">
+  <h3>Retirement buffer share (%) vs net need 2035 (M)</h3>
+  <div id="buffer-scatter"></div>
+</div>
+
+<!-- NARRATIVE -->
+<h2><span class="num">5.</span> What the aggregate hides <span class="subtitle">Four country-level patterns</span></h2>
+
+<p><strong>Germany carries roughly a quarter of Europe&rsquo;s absolute load.</strong> At 6.3&nbsp;million net reskilling need, Germany alone accounts for ~27% of the seven-country total and ~21% of the EU-27 aggregate. The German advantage is a uniquely well-funded Umschulung infrastructure (the <a href="systems.html">Germanic Dual System</a> ranks second on the <a href="systems.html">system scorecard</a>). The disadvantage is a 24-month statutory Umschulung minimum, tripartite Beruf reform cycles measured in years, and a middle-aged mass of clerical workers squarely in the Zone&nbsp;A exposure category. Germany&rsquo;s response capacity is high; its response latency is the binding constraint.</p>
+
+<!-- Inline stat callouts — breaking up the narrative -->
+<div class="stats-bar" style="padding:4px 0 16px;margin-top:-4px">
+  <div class="stat-card" style="padding:12px 16px">
+    <span class="stat-value" style="font-size:20px">~27%</span>
+    <span class="stat-label">Germany share</span>
+    <span class="stat-sublabel">Of the seven-country net 2035 load</span>
+  </div>
+  <div class="stat-card" style="padding:12px 16px">
+    <span class="stat-value" style="font-size:20px">2.8&ndash;3.6%</span>
+    <span class="stat-label">UK A&rarr;C rate</span>
+    <span class="stat-sublabel">Lowest modelled transition rate of the seven</span>
+  </div>
+  <div class="stat-card" style="padding:12px 16px">
+    <span class="stat-value" style="font-size:20px">0.08% GDP</span>
+    <span class="stat-label">UK ALMP spend</span>
+    <span class="stat-sublabel">vs 0.6% DE, 0.9% FR, 1.3% Nordic</span>
+  </div>
+</div>
+
+<p><strong>Southern Europe has the smallest retirement cushion relative to the task.</strong> Italy&rsquo;s 25.7% buffer share is the highest of the seven, but it is a cushion on a much larger structural problem: Southern ALMP training spend is 0.18% of GDP, CVET enterprise participation is among the weakest in the EU, and the modelled A&rarr;C transition rate is 4.0&ndash;5.7%. Spain has both a slightly smaller cushion (22.8%) and the same system-level constraints. The net result is that roughly 4.7% of Italy&rsquo;s working-age population needs successful cross-occupational reskilling by 2035 &mdash; the same order of magnitude as Germany and the UK but hitting a system with less than a third of their capacity.</p>
+
+<p><strong>The UK&rsquo;s position is uniquely exposed.</strong> A 20.8% buffer share is below the group median, the absolute load is second-largest at 5.07&nbsp;million, and the modelled A&rarr;C transition rate of 2.8&ndash;3.6% is the lowest in the set &mdash; a function of UK ALMP spend at roughly 0.08% of GDP and an almost entirely private reskilling ecosystem. The UK bootcamp market is genuinely agile and may be underestimated by the ALMP-linear model (the S1b derivation flags this), but the mid-cohort ageing pattern is real: the UK&rsquo;s 55&ndash;64 share of high-exposure employment (20.8%) is the lowest of the seven, meaning fewer workers age out and more must transition.</p>
+
+<p><strong>Austria and Switzerland scale differently from the peers around them.</strong> Their absolute loads are ~700K each, but on a per-capita basis they are at the top of the distribution (12.8% and 13.2%). Switzerland&rsquo;s position is the sharpest in Europe: working-age population is <em>growing</em> through 2040 (the only one of the seven projected to do so, per <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Layer&nbsp;4</a>), so the retirement buffer is proportionally smaller, but the workforce to reskill is proportionally larger. Austria sits in the same Germanic-Dual system as Germany but operates at 10% of the scale, giving it both more policy agility and less infrastructure to deploy. The three DACH economies share a system model and diverge sharply on the per-capita intensity of the task.</p>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>From seven countries to one region</h3>
+  <p>The Germanic Dual System carries 32.6% of the seven-country load. DACH adds the regulatory geography, retirement-offset deltas, and operator implications that the country-level cuts miss.</p>
+  <div class="btn-row">
+    <a href="dach.html" class="btn btn-primary">DACH deep dive &rarr;</a>
+    <a href="index.html" class="btn btn-outline">&larr; Back to the gap</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Can Europe Reskill Fast Enough? v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="transitions.html">Transitions</a> &middot; <a href="lenses.html">Lenses</a> &middot; <a href="systems.html">Systems</a> &middot; <a href="countries.html">Countries</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+
+</main>
+
+<!-- TOOLTIP -->
+<div class="chart-tooltip" id="tooltip" style="display:none"></div>
+
+<script>
+// Burger menu
+const burgerBtn=document.getElementById('burger-btn'),burgerPanel=document.getElementById('burger-panel');
+burgerBtn.addEventListener('click',()=>{const open=burgerBtn.classList.toggle('open');burgerPanel.classList.toggle('open');burgerBtn.setAttribute('aria-expanded',open)});
+
+// Working-age (15-64) lookup, 2025. Source: Layer 4 demographics-data.json (Eurostat demo_pjan).
+// UK not in Layer 4; ONS 2023 mid-year rolled forward.
+const WAP = {
+  DE: 49100000, FR: 37600000, IT: 34100000, ES: 29300000,
+  UK: 40000000, AT:  5400000, CH:  5450000
+};
+
+// Country data (grounded retirement offsets from derivations.retirement_offset.by_country)
+const COUNTRIES = [
+  {code:'DE', name:'Germany',        gross:8.35, retire2035:1.83, net2035:6.30, buffer:21.9, atc_low:6.3, atc_high:9.5},
+  {code:'UK', name:'United Kingdom', gross:6.45, retire2035:1.34, net2035:5.07, buffer:20.8, atc_low:2.8, atc_high:3.6},
+  {code:'FR', name:'France',         gross:5.82, retire2035:1.18, net2035:4.60, buffer:20.3, atc_low:5.6, atc_high:8.2},
+  {code:'IT', name:'Italy',          gross:4.35, retire2035:1.12, net2035:3.25, buffer:25.7, atc_low:4.0, atc_high:5.7},
+  {code:'ES', name:'Spain',          gross:3.95, retire2035:0.90, net2035:3.03, buffer:22.8, atc_low:4.0, atc_high:5.7},
+  {code:'CH', name:'Switzerland',    gross:0.94, retire2035:0.21, net2035:0.72, buffer:22.3, atc_low:6.3, atc_high:9.5},
+  {code:'AT', name:'Austria',        gross:0.88, retire2035:0.19, net2035:0.69, buffer:21.6, atc_low:6.3, atc_high:9.5}
+];
+
+const tooltip=d3.select('#tooltip');
+const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function fmtM(v){return v.toFixed(2)+'M'}
+function fmtPct(v){return v.toFixed(1)+'%'}
+
+function showTip(html,event){
+  tooltip.style('display','block').html(html)
+    .style('left',(event.pageX+12)+'px').style('top',(event.pageY-8)+'px');
+}
+function hideTip(){tooltip.style('display','none')}
+
+// CHART: Europe schematic dot map
+(function(){
+  const container=document.getElementById('europe-map');
+  if(!container)return;
+  const FOCUS=new Set(['DE','FR','IT','ES','UK','AT','CH']);
+  // Approximate lat/lon centroids for EU-27 + UK + CH + EEA (IS, NO, LI)
+  const EUR=[
+    {c:'IS',n:'Iceland',lat:64.9,lon:-19.0},
+    {c:'NO',n:'Norway',lat:60.8,lon:10.0},
+    {c:'SE',n:'Sweden',lat:60.1,lon:15.6},
+    {c:'FI',n:'Finland',lat:61.9,lon:25.7},
+    {c:'EE',n:'Estonia',lat:58.6,lon:25.0},
+    {c:'LV',n:'Latvia',lat:56.9,lon:24.6},
+    {c:'LT',n:'Lithuania',lat:55.2,lon:23.9},
+    {c:'DK',n:'Denmark',lat:56.1,lon:10.0},
+    {c:'IE',n:'Ireland',lat:53.1,lon:-8.2},
+    {c:'UK',n:'United Kingdom',lat:54.0,lon:-2.4},
+    {c:'NL',n:'Netherlands',lat:52.3,lon:5.3},
+    {c:'BE',n:'Belgium',lat:50.6,lon:4.7},
+    {c:'LU',n:'Luxembourg',lat:49.8,lon:6.1},
+    {c:'DE',n:'Germany',lat:51.2,lon:10.4},
+    {c:'PL',n:'Poland',lat:51.9,lon:19.1},
+    {c:'CZ',n:'Czechia',lat:49.8,lon:15.5},
+    {c:'SK',n:'Slovakia',lat:48.7,lon:19.7},
+    {c:'AT',n:'Austria',lat:47.5,lon:14.5},
+    {c:'CH',n:'Switzerland',lat:46.8,lon:8.2},
+    {c:'LI',n:'Liechtenstein',lat:47.2,lon:9.5},
+    {c:'FR',n:'France',lat:46.8,lon:2.2},
+    {c:'PT',n:'Portugal',lat:39.4,lon:-8.2},
+    {c:'ES',n:'Spain',lat:40.5,lon:-3.7},
+    {c:'IT',n:'Italy',lat:42.8,lon:12.6},
+    {c:'SI',n:'Slovenia',lat:46.2,lon:14.9},
+    {c:'HR',n:'Croatia',lat:45.1,lon:15.2},
+    {c:'HU',n:'Hungary',lat:47.2,lon:19.5},
+    {c:'RO',n:'Romania',lat:45.9,lon:24.9},
+    {c:'BG',n:'Bulgaria',lat:42.7,lon:25.5},
+    {c:'GR',n:'Greece',lat:39.1,lon:22.5},
+    {c:'MT',n:'Malta',lat:35.9,lon:14.4},
+    {c:'CY',n:'Cyprus',lat:35.1,lon:33.4}
+  ];
+  const w=Math.min(container.clientWidth||700,700);
+  const h=420;
+  const margin={top:16,right:16,bottom:16,left:16};
+  const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+  const lonExt=d3.extent(EUR,d=>d.lon), latExt=d3.extent(EUR,d=>d.lat);
+  const lonPad=(lonExt[1]-lonExt[0])*0.05, latPad=(latExt[1]-latExt[0])*0.05;
+  const x=d3.scaleLinear().domain([lonExt[0]-lonPad,lonExt[1]+lonPad]).range([0,iw]);
+  const y=d3.scaleLinear().domain([latExt[0]-latPad,latExt[1]+latPad]).range([ih,0]);
+
+  const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+  const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+  // Faint backdrop panel
+  g.append('rect').attr('x',0).attr('y',0).attr('width',iw).attr('height',ih)
+    .attr('fill','rgba(255,255,255,0.015)').attr('rx',6);
+
+  // Draw non-focus countries first (grey), then focus on top
+  const ordered=EUR.slice().sort((a,b)=>(FOCUS.has(a.c)?1:0)-(FOCUS.has(b.c)?1:0));
+  ordered.forEach(d=>{
+    const focus=FOCUS.has(d.c);
+    const r=focus?9:5;
+    g.append('circle').attr('cx',x(d.lon)).attr('cy',y(d.lat)).attr('r',r)
+      .attr('fill',focus?'#f97316':'#3f3f46')
+      .attr('stroke',focus?'#fafafa':'rgba(255,255,255,0.12)')
+      .attr('stroke-width',focus?1.2:0.8)
+      .attr('opacity',focus?0.95:0.75)
+      .on('mousemove',e=>showTip(`<strong>${d.n}</strong>${focus?'<br>Focus country':''}`,e))
+      .on('mouseleave',hideTip);
+    g.append('text').attr('x',x(d.lon)).attr('y',y(d.lat)+(focus?-r-5:-r-3))
+      .attr('text-anchor','middle')
+      .attr('fill',focus?'#fafafa':'#71717a')
+      .attr('font-size',focus?'11px':'9px')
+      .attr('font-weight',focus?'700':'500')
+      .text(d.c);
+  });
+
+  // Legend
+  const leg=svg.append('g').attr('transform',`translate(${margin.left+8},${h-18})`);
+  leg.append('circle').attr('cx',6).attr('cy',0).attr('r',6).attr('fill','#f97316').attr('opacity',0.95).attr('stroke','#fafafa').attr('stroke-width',1);
+  leg.append('text').attr('x',18).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('Focus country');
+  leg.append('circle').attr('cx',140).attr('cy',0).attr('r',4).attr('fill','#3f3f46').attr('opacity',0.75).attr('stroke','rgba(255,255,255,0.12)');
+  leg.append('text').attr('x',150).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('EU-27 + EEA (reference)');
+})();
+
+// CHART: Grouped horizontal bars per country
+(function(){
+  const container=document.getElementById('country-bars');
+  if(!container)return;
+  const w=Math.min(container.clientWidth||700,700);
+  const rowH=70;
+  const h=COUNTRIES.length*rowH+60;
+  const margin={top:30,right:20,bottom:36,left:130};
+  const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+  const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+  const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+  const maxV=d3.max(COUNTRIES,d=>d.gross);
+  const x=d3.scaleLinear().domain([0,Math.ceil(maxV)]).range([0,iw]);
+  const y=d3.scaleBand().domain(COUNTRIES.map(d=>d.name)).range([0,ih]).padding(0.25);
+  const barH=y.bandwidth()/3.2;
+
+  // Gridlines
+  const ticks=x.ticks(5);
+  g.append('g').selectAll('line').data(ticks).join('line')
+    .attr('x1',d=>x(d)).attr('x2',d=>x(d)).attr('y1',0).attr('y2',ih)
+    .attr('stroke','rgba(255,255,255,0.04)');
+
+  COUNTRIES.forEach(d=>{
+    const yPos=y(d.name);
+    // Gross exposure (top bar)
+    g.append('rect').attr('x',0).attr('y',yPos)
+      .attr('width',x(d.gross)).attr('height',barH)
+      .attr('rx',2).attr('fill','#f97316').attr('opacity',0.9)
+      .on('mousemove',e=>showTip(`<strong>${d.name}</strong><br>Gross exposure: ${fmtM(d.gross)}`,e))
+      .on('mouseleave',hideTip);
+    g.append('text').attr('x',x(d.gross)+6).attr('y',yPos+barH/2).attr('dy','0.35em')
+      .attr('fill','#fafafa').attr('font-size','11px').attr('font-weight','600').text(fmtM(d.gross));
+
+    // Retirement offset (middle bar, shown as subtracted from gross starting at retire position)
+    g.append('rect').attr('x',x(d.gross-d.retire2035)).attr('y',yPos+barH+4)
+      .attr('width',x(d.retire2035)).attr('height',barH)
+      .attr('rx',2).attr('fill','#71717a').attr('opacity',0.85)
+      .on('mousemove',e=>showTip(`<strong>${d.name}</strong><br>Retirement offset 2035: &minus;${fmtM(d.retire2035)}<br>Buffer share: ${fmtPct(d.buffer)}`,e))
+      .on('mouseleave',hideTip);
+    g.append('text').attr('x',x(d.gross-d.retire2035)-6).attr('y',yPos+barH+4+barH/2).attr('dy','0.35em')
+      .attr('text-anchor','end').attr('fill','#a1a1aa').attr('font-size','11px').attr('font-weight','500')
+      .text('\u2212'+fmtM(d.retire2035));
+
+    // Net need (bottom bar)
+    g.append('rect').attr('x',0).attr('y',yPos+(barH+4)*2)
+      .attr('width',x(d.net2035)).attr('height',barH)
+      .attr('rx',2).attr('fill','#ef4444').attr('opacity',0.9)
+      .on('mousemove',e=>showTip(`<strong>${d.name}</strong><br>Net need 2035: ${fmtM(d.net2035)}`,e))
+      .on('mouseleave',hideTip);
+    g.append('text').attr('x',x(d.net2035)+6).attr('y',yPos+(barH+4)*2+barH/2).attr('dy','0.35em')
+      .attr('fill','#fafafa').attr('font-size','11px').attr('font-weight','600').text(fmtM(d.net2035));
+  });
+
+  // X axis
+  g.append('g').attr('transform',`translate(0,${ih})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d=>d+'M')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+  g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+  g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
+
+  // Y axis — text shifted left to avoid overlap with the retirement-offset minus label on small bars (AT/CH)
+  const yAxisG=g.append('g').call(d3.axisLeft(y).tickSize(0));
+  yAxisG.select('.domain').remove();
+  yAxisG.selectAll('.tick text').attr('x',-14).attr('fill','#a1a1aa').attr('font-size','12px');
+
+  // Legend
+  const legend=svg.append('g').attr('transform',`translate(${margin.left},8)`);
+  const items=[{c:'#f97316',l:'Gross exposure'},{c:'#71717a',l:'Retirement offset'},{c:'#ef4444',l:'Net need 2035'}];
+  let lx=0;
+  items.forEach(it=>{
+    legend.append('rect').attr('x',lx).attr('width',10).attr('height',10).attr('rx',2).attr('fill',it.c).attr('opacity',0.9);
+    const t=legend.append('text').attr('x',lx+14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text(it.l);
+    lx+=it.l.length*6.5+30;
+  });
+})();
+
+// CHART: Per-capita horizontal bars (styled to match index.html race chart vocabulary)
+(function(){
+  const container=document.getElementById('per-capita-chart');
+  if(!container)return;
+  const rows=COUNTRIES.map(d=>({...d,pc:(d.net2035*1000000/WAP[d.code])*100}))
+    .sort((a,b)=>b.pc-a.pc);
+  const w=Math.min(container.clientWidth||700,700);
+  const rowH=52;
+  const h=rows.length*rowH+60;
+  const margin={top:28,right:30,bottom:30,left:200};
+  const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+  const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+  const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+  const x=d3.scaleLinear().domain([0,15]).range([0,iw]);
+  const y=d3.scaleBand().domain(rows.map(d=>d.name)).range([0,ih]).padding(0.35);
+  const barH=y.bandwidth()/1.8;
+
+  // Gridlines
+  g.append('g').selectAll('line').data(x.ticks(6)).join('line')
+    .attr('x1',d=>x(d)).attr('x2',d=>x(d)).attr('y1',0).attr('y2',ih)
+    .attr('stroke','rgba(255,255,255,0.04)');
+
+  rows.forEach(d=>{
+    const yPos=y(d.name)+(y.bandwidth()-barH)/2;
+    g.append('rect').attr('x',0).attr('y',yPos)
+      .attr('width',x(d.pc)).attr('height',barH)
+      .attr('rx',2).attr('fill','#f97316').attr('opacity',0.85)
+      .on('mousemove',e=>showTip(`<strong>${d.name}</strong><br>Net 2035: ${fmtM(d.net2035)}<br>Working-age (15&ndash;64): ${(WAP[d.code]/1000000).toFixed(1)}M<br>Share: ${fmtPct(d.pc)}`,e))
+      .on('mouseleave',hideTip);
+    g.append('text').attr('x',x(d.pc)+6).attr('y',yPos+barH/2).attr('dy','0.35em')
+      .attr('fill','#fafafa').attr('font-size','11px').attr('font-weight','600').text(fmtPct(d.pc));
+  });
+
+  // X axis
+  g.append('g').attr('transform',`translate(0,${ih})`)
+    .call(d3.axisBottom(x).ticks(6).tickFormat(d=>d+'%')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+  g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+  g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
+
+  // Y axis
+  g.append('g').call(d3.axisLeft(y).tickSize(0)).select('.domain').remove();
+  g.selectAll('.tick text').attr('fill','#a1a1aa').attr('font-size','11px');
+
+  // In-chart legend (top, matching race chart placement)
+  const legend=g.append('g').attr('transform','translate(0,-10)');
+  legend.append('rect').attr('width',10).attr('height',10).attr('rx',2).attr('fill','#f97316').attr('opacity',0.85);
+  legend.append('text').attr('x',14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('Net 2035 \u00F7 working-age (15\u201364)');
+})();
+
+// CHART: Buffer-share vs net-need scatter
+(function(){
+  const container=document.getElementById('buffer-scatter');
+  if(!container)return;
+  const w=Math.min(container.clientWidth||700,700);
+  const h=440;
+  const margin={top:24,right:32,bottom:50,left:56};
+  const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+  const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+  const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+  const x=d3.scaleLinear().domain([19,27]).range([0,iw]);
+  const y=d3.scaleLinear().domain([0,7]).range([ih,0]);
+
+  // Grid
+  g.append('g').selectAll('line').data(x.ticks(5)).join('line')
+    .attr('x1',d=>x(d)).attr('x2',d=>x(d)).attr('y1',0).attr('y2',ih)
+    .attr('stroke','rgba(255,255,255,0.04)');
+  g.append('g').selectAll('line').data(y.ticks(5)).join('line')
+    .attr('x1',0).attr('x2',iw).attr('y1',d=>y(d)).attr('y2',d=>y(d))
+    .attr('stroke','rgba(255,255,255,0.04)');
+
+  // Quadrant guides (median-ish)
+  const xMed=22, yMed=3;
+  g.append('line').attr('x1',x(xMed)).attr('x2',x(xMed)).attr('y1',0).attr('y2',ih)
+    .attr('stroke','rgba(249,115,22,0.25)').attr('stroke-dasharray','3,4');
+  g.append('line').attr('x1',0).attr('x2',iw).attr('y1',y(yMed)).attr('y2',y(yMed))
+    .attr('stroke','rgba(249,115,22,0.25)').attr('stroke-dasharray','3,4');
+
+  // Quadrant labels
+  g.append('text').attr('x',x(19.3)).attr('y',y(6.7))
+    .attr('fill','rgba(239,68,68,0.6)').attr('font-size','10px').attr('font-weight','600')
+    .text('LARGE LOAD, SMALL CUSHION');
+  g.append('text').attr('x',x(26.8)).attr('y',y(0.4)).attr('text-anchor','end')
+    .attr('fill','rgba(161,161,170,0.6)').attr('font-size','10px').attr('font-weight','600')
+    .text('SMALL LOAD, LARGE CUSHION');
+
+  // Axes
+  g.append('g').attr('transform',`translate(0,${ih})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d=>d+'%')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+  g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(d=>d+'M')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+  g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+  g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
+
+  // Axis titles
+  g.append('text').attr('x',iw/2).attr('y',ih+38).attr('text-anchor','middle')
+    .attr('fill','#a1a1aa').attr('font-size','12px').text('Retirement buffer share (%)');
+  g.append('text').attr('transform',`translate(-42,${ih/2}) rotate(-90)`).attr('text-anchor','middle')
+    .attr('fill','#a1a1aa').attr('font-size','12px').text('Net reskilling need 2035 (M)');
+
+  // Dots
+  COUNTRIES.forEach(d=>{
+    // Dot size scaled to gross exposure
+    const r=3+Math.sqrt(d.gross)*2;
+    g.append('circle').attr('cx',x(d.buffer)).attr('cy',y(d.net2035)).attr('r',r)
+      .attr('fill','#f97316').attr('opacity',0.85).attr('stroke','#fafafa').attr('stroke-width',1.2)
+      .on('mousemove',e=>showTip(`<strong>${d.name}</strong><br>Buffer: ${fmtPct(d.buffer)}<br>Net 2035: ${fmtM(d.net2035)}<br>Gross exposure: ${fmtM(d.gross)}`,e))
+      .on('mouseleave',hideTip);
+    // Label placement — fixed quadrants to avoid UK/FR and CH/AT collisions
+    let dx=r+6, dy=-r-2, anchor='start';
+    if(d.code==='UK'){dx=r+6; anchor='start'; dy=-r-4}          // top-right
+    if(d.code==='FR'){dx=-(r+6); anchor='end'; dy=r+12}          // bottom-left
+    if(d.code==='CH'){dx=r+6; anchor='start'; dy=-r-4}          // top-right
+    if(d.code==='AT'){dx=-(r+6); anchor='end'; dy=r+12}          // bottom-left
+    if(d.code==='ES'){dx=r+6; anchor='start'; dy=r+12}           // bottom-right
+    if(d.code==='IT'){dx=-(r+6); anchor='end'; dy=-r-4}          // top-left
+    g.append('text').attr('x',x(d.buffer)+dx).attr('y',y(d.net2035)+dy)
+      .attr('text-anchor',anchor).attr('fill','#fafafa').attr('font-size','12px').attr('font-weight','600')
+      .text(d.name);
+  });
+
+  // Caption legend
+  svg.append('text').attr('x',w-margin.right).attr('y',h-6).attr('text-anchor','end')
+    .attr('fill','#71717a').attr('font-size','10px').text('Dot radius scales with gross exposure');
+})();
+
+// PostHog chart tracking
+document.querySelectorAll('.chart-box').forEach(box=>{
+  box.addEventListener('mouseenter',()=>{
+    if(window.posthog)posthog.capture('chart_interacted',{chart:box.querySelector('h3')?.textContent||'unknown',page:'countries'});
+  },{once:true});
+});
+
+// CTA tracking
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(window.posthog)posthog.capture('cta_clicked',{href:btn.getAttribute('href'),text:btn.textContent.trim(),page:'countries'});
+  });
+});
+
+// Scroll depth + outbound click
+setTimeout(function(){
+  if(typeof posthog==='undefined')return;
+  var thresholds=[25,50,75,100], fired={};
+  window.addEventListener('scroll',function(){
+    var h=document.body.scrollHeight-window.innerHeight;
+    if(h<=0)return;
+    var pct=Math.round((window.scrollY/h)*100);
+    thresholds.forEach(function(t){if(pct>=t&&!fired[t]){fired[t]=true;posthog.capture('scroll_depth',{percent:t,page:'countries'})}});
+  },{passive:true});
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){a.addEventListener('click',function(){posthog.capture('outbound_click',{url:a.href,text:a.textContent.trim().slice(0,80),page:'countries'})})});
+},500);
+</script>
+</body>
+</html>
