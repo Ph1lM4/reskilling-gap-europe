@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Can Europe Reskill Fast Enough? &mdash; European Reskilling &amp; AI</title>
+<meta name="description" content="7.55 million EU workers need deep reskilling by 2035. Annual system throughput: ~450K net new. Backlog clearance: 15+ years. The gap between AI displacement and reskilling capacity.">
+<link rel="canonical" href="https://reskilling.nexalps.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Can Europe Reskill Fast Enough?">
+<meta property="og:description" content="7.55M workers need deep reskilling. System throughput: 450K/year. Backlog: 15+ years. The numbers don't work.">
+<meta property="og:url" content="https://reskilling.nexalps.com/">
+<meta property="og:site_name" content="Nexalps">
+<meta property="og:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://reskilling.nexalps.com/og-image.png">
+<meta name="twitter:title" content="Can Europe Reskill Fast Enough?">
+<meta name="twitter:description" content="7.55M workers need deep reskilling. System throughput: 450K/year. Backlog: 15+ years.">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Can Europe Reskill Fast Enough? European Reskilling & AI","description":"Analysis of Europe's reskilling capacity gap: 7.55M workers need deep reskilling by 2035, but system throughput is only 450K/year net new.","url":"https://reskilling.nexalps.com/","datePublished":"2026-04","author":{"@type":"Person","name":"Philipp Maul","url":"https://www.linkedin.com/in/pmaul/","affiliation":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"}},"publisher":{"@type":"Organization","name":"Nexalps","url":"https://nexalps.com"},"keywords":["reskilling","AI displacement","European labour market","vocational training","workforce transition","skills gap","demographic buffer"]}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"How many European workers need reskilling because of AI by 2035?","acceptedAnswer":{"@type":"Answer","text":"Across the EU-27, 38.72 million workers sit in high-exposure roles. After the demographic buffer (8.67 million workers absorbed by retirement by 2035), the net reskilling need is 30.05 million. Of those, 7.55 million need deep cross-occupational reskilling, 15 million need substantial within-field upskilling, and 7.5 million face partial task change."}},
+  {"@type":"Question","name":"Can European reskilling systems keep up with AI adoption?","acceptedAnswer":{"@type":"Answer","text":"No — not at current capacity. Europe's five reskilling channels (university, VET, corporate L&D, ALMP, bootcamps) produce roughly 3.34 million meaningful qualifications per year in total, but that capacity is already consumed by baseline economic churn. Net new throughput available for AI-driven transitions is about 450,000 per year. Clearing the 7.55 million deep-reskilling backlog alone would take 15+ years without capacity expansion."}},
+  {"@type":"Question","name":"Why does AI disrupt faster than reskilling systems can respond?","acceptedAnswer":{"@type":"Answer","text":"Generative AI reaches corporate adoption within 12–36 months of release. European VET and university systems take 3–5 years of tripartite negotiation to update a training ordinance, then another 2–4 years to train workers. The total lag from 'AI disruption identified' to 'first reskilled graduates' is typically 5–9 years. For customer service, admin clerks and writers, the speed gap is structurally 3–5 years."}},
+  {"@type":"Question","name":"Which European country's reskilling system handles AI transitions best?","acceptedAnswer":{"@type":"Answer","text":"Nordic flexicurity (Denmark, Sweden, Finland, Norway) achieves the highest cross-zone transition rate at 8–12%. Germanic Dual System (Germany, Austria, Switzerland) delivers the highest quality but is slower to pivot. Liberal Market (UK, Ireland) is agile via bootcamps but inequitable. Continental Corporatist (France, Netherlands, Belgium) sits mid-table. Central/Eastern and Southern European systems trail at 2–5%."}},
+  {"@type":"Question","name":"Why does reskilling feel harder in 2026 than in past technological transitions?","acceptedAnswer":{"@type":"Answer","text":"Past general-purpose technologies took 15–40 years to mature, giving education systems a generational window to adapt. Generative AI has compressed that window to 12–36 months. The challenge has shifted from skill acquisition (knowledge is abundant and free) to skill evaluation: the credentialing and role-translation mechanisms that make acquired capability legible to employers still operate on pre-digital institutional timelines."}}
+]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])}}(document,window.posthog||[]);
+posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https://eu.i.posthog.com',person_profiles:'identified_only'});
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+:root{
+  --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
+  --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;
+  --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
+  --ring:#f97316;
+  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --font:'Geist',system-ui,-apple-system,sans-serif;
+  --transition:150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+html,body{overflow-x:hidden}
+body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+/* Nav */
+.site-nav{position:fixed;top:0;right:0;left:0;z-index:9999;display:flex;align-items:center;justify-content:flex-end;padding:12px 20px;pointer-events:none}
+.site-nav-links{display:flex;gap:20px;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:8px 16px}
+.site-nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s}
+.site-nav-links a:hover{color:var(--foreground)}
+.site-nav-links a[aria-current="page"]{color:var(--ring)}
+.nav-sep{width:1px;background:var(--border);margin:0 4px;align-self:stretch}
+.burger{display:none;pointer-events:auto;background:rgba(9,9,11,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--card-border);border-radius:var(--radius-md);padding:10px 11px;cursor:pointer;flex-direction:column;gap:4px}
+.burger span{display:block;width:18px;height:2px;background:var(--foreground);border-radius:1px;transition:transform .2s,opacity .2s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.burger-panel{display:none;position:fixed;top:0;left:0;right:0;z-index:9998;background:rgba(9,9,11,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:72px 24px 32px;flex-direction:column;gap:24px}
+.burger-panel.open{display:flex}
+.burger-panel a{font-size:20px;font-weight:600;color:var(--muted);text-decoration:none}
+.burger-panel a:hover{color:var(--foreground)}
+.burger-panel a[aria-current="page"]{color:var(--ring)}
+@media(max-width:768px){.site-nav-links{display:none}.burger{display:flex}}
+
+/* Hero */
+.hero.container{padding-top:80px;padding-bottom:24px}
+.hero h1{font-size:36px;font-weight:700;letter-spacing:-0.03em;line-height:1.15;margin-bottom:12px;max-width:720px}
+.hero .lede{font-size:18px;color:var(--muted);line-height:1.7;max-width:620px;margin-bottom:20px;font-weight:400}
+.hero .byline{font-size:12px;color:var(--muted-foreground);line-height:1.6}
+.hero .byline a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.hero h1{font-size:20px}.hero .lede{font-size:16px}.hero.container{padding-top:64px;padding-bottom:20px}}
+@media(max-width:480px){.hero h1{font-size:20px}.stat-card .stat-value{font-size:18px!important}}
+
+/* Stat cards */
+.stats-bar{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:12px}
+.stat-card{flex:1;min-width:150px;display:flex;flex-direction:column;gap:2px;padding:16px 20px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg)}
+.stat-card .stat-value{font-size:24px;font-weight:700;color:var(--foreground);letter-spacing:-0.025em;line-height:1.2}
+.stat-card .stat-label{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);line-height:1.4}
+.stat-card .stat-sublabel{font-size:10px;color:var(--muted-foreground);opacity:0.7;letter-spacing:0;text-transform:none;line-height:1.5;margin-top:4px}
+@media(max-width:768px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat-card{min-width:0;padding:10px 12px}.stat-card .stat-value{font-size:20px}}
+
+/* Section headings */
+h2{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:48px 0 8px;line-height:1.3}
+h2 .num{color:var(--ring);font-weight:700}
+h2 .subtitle{display:block;font-size:14px;font-weight:400;color:var(--muted)}
+.section-sub{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.5}
+p{font-size:16px;color:#d4d4d8;line-height:1.8}
+
+/* Chart containers */
+.chart-box{margin:24px 0;padding:20px;background:rgba(255,255,255,0.02);border:1px solid var(--card-border);border-radius:var(--radius-md);overflow-x:auto}
+.chart-box h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);margin-bottom:12px}
+.chart-box svg text{font-family:var(--font)}
+
+/* Data tables */
+.data-table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+.data-table th{text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--muted-foreground);padding:8px 12px;border-bottom:1px solid var(--border)}
+.data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border)}
+.data-table tr:last-child td{border-bottom:none}
+@media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
+
+/* Highlight boxes */
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
+
+/* Author note */
+.author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
+.author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
+.author-note p{font-size:15px;color:#d4d4d8;line-height:1.8;margin:8px 0}
+.author-note .sig{margin-top:16px;font-size:14px;font-weight:500;color:var(--muted-foreground)}
+
+/* CTA */
+.cta-bar{max-width:760px;margin:48px auto;padding:32px 24px;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);text-align:center}
+.cta-bar h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.cta-bar p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.btn{display:inline-block;padding:10px 24px;border-radius:var(--radius-md);font-family:var(--font);font-size:14px;font-weight:600;text-decoration:none;transition:all var(--transition)}
+.btn-primary{background:var(--ring);color:#000}
+.btn-primary:hover{background:#fb923c}
+.btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--foreground)}
+.btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{padding:24px 0 40px;font-size:12px;color:var(--muted-foreground);line-height:1.7;border-top:1px solid var(--card-border);margin-top:48px}
+.footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+.footer a:hover{color:var(--foreground)}
+
+/* Unified body-prose links */
+main p a, main li a, main td a, main .highlight a, main .author-note a, main .chart-caption a{color:var(--foreground);text-decoration:underline;text-underline-offset:2px;transition:color var(--transition)}
+main p a:visited, main li a:visited, main td a:visited, main .highlight a:visited, main .author-note a:visited, main .chart-caption a:visited{color:var(--foreground)}
+main p a:hover, main li a:hover, main td a:hover, main .highlight a:hover, main .author-note a:hover, main .chart-caption a:hover{color:var(--ring)}
+
+/* Tooltip */
+.chart-tooltip{position:absolute;pointer-events:none;background:rgba(10,10,12,0.95);border:1px solid var(--card-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--foreground);z-index:100;white-space:nowrap;backdrop-filter:blur(8px)}
+
+/* Feasibility badges */
+.feasibility{display:inline-block;padding:2px 8px;border-radius:9999px;font-size:11px;font-weight:600}
+.feasibility-high{background:rgba(34,197,94,0.12);color:#86efac;border:1px solid rgba(34,197,94,0.2)}
+.feasibility-moderate{background:rgba(234,179,8,0.12);color:#fde047;border:1px solid rgba(234,179,8,0.2)}
+.feasibility-low{background:rgba(239,68,68,0.12);color:#fca5a5;border:1px solid rgba(239,68,68,0.2)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+@media(max-width:768px){.container,.container-narrow{padding:0 16px}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="site-nav-links">
+    <a href="index.html" aria-current="page">Overview</a>
+    <a href="transitions.html">Transitions</a>
+    <a href="lenses.html">Lenses</a>
+    <span class="nav-sep"></span>
+    <a href="systems.html">Systems</a>
+    <a href="countries.html">Countries</a>
+    <a href="dach.html">DACH</a>
+    <a href="sources.html">Sources</a>
+    <span class="nav-sep"></span>
+    <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+    <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+    <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+    <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+  </div>
+  <button class="burger" id="burger-btn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="burger-panel" id="burger-panel" role="dialog" aria-label="Navigation menu">
+  <a href="index.html" aria-current="page">Overview</a>
+  <a href="transitions.html">Transitions</a>
+  <a href="lenses.html">Lenses</a>
+  <a href="systems.html">Systems</a>
+  <a href="countries.html">Countries</a>
+  <a href="dach.html">DACH</a>
+  <a href="sources.html">Sources</a>
+  <span style="height:1px;background:var(--border);margin:4px 0"></span>
+  <a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">AI Exposure &#8599;</a>
+  <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Job Market &#8599;</a>
+  <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Disruptions &#8599;</a>
+  <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Demographics &#8599;</a>
+</div>
+
+<main id="main" role="main">
+
+<!-- HERO -->
+<header class="hero container">
+  <h1>Can Europe Reskill Fast Enough?</h1>
+  <p class="lede">7.55&nbsp;million workers need deep reskilling by 2035. The system produces ~450K net new transitions per year. The backlog takes 15+ years to clear. The numbers don&rsquo;t work.</p>
+  <p class="byline">By <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a> &middot; April 2026 &middot; Part 5 of 7 in the European AI Labour Market suite</p>
+  <p class="byline">Based on <a href="sources.html">63 primary sources</a> including Gathmann &amp; Sch&ouml;nberg, ILO, Jacobson et al., Bertheau et al. and Anthropic.</p>
+</header>
+
+<!-- STAT CARDS -->
+<section class="stats-bar container" role="region" aria-label="Summary statistics">
+  <div class="stat-card">
+    <span class="stat-value">7.55M</span>
+    <span class="stat-label">Deep reskilling needed</span>
+    <span class="stat-sublabel">Cross-occupational transitions by 2035</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">15M</span>
+    <span class="stat-label">Upskilling needed</span>
+    <span class="stat-sublabel">Within-occupation adaptation</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">~450K/yr</span>
+    <span class="stat-label">Net new throughput</span>
+    <span class="stat-sublabel">Current capacity already saturated</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-value">15+ yrs</span>
+    <span class="stat-label">Backlog clearance</span>
+    <span class="stat-sublabel">Without capacity expansion</span>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+<!-- S1: SIZING THE NEED -->
+<h2><span class="num">1.</span> Sizing the Need <span class="subtitle">From gross exposure to net reskilling gap</span></h2>
+
+<p>Across the EU-27, 38.72&nbsp;million workers sit in roles where AI will displace or fundamentally transform more than 40% of their tasks within a decade. Clerical workers (ISCO 4) face the highest aggregate exposure. But not every displaced role means an unemployed worker.</p>
+
+<p>The demographic buffer matters. Approximately 22.4% of high-exposure roles are held by workers aged 55&ndash;64. By 2035, roughly 8.67&nbsp;million of the &ldquo;displaced&rdquo; roles will be vacated naturally through retirement &mdash; AI fills the gap without creating unemployment. In clerical groups, retirement absorbs 28&ndash;32% of the displacement. In programming and data roles, it absorbs less than 10%.</p>
+
+<p>After subtracting retirements, the EU-27 faces a <strong>net reskilling need of 30.05&nbsp;million workers by 2035</strong>. Of these, 7.55&nbsp;million need deep reskilling &mdash; a complete change of occupation &mdash; while 15&nbsp;million need substantial upskilling within their current field.</p>
+
+<!-- CHART 1: WATERFALL + COMPOSITION -->
+<div class="chart-box" role="img" aria-label="Two-part chart. Top: waterfall showing 38.72 million high-exposure workers minus 8.67 million retirement offset equals 30.05 million net reskilling need. Bottom: stacked bar breaking down the 30.05 million into deep reskilling, upskilling, and other affected workers.">
+  <h3>The Reskilling Gap &mdash; From Gross Exposure to Net Need (EU-27, millions)</h3>
+  <div id="waterfall-chart"></div>
+  <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--card-border)">
+    <h3 style="margin-bottom:12px">What the 30M Net Need Looks Like</h3>
+    <div id="composition-chart"></div>
+  </div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th scope="col">Stage</th><th scope="col">Workers (millions)</th></tr></thead>
+      <tbody>
+        <tr><td>High-exposure roles (total)</td><td>38.72</td></tr>
+        <tr><td>Retirement offset by 2035</td><td>&minus;8.67</td></tr>
+        <tr><td>Net reskilling need</td><td>30.05</td></tr>
+        <tr><td>&mdash; Deep reskilling (cross-occupational)</td><td>7.55</td></tr>
+        <tr><td>&mdash; Substantial upskilling (within-occupation)</td><td>15.00</td></tr>
+        <tr><td>&mdash; Other affected (partial task change)</td><td>7.50</td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<!-- S2: THE SPEED GAP -->
+<h2><span class="num">2.</span> The Speed Gap <span class="subtitle">AI disrupts in 1&ndash;3 years. Systems respond in 5&ndash;9.</span></h2>
+
+<p>Previous general-purpose technologies took 15&ndash;40 years to mature, giving education systems a generational window to adapt. Generative AI breaks this pattern. Corporate adoption of LLMs for code generation, document review, and customer service is scaling within 12&ndash;36 months of release.</p>
+
+<p>European VET and university systems respond on a different clock. Updating a national training ordinance takes 3&ndash;5 years of tripartite negotiation before the first student even enrols. Training then takes another 2&ndash;4 years. The total lag from &ldquo;AI disruption identified&rdquo; to &ldquo;first reskilled graduates&rdquo; is typically 5&ndash;9 years.</p>
+
+<!-- CHART 2: RACE CHART -->
+<div class="chart-box" role="img" aria-label="Paired horizontal bar chart showing AI disruption speed versus system response time for 5 occupation groups. Admin clerks and writers face the largest speed gaps of 3-5 years.">
+  <h3>The Race &mdash; Disruption Speed vs System Response (years)</h3>
+  <div id="race-chart"></div>
+  <details><summary style="font-size:12px;color:var(--muted-foreground);cursor:pointer;margin-top:12px">View data as table</summary>
+    <table class="data-table" style="margin-top:8px">
+      <thead><tr><th scope="col">Occupation Group</th><th scope="col">AI Disruption</th><th scope="col">System Response</th><th scope="col">Speed Gap</th><th scope="col">Viability</th></tr></thead>
+      <tbody>
+        <tr><td>ICT Professionals</td><td>1&ndash;3 yrs</td><td>1&ndash;2 yrs</td><td>+0&ndash;1 yr</td><td><span class="feasibility feasibility-high">High</span></td></tr>
+        <tr><td>Legal &amp; Financial Analysts</td><td>3&ndash;6 yrs</td><td>3&ndash;5 yrs</td><td>+0&ndash;2 yrs</td><td><span class="feasibility feasibility-moderate">Medium</span></td></tr>
+        <tr><td>Customer Service / Call Centres</td><td>2&ndash;4 yrs</td><td>4&ndash;6 yrs</td><td>+2&ndash;4 yrs</td><td><span class="feasibility feasibility-low">Low</span></td></tr>
+        <tr><td>Data Entry / Admin Clerks</td><td>2&ndash;5 yrs</td><td>5&ndash;7 yrs</td><td>+3&ndash;5 yrs</td><td><span class="feasibility feasibility-low">Low</span></td></tr>
+        <tr><td>Writers / Translators</td><td>1&ndash;3 yrs</td><td>4&ndash;6 yrs</td><td>+3&ndash;5 yrs</td><td><span class="feasibility feasibility-moderate">Medium</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
+<p style="font-size:14px;color:var(--muted);margin-top:-12px;line-height:1.6">High-skill, high-wage roles close the gap through agile private markets and corporate L&amp;D. For the millions of clerical and customer service workers, reliance on slow-moving public systems guarantees 3&ndash;5 years of structural friction.</p>
+
+<!-- S3: THE CAPACITY DEFICIT -->
+<h2><span class="num">3.</span> The Capacity Deficit <span class="subtitle">3.34M throughput, already saturated</span></h2>
+
+<p>Europe&rsquo;s annual reskilling throughput &mdash; the number of workers completing meaningful, qualification-producing training &mdash; totals roughly 3.34&nbsp;million across five channels. But this capacity is already consumed by baseline economic churn: routine career changes, green-transition demands, post-COVID reallocations. The AI reskilling need is <strong>additive</strong>, not a replacement.</p>
+
+<table class="data-table">
+  <thead><tr><th scope="col">Channel</th><th scope="col">Annual Throughput</th><th scope="col">Key Limitation</th></tr></thead>
+  <tbody>
+    <tr><td>University (returning adults 30+)</td><td>380,000</td><td>3&ndash;5 year time-to-degree; high opportunity cost</td></tr>
+    <tr><td>VET / Apprenticeships (adult)</td><td>880,000</td><td>Practically age-limited; stigma in Southern states</td></tr>
+    <tr><td>Corporate L&amp;D (structural)</td><td>1,250,000</td><td>Biased to already-advantaged; incremental, not cross-sector</td></tr>
+    <tr><td>Government ALMP</td><td>650,000</td><td>High deadweight loss; trains for current not future</td></tr>
+    <tr><td>Bootcamps / Micro-credentials</td><td>180,000</td><td>Uncertain employer recognition; basic coding focus</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>3,340,000</strong></td><td><strong>Already saturated by baseline churn</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="highlight">
+  <h3>The arithmetic</h3>
+  <p>To service both baseline economic needs <em>and</em> the AI transition, Europe must effectively <strong>double</strong> its output of deep, meaningful qualifications. Without expansion, processing the AI-displaced cohort alone would take approximately 18 years.</p>
+</div>
+
+<!-- NOTE ON SOURCE GEOGRAPHY -->
+<div class="highlight">
+  <h3>A note on source geography</h3>
+  <p>Some underlying research (Massenkoff &amp; McCrory 2026 &mdash; Anthropic; Brynjolfsson et&nbsp;al. 2025) is US-sourced and applied to Europe as a leading indicator. See <a href="sources.html#limitations">Sources</a> for the methodology caveat.</p>
+</div>
+
+<!-- AUTHOR NOTE -->
+<div class="author-note">
+  <h3>What this layer connects to</h3>
+  <p><a href="https://ai-exposure.nexalps.com/" target="_blank" rel="noopener">Layer 1</a> showed <em>which</em> jobs AI hits. <a href="https://job-market.nexalps.com/" target="_blank" rel="noopener">Layer 2</a> showed where demand is going. <a href="https://disruptions.nexalps.com/" target="_blank" rel="noopener">Layer 3</a> showed what happened every other time technology restructured work. <a href="https://demographics.nexalps.com/" target="_blank" rel="noopener">Layer 4</a> showed that Europe&rsquo;s workforce is shrinking. This layer asks: given all of that, can Europe actually retrain people fast enough?</p>
+  <p>The answer is no &mdash; not with current capacity. What follows is why the bridge between surplus and shortage is structurally unwalkable, and which systems come closest to making it work.</p>
+  <div class="sig">&mdash; Philipp Maul, Nexalps</div>
+</div>
+
+<!-- CTA -->
+<div class="cta-bar">
+  <h3>The bridge nobody can walk</h3>
+  <p>Skills distance 6.8/10. Certification walls of 12&ndash;42 months. A wage cliff of &minus;25% to &minus;40%. See why fewer than 8% of displaced Zone A workers will transition to Zone C.</p>
+  <div class="btn-row">
+    <a href="transitions.html" class="btn btn-primary">See the transition matrix &rarr;</a>
+    <a href="systems.html" class="btn btn-outline">Which systems come closest &rarr;</a>
+  </div>
+</div>
+
+</div><!-- /container-narrow -->
+
+<footer class="footer container" role="contentinfo">
+  Can Europe Reskill Fast Enough? v1.0 &middot; April 2026 &middot; Source on GitHub<br>
+  <a href="index.html">Overview</a> &middot; <a href="transitions.html">Transitions</a> &middot; <a href="lenses.html">Lenses</a> &middot; <a href="systems.html">Systems</a> &middot; <a href="countries.html">Countries</a> &middot; <a href="dach.html">DACH</a> &middot; <a href="sources.html">Sources</a><br>
+  Built by <a href="https://www.linkedin.com/in/pmaul/" target="_blank" rel="noopener">Philipp Maul</a> &middot; <a href="https://nexalps.com" target="_blank" rel="noopener">Nexalps</a><br>
+  Code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a> &middot; Data &amp; Analysis: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY 4.0</a> Philipp Maul | Nexalps
+</footer>
+
+</main>
+
+<!-- TOOLTIP -->
+<div class="chart-tooltip" id="tooltip" style="display:none"></div>
+
+<script>
+// Burger menu
+const burgerBtn=document.getElementById('burger-btn'),burgerPanel=document.getElementById('burger-panel');
+burgerBtn.addEventListener('click',()=>{const open=burgerBtn.classList.toggle('open');burgerPanel.classList.toggle('open');burgerBtn.setAttribute('aria-expanded',open)});
+
+// Load data and render charts
+d3.json('reskilling-data.json').then(data=>{
+  const tooltip=d3.select('#tooltip');
+  const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dur=prefersReducedMotion?0:600;
+
+  // CHART 1: Clean 3-bar Waterfall
+  (function(){
+    const container=document.getElementById('waterfall-chart');
+    if(!container)return;
+    const w=Math.min(container.clientWidth||700,700),h=220;
+    const margin={top:16,right:80,bottom:40,left:180};
+    const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+    const items=[
+      {label:'High-exposure roles',value:38.72,color:'#f97316',start:0},
+      {label:'Retirement offset',value:8.67,color:'#71717a',start:38.72-8.67},
+      {label:'Net reskilling need',value:30.05,color:'#ef4444',start:0}
+    ];
+
+    const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+    const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+    const x=d3.scaleLinear().domain([0,42]).range([0,iw]);
+    const y=d3.scaleBand().domain(items.map(d=>d.label)).range([0,ih]).padding(0.35);
+
+    // Connector lines between bars
+    g.append('line').attr('x1',x(38.72)).attr('x2',x(38.72)).attr('y1',y('High-exposure roles')+y.bandwidth()).attr('y2',y('Retirement offset')).attr('stroke','rgba(255,255,255,0.15)').attr('stroke-dasharray','3,3');
+    g.append('line').attr('x1',x(30.05)).attr('x2',x(30.05)).attr('y1',y('Retirement offset')+y.bandwidth()).attr('y2',y('Net reskilling need')).attr('stroke','rgba(255,255,255,0.15)').attr('stroke-dasharray','3,3');
+
+    // Bars
+    items.forEach(d=>{
+      g.append('rect').attr('y',y(d.label)).attr('height',y.bandwidth())
+        .attr('x',x(d.start)).attr('width',x(d.value)).attr('rx',3)
+        .attr('fill',d.color).attr('opacity',0.9);
+      // Value label
+      g.append('text').attr('y',y(d.label)+y.bandwidth()/2).attr('x',x(d.start+d.value)+6)
+        .attr('dy','0.35em').attr('fill','#fafafa').attr('font-size','14px').attr('font-weight','700')
+        .text(d.label==='Retirement offset'?'\u2212'+d.value.toFixed(1)+'M':d.value.toFixed(1)+'M');
+    });
+
+    // Y axis
+    g.append('g').call(d3.axisLeft(y).tickSize(0)).select('.domain').remove();
+    g.selectAll('.tick text').attr('fill','#a1a1aa').attr('font-size','13px');
+
+    // Legend
+    const wfLeg=g.append('g').attr('transform',`translate(-140,${ih+14})`);
+    [{color:'#f97316',label:'Gross exposure'},{color:'#71717a',label:'Retirement offset'},{color:'#ef4444',label:'Net reskilling need'}].forEach((item,i)=>{
+      const xOff=i*155;
+      wfLeg.append('rect').attr('x',xOff).attr('width',10).attr('height',10).attr('rx',2).attr('fill',item.color).attr('opacity',0.9);
+      wfLeg.append('text').attr('x',xOff+14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text(item.label);
+    });
+  })();
+
+  // CHART 1b: Composition of the 30M
+  (function(){
+    const container=document.getElementById('composition-chart');
+    if(!container)return;
+    const w=Math.min(container.clientWidth||700,700),h=80;
+    const margin={top:4,right:20,bottom:30,left:0};
+    const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+    const segments=[
+      {label:'Deep reskilling',value:7.55,color:'#ef4444',desc:'Must change occupation entirely'},
+      {label:'Substantial upskilling',value:15.00,color:'#f97316',desc:'Major skill adaptation within field'},
+      {label:'Partial task change',value:7.50,color:'#71717a',desc:'Moderate AI-driven role evolution'}
+    ];
+    const total=segments.reduce((s,d)=>s+d.value,0);
+    const x=d3.scaleLinear().domain([0,total]).range([0,iw]);
+
+    const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+    const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+    let cumX=0;
+    segments.forEach(d=>{
+      const barW=x(d.value);
+      g.append('rect').attr('x',cumX).attr('y',0).attr('width',barW-2).attr('height',ih-20)
+        .attr('rx',3).attr('fill',d.color).attr('opacity',0.85);
+      // In-bar label (only if wide enough)
+      if(barW>60){
+        g.append('text').attr('x',cumX+barW/2).attr('y',(ih-20)/2)
+          .attr('dy','0.35em').attr('text-anchor','middle')
+          .attr('fill',d.color==='#71717a'?'#d4d4d8':'#000').attr('font-size','12px').attr('font-weight','700')
+          .text(d.value.toFixed(1)+'M');
+      }
+      cumX+=barW;
+    });
+
+    // Legend below
+    const leg=g.append('g').attr('transform',`translate(0,${ih-6})`);
+    let legX=0;
+    segments.forEach(d=>{
+      leg.append('rect').attr('x',legX).attr('width',10).attr('height',10).attr('rx',2).attr('fill',d.color).attr('opacity',0.85);
+      leg.append('text').attr('x',legX+14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text(`${d.label} (${d.value.toFixed(1)}M)`);
+      legX+=d.label.length*7+80;
+    });
+  })();
+
+  // CHART 2: Race Chart
+  (function(){
+    const container=document.getElementById('race-chart');
+    if(!container)return;
+    const speedData=data.speed_gap;
+    const w=Math.min(container.clientWidth||700,700),h=speedData.length*70+60;
+    const margin={top:20,right:30,bottom:30,left:200};
+    const iw=w-margin.left-margin.right,ih=h-margin.top-margin.bottom;
+
+    const svg=d3.select(container).append('svg').attr('width',w).attr('height',h).attr('role','img');
+    const g=svg.append('g').attr('transform',`translate(${margin.left},${margin.top})`);
+
+    const x=d3.scaleLinear().domain([0,8]).range([0,iw]);
+    const y=d3.scaleBand().domain(speedData.map(d=>d.occupation)).range([0,ih]).padding(0.35);
+    const barH=y.bandwidth()/2.4;
+
+    speedData.forEach(d=>{
+      const yPos=y(d.occupation);
+      // Disruption bar
+      g.append('rect').attr('x',x(d.disruption_years_low)).attr('y',yPos)
+        .attr('width',x(d.disruption_years_high)-x(d.disruption_years_low)).attr('height',barH)
+        .attr('rx',2).attr('fill','#f97316').attr('opacity',0.85);
+      // Response bar
+      g.append('rect').attr('x',x(d.response_years_low)).attr('y',yPos+barH+4)
+        .attr('width',x(d.response_years_high)-x(d.response_years_low)).attr('height',barH)
+        .attr('rx',2).attr('fill','#71717a').attr('opacity',0.7);
+      // Gap zone
+      if(d.response_years_low>d.disruption_years_high){
+        g.append('rect').attr('x',x(d.disruption_years_high)).attr('y',yPos-2)
+          .attr('width',x(d.response_years_low)-x(d.disruption_years_high)).attr('height',barH*2+8)
+          .attr('rx',2).attr('fill','rgba(239,68,68,0.1)').attr('stroke','rgba(239,68,68,0.3)').attr('stroke-dasharray','3,3');
+      }
+    });
+
+    // X axis
+    g.append('g').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).ticks(8).tickFormat(d=>d+'yr')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
+    g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+    g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
+
+    // Y axis
+    g.append('g').call(d3.axisLeft(y).tickSize(0)).select('.domain').remove();
+    g.selectAll('.tick text').attr('fill','#a1a1aa').attr('font-size','11px');
+
+    // Legend
+    const legend=g.append('g').attr('transform',`translate(0,-8)`);
+    legend.append('rect').attr('width',10).attr('height',10).attr('rx',2).attr('fill','#f97316');
+    legend.append('text').attr('x',14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('AI disruption');
+    legend.append('rect').attr('x',110).attr('width',10).attr('height',10).attr('rx',2).attr('fill','#71717a');
+    legend.append('text').attr('x',124).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('System response');
+    legend.append('rect').attr('x',240).attr('width',10).attr('height',10).attr('rx',2).attr('fill','rgba(239,68,68,0.15)').attr('stroke','rgba(239,68,68,0.4)').attr('stroke-dasharray','3,3');
+    legend.append('text').attr('x',254).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('Speed gap');
+  })();
+
+  // PostHog chart interaction tracking
+  document.querySelectorAll('.chart-box').forEach(box=>{
+    box.addEventListener('mouseenter',()=>{
+      if(window.posthog)posthog.capture('chart_interacted',{chart:box.querySelector('h3')?.textContent||'unknown'});
+    },{once:true});
+  });
+});
+
+// CTA tracking
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(window.posthog)posthog.capture('cta_clicked',{href:btn.getAttribute('href'),text:btn.textContent.trim(),page:'overview'});
+  });
+});
+
+// Scroll depth + outbound click
+setTimeout(function(){
+  if(typeof posthog==='undefined')return;
+  var thresholds=[25,50,75,100], fired={};
+  window.addEventListener('scroll',function(){
+    var h=document.body.scrollHeight-window.innerHeight;
+    if(h<=0)return;
+    var pct=Math.round((window.scrollY/h)*100);
+    thresholds.forEach(function(t){if(pct>=t&&!fired[t]){fired[t]=true;posthog.capture('scroll_depth',{percent:t,page:'overview'})}});
+  },{passive:true});
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){a.addEventListener('click',function(){posthog.capture('outbound_click',{url:a.href,text:a.textContent.trim().slice(0,80),page:'overview'})})});
+},500);
+</script>
+</body>
+</html>

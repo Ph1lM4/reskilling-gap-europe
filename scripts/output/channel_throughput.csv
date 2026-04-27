@@ -1,0 +1,7 @@
+channel,source_code,throughput_low,throughput_central,throughput_high,reskilling_relevance,quality_tier
+University adult returners,educ_uoe_enra02,320000,380000,450000,0.55,1
+VET / apprenticeships (CVET),cedefop_kiv,720000,880000,1050000,0.85,1
+Corporate L&D,technavio_fosway,800000,1250000,1700000,0.45,3
+Government ALMP (Category 2 training),empl_lmp_expsumm,520000,650000,780000,0.7,2
+Bootcamps / micro-credentials,career_karma_cpf,140000,180000,230000,0.75,3
+TOTAL,,2500000,3340000,4210000,,
