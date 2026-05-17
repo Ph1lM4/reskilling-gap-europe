@@ -79,18 +79,19 @@ This is Part 5 of 7 in the European AI Labour Market suite:
 3. **[Disruptions](https://disruptions.nexalps.com)** — 580 years of technology shocks, 20 case studies, 5 disruption patterns (*what happened every other time*)
 4. **[Demographics](https://demographics.nexalps.com)** — Population × AI substitution through 2050 (*the structural constraint*)
 5. **[Reskilling](https://reskilling.nexalps.com)** — Capacity vs need, the bridge nobody can walk *(this repo)*
-6. *Coming soon*
+6. **[Synthesis](https://synthesis.nexalps.com)** — 36 markets stress-tested across five lenses and eight scenarios, bracketed by four fragility classes; 9 hold up under a softer rule, 0 under the strict one (*what survives the stress test*)
 7. *Coming soon*
 
-**How the five products connect:**
+**How the six products connect:**
 
 - `ai-exposure.nexalps.com` = **which jobs** AI hits
 - `job-market.nexalps.com` = **where demand** is going
 - `disruptions.nexalps.com` = **what happened every other time**
 - `demographics.nexalps.com` = **the structural constraint** (population × AI mismatch)
 - `reskilling.nexalps.com` = **whether the bridge is walkable** (capacity vs need)
+- `synthesis.nexalps.com` = **what survives the stress test** (5 lenses × 8 scenarios × 36 markets)
 
-ISCO-08 codes bridge all five products. Shared design system (shadcn dark, Geist font, `#f97316` orange accent).
+ISCO-08 codes bridge the upstream five products; the synthesis aggregates them into country-level corridors and fragility classes. Shared design system (shadcn dark, Geist font, `#f97316` orange accent).
 
 ## Preview Locally
 
