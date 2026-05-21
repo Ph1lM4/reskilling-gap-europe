@@ -70,9 +70,9 @@
       {"destination": "Zone A+ (augmented knowledge work)", "share_low": 15, "share_high": 25, "color": "#4ade80", "rationale": "Shortest skills bridge, no certification wall, wage-positive"},
       {"destination": "Lateral moves within Zone A", "share_low": 10, "share_high": 15, "color": "#86efac", "rationale": "Similar roles in less-automated organisations; delays but doesn't prevent transition"},
       {"destination": "Absorbed by retirement", "share_low": 10, "share_high": 15, "color": "#a1a1aa", "rationale": "20-25% of Zone A aged 55+; clerical workers have lowest propensity to work past pension age"},
-      {"destination": "Zone C — care work", "share_low": 3, "share_high": 6, "color": "#fde047", "rationale": "Most feasible cross-zone path; transferable interpersonal skills; gender-compatible"},
-      {"destination": "Zone C — skilled trades", "share_low": 0.5, "share_high": 2, "color": "#f97316", "rationale": "Near-total skills discontinuity; gender mismatch; physical demands exclude 50+"},
-      {"destination": "Zone C — other (education, transport)", "share_low": 1, "share_high": 3, "color": "#fdba74", "rationale": "Early childhood education for social/cultural profs; transport for numerical clerks"},
+      {"destination": "Zone C: care work", "share_low": 3, "share_high": 6, "color": "#fde047", "rationale": "Most feasible cross-zone path; transferable interpersonal skills; gender-compatible"},
+      {"destination": "Zone C: skilled trades", "share_low": 0.5, "share_high": 2, "color": "#f97316", "rationale": "Near-total skills discontinuity; gender mismatch; physical demands exclude 50+"},
+      {"destination": "Zone C: other (education, transport)", "share_low": 1, "share_high": 3, "color": "#fdba74", "rationale": "Early childhood education for social/cultural profs; transport for numerical clerks"},
       {"destination": "Not successfully transitioning", "share_low": 40, "share_high": 60, "color": "#ef4444", "rationale": "Underemployment, long-term unemployment, labour force exit, disability pathways"}
     ]
   },
@@ -156,7 +156,7 @@
     "it_course_uptake": 96000,
     "career_advancement_pct": 64,
     "ai_uptake_multiplier": 3,
-    "model": "SkillsFuture — continuous credit to all citizens 25+; massive mid-career 'skills reboots' for 40+"
+    "model": "SkillsFuture: continuous credit to all citizens 25+; massive mid-career 'skills reboots' for 40+"
   },
   "entry_level_impact": {
     "source": "Massenkoff & McCrory 2026",
@@ -257,8 +257,8 @@
       "headline": {"deep_reskilling": 7550000, "upskilling": 15000000, "partial_change": 7500000, "split_pct": "25/50/25"},
       "status": "material_disagreement_flagged",
       "primary_sources": [
-        "Anthropic Economic Index v2 (Handa et al. 2025) — HuggingFace Anthropic/EconomicIndex, CC-BY",
-        "Microsoft Working with AI (Tomlinson et al. 2025) — github.com/microsoft/working-with-ai"
+        "Anthropic Economic Index v2 (Handa et al. 2025) · HuggingFace Anthropic/EconomicIndex, CC-BY",
+        "Microsoft Working with AI (Tomlinson et al. 2025) · github.com/microsoft/working-with-ai"
       ],
       "methods": [
         {"name": "Anthropic Economic Index only",    "deep": 3338888, "upskilling":  5843055, "partial": 20868055, "split_pct": "11/19/69", "note": "Figure 4 CDF: 4% of occupations >=75% task coverage, 11% >=50%, 36% >=25%. Renormalised to the >=25% pool."},
@@ -456,7 +456,7 @@
         "share_of_7country_net_pct": 32.6
       },
       "germany_delta_retirement_2035_vs_by_country_pct": -10.7,
-      "germany_delta_note": "Grounded retirement offset for Germany lands at 1.83M vs the proportional-allocation headline of 2.05M. DE's 55-64 employment share in high-exposure roles (21.9%) is on the group mean, but the statutory retirement schedule's 2025->2035 shift from 66 to 67 pulls a larger fraction of potential retirees back into the labour force than the headline allocation assumes. The uniquely large (-10.7%) delta reflects German workforce ageing interacting with Rente-mit-67 phase-in, not a measurement error.",
+      "germany_delta_note": "Grounded retirement offset for Germany is 1.83M vs the proportional-allocation headline of 2.05M. DE's 55-64 employment share in high-exposure roles (21.9%) is on the group mean, but the statutory retirement schedule's 2025->2035 shift from 66 to 67 pulls a larger fraction of potential retirees back into the labour force than the headline allocation assumes. The uniquely large (-10.7%) delta reflects German workforce ageing interacting with Rente-mit-67 phase-in, not a measurement error.",
       "ch_ict_shortfall_2033": {
         "additional_specialists_needed": 117900,
         "current_graduation_per_year": 3500,
