@@ -27,7 +27,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
 <script>
@@ -38,7 +38,10 @@ posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https:
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-:root{--background:#09090b;--foreground:#fafafa;--card:#0a0a0c;--card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;--accent:#27272a;--border:rgba(255,255,255,0.12);--ring:#f97316;--radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;--font:'Geist',system-ui,-apple-system,sans-serif;--transition:150ms cubic-bezier(0.4,0,0.2,1)}
+:root{/* Nexalps brand tokens v1 (2026-06-11) — SSOT: nexalps-website/DESIGN-TOKEN-UNIFICATION.md */--brand-teal:#0D9488;--brand-teal-text:#087569;--font-mono:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;--font-serif:'Source Serif 4',Georgia,serif;/* data ink — governed, values unchanged; charts keep literals in JS */--data-orange:#f97316;--data-red:#ef4444;--data-yellow:#eab308;--data-green:#22c55e;--data-blue:#3b82f6;--data-cyan:#06b6d4;--background:#09090b;--foreground:#fafafa;--card:#0a0a0c;--card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;--accent:#27272a;--border:rgba(255,255,255,0.12);--ring:var(--brand-teal);--radius-sm:0px;--radius-md:0px;--radius-lg:0px;--radius-xl:0px;--font:'Geist',system-ui,-apple-system,sans-serif;--transition:150ms cubic-bezier(0.4,0,0.2,1)}
+/* Nexalps type: mono for data ink (tokens v1) */
+.stat-value,.num,svg .tick text{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+
 html,body{overflow-x:hidden}
 body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
 .skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}.skip-link:focus{top:0}
@@ -96,7 +99,7 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
 @media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
 
 /* Highlight boxes */
-.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(13,148,136,0.12);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
 .highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
 .highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
 
@@ -429,7 +432,7 @@ function hideTip(){tooltip.style('display','none')}
       .on('mouseleave',hideTip);
     g.append('text').attr('x',x(d.lon)).attr('y',y(d.lat)+(focus?-r-5:-r-3))
       .attr('text-anchor','middle')
-      .attr('fill',focus?'#fafafa':'#71717a')
+      .attr('fill',focus?'#fafafa':'#7d7d86')
       .attr('font-size',focus?'11px':'9px')
       .attr('font-weight',focus?'700':'500')
       .text(d.c);
@@ -481,7 +484,7 @@ function hideTip(){tooltip.style('display','none')}
     // Retirement offset (middle bar, shown as subtracted from gross starting at retire position)
     g.append('rect').attr('x',x(d.gross-d.retire2035)).attr('y',yPos+barH+4)
       .attr('width',x(d.retire2035)).attr('height',barH)
-      .attr('rx',2).attr('fill','#71717a').attr('opacity',0.85)
+      .attr('rx',2).attr('fill','#7d7d86').attr('opacity',0.85)
       .on('mousemove',e=>showTip(`<strong>${d.name}</strong><br>Retirement offset 2035: &minus;${fmtM(d.retire2035)}<br>Buffer share: ${fmtPct(d.buffer)}`,e))
       .on('mouseleave',hideTip);
     g.append('text').attr('x',x(d.gross-d.retire2035)-6).attr('y',yPos+barH+4+barH/2).attr('dy','0.35em')
@@ -501,7 +504,7 @@ function hideTip(){tooltip.style('display','none')}
   // X axis
   g.append('g').attr('transform',`translate(0,${ih})`)
     .call(d3.axisBottom(x).ticks(5).tickFormat(d=>d+'M')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
-  g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+  g.selectAll('.tick text').attr('fill','#7d7d86').attr('font-size','11px');
   g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
 
   // Y axis — text shifted left to avoid overlap with the retirement-offset minus label on small bars (AT/CH)
@@ -511,7 +514,7 @@ function hideTip(){tooltip.style('display','none')}
 
   // Legend
   const legend=svg.append('g').attr('transform',`translate(${margin.left},8)`);
-  const items=[{c:'#f97316',l:'Gross exposure'},{c:'#71717a',l:'Retirement offset'},{c:'#ef4444',l:'Net need 2035'}];
+  const items=[{c:'#f97316',l:'Gross exposure'},{c:'#7d7d86',l:'Retirement offset'},{c:'#ef4444',l:'Net need 2035'}];
   let lx=0;
   items.forEach(it=>{
     legend.append('rect').attr('x',lx).attr('width',10).attr('height',10).attr('rx',2).attr('fill',it.c).attr('opacity',0.9);
@@ -558,7 +561,7 @@ function hideTip(){tooltip.style('display','none')}
   // X axis
   g.append('g').attr('transform',`translate(0,${ih})`)
     .call(d3.axisBottom(x).ticks(6).tickFormat(d=>d+'%')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
-  g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+  g.selectAll('.tick text').attr('fill','#7d7d86').attr('font-size','11px');
   g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
 
   // Y axis
@@ -613,7 +616,7 @@ function hideTip(){tooltip.style('display','none')}
   g.append('g').attr('transform',`translate(0,${ih})`)
     .call(d3.axisBottom(x).ticks(5).tickFormat(d=>d+'%')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
   g.append('g').call(d3.axisLeft(y).ticks(5).tickFormat(d=>d+'M')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
-  g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+  g.selectAll('.tick text').attr('fill','#7d7d86').attr('font-size','11px');
   g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
 
   // Axis titles
@@ -645,7 +648,7 @@ function hideTip(){tooltip.style('display','none')}
 
   // Caption legend
   svg.append('text').attr('x',w-margin.right).attr('y',h-6).attr('text-anchor','end')
-    .attr('fill','#71717a').attr('font-size','10px').text('Dot radius scales with gross exposure');
+    .attr('fill','#7d7d86').attr('font-size','10px').text('Dot radius scales with gross exposure');
 })();
 
 // PostHog chart tracking

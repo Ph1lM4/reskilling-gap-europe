@@ -37,7 +37,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
 <script>
@@ -49,15 +49,18 @@ posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https:
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 
-:root{
+:root{/* Nexalps brand tokens v1 (2026-06-11) — SSOT: nexalps-website/DESIGN-TOKEN-UNIFICATION.md */--brand-teal:#0D9488;--brand-teal-text:#087569;--font-mono:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;--font-serif:'Source Serif 4',Georgia,serif;/* data ink — governed, values unchanged; charts keep literals in JS */--data-orange:#f97316;--data-red:#ef4444;--data-yellow:#eab308;--data-green:#22c55e;--data-blue:#3b82f6;--data-cyan:#06b6d4;
   --background:#09090b;--foreground:#fafafa;--card:#0a0a0c;
   --card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;
   --accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);
-  --ring:#f97316;
-  --radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;
+  --ring:var(--brand-teal);
+  --radius-sm:0px;--radius-md:0px;--radius-lg:0px;--radius-xl:0px;
   --font:'Geist',system-ui,-apple-system,sans-serif;
   --transition:150ms cubic-bezier(0.4,0,0.2,1);
 }
+/* Nexalps type: mono for data ink (tokens v1) */
+.stat-value,.num,svg .tick text{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+
 
 html,body{overflow-x:hidden}
 body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -125,7 +128,7 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
 @media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
 
 /* Highlight boxes */
-.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(13,148,136,0.12);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
 .highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}
 .highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
 
@@ -389,7 +392,7 @@ d3.json('reskilling-data.json').then(data=>{
 
     const items=[
       {label:'High-exposure roles',value:38.72,color:'#f97316',start:0},
-      {label:'Retirement offset',value:8.67,color:'#71717a',start:38.72-8.67},
+      {label:'Retirement offset',value:8.67,color:'#7d7d86',start:38.72-8.67},
       {label:'Net reskilling need',value:30.05,color:'#ef4444',start:0}
     ];
 
@@ -420,7 +423,7 @@ d3.json('reskilling-data.json').then(data=>{
 
     // Legend
     const wfLeg=g.append('g').attr('transform',`translate(-140,${ih+14})`);
-    [{color:'#f97316',label:'Gross exposure'},{color:'#71717a',label:'Retirement offset'},{color:'#ef4444',label:'Net reskilling need'}].forEach((item,i)=>{
+    [{color:'#f97316',label:'Gross exposure'},{color:'#7d7d86',label:'Retirement offset'},{color:'#ef4444',label:'Net reskilling need'}].forEach((item,i)=>{
       const xOff=i*155;
       wfLeg.append('rect').attr('x',xOff).attr('width',10).attr('height',10).attr('rx',2).attr('fill',item.color).attr('opacity',0.9);
       wfLeg.append('text').attr('x',xOff+14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text(item.label);
@@ -438,7 +441,7 @@ d3.json('reskilling-data.json').then(data=>{
     const segments=[
       {label:'Deep reskilling',value:7.55,color:'#ef4444',desc:'Must change occupation entirely'},
       {label:'Substantial upskilling',value:15.00,color:'#f97316',desc:'Major skill adaptation within field'},
-      {label:'Partial task change',value:7.50,color:'#71717a',desc:'Moderate AI-driven role evolution'}
+      {label:'Partial task change',value:7.50,color:'#7d7d86',desc:'Moderate AI-driven role evolution'}
     ];
     const total=segments.reduce((s,d)=>s+d.value,0);
     const x=d3.scaleLinear().domain([0,total]).range([0,iw]);
@@ -455,7 +458,7 @@ d3.json('reskilling-data.json').then(data=>{
       if(barW>60){
         g.append('text').attr('x',cumX+barW/2).attr('y',(ih-20)/2)
           .attr('dy','0.35em').attr('text-anchor','middle')
-          .attr('fill',d.color==='#71717a'?'#d4d4d8':'#000').attr('font-size','12px').attr('font-weight','700')
+          .attr('fill',d.color==='#7d7d86'?'#d4d4d8':'#000').attr('font-size','12px').attr('font-weight','700')
           .text(d.value.toFixed(1)+'M');
       }
       cumX+=barW;
@@ -496,7 +499,7 @@ d3.json('reskilling-data.json').then(data=>{
       // Response bar
       g.append('rect').attr('x',x(d.response_years_low)).attr('y',yPos+barH+4)
         .attr('width',x(d.response_years_high)-x(d.response_years_low)).attr('height',barH)
-        .attr('rx',2).attr('fill','#71717a').attr('opacity',0.7);
+        .attr('rx',2).attr('fill','#7d7d86').attr('opacity',0.7);
       // Gap zone
       if(d.response_years_low>d.disruption_years_high){
         g.append('rect').attr('x',x(d.disruption_years_high)).attr('y',yPos-2)
@@ -507,7 +510,7 @@ d3.json('reskilling-data.json').then(data=>{
 
     // X axis
     g.append('g').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).ticks(8).tickFormat(d=>d+'yr')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
-    g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+    g.selectAll('.tick text').attr('fill','#7d7d86').attr('font-size','11px');
     g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
 
     // Y axis
@@ -518,7 +521,7 @@ d3.json('reskilling-data.json').then(data=>{
     const legend=g.append('g').attr('transform',`translate(0,-8)`);
     legend.append('rect').attr('width',10).attr('height',10).attr('rx',2).attr('fill','#f97316');
     legend.append('text').attr('x',14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('AI disruption');
-    legend.append('rect').attr('x',110).attr('width',10).attr('height',10).attr('rx',2).attr('fill','#71717a');
+    legend.append('rect').attr('x',110).attr('width',10).attr('height',10).attr('rx',2).attr('fill','#7d7d86');
     legend.append('text').attr('x',124).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('System response');
     legend.append('rect').attr('x',240).attr('width',10).attr('height',10).attr('rx',2).attr('fill','rgba(239,68,68,0.15)').attr('stroke','rgba(239,68,68,0.4)').attr('stroke-dasharray','3,3');
     legend.append('text').attr('x',254).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text('Speed gap');

@@ -27,7 +27,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
 
@@ -39,7 +39,10 @@ posthog.init('phc_bjax6jdRxYJAaExodvALjRru8AQzUSbYFNlWlXiJM8A',{api_host:'https:
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-:root{--background:#09090b;--foreground:#fafafa;--card:#0a0a0c;--card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;--accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);--ring:#f97316;--radius-sm:6px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;--font:'Geist',system-ui,-apple-system,sans-serif;--transition:150ms cubic-bezier(0.4,0,0.2,1)}
+:root{/* Nexalps brand tokens v1 (2026-06-11) — SSOT: nexalps-website/DESIGN-TOKEN-UNIFICATION.md */--brand-teal:#0D9488;--brand-teal-text:#087569;--font-mono:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;--font-serif:'Source Serif 4',Georgia,serif;/* data ink — governed, values unchanged; charts keep literals in JS */--data-orange:#f97316;--data-red:#ef4444;--data-yellow:#eab308;--data-green:#22c55e;--data-blue:#3b82f6;--data-cyan:#06b6d4;--background:#09090b;--foreground:#fafafa;--card:#0a0a0c;--card-border:rgba(255,255,255,0.08);--muted:#a1a1aa;--muted-foreground:#8a8a93;--accent:#27272a;--border:rgba(255,255,255,0.12);--input-border:rgba(255,255,255,0.15);--ring:var(--brand-teal);--radius-sm:0px;--radius-md:0px;--radius-lg:0px;--radius-xl:0px;--font:'Geist',system-ui,-apple-system,sans-serif;--transition:150ms cubic-bezier(0.4,0,0.2,1)}
+/* Nexalps type: mono for data ink (tokens v1) */
+.stat-value,.num,svg .tick text{font-family:var(--font-mono);font-variant-numeric:tabular-nums;}
+
 html,body{overflow-x:hidden}
 body{font-family:var(--font);background:var(--background);color:var(--foreground);line-height:1.5;-webkit-font-smoothing:antialiased}
 .skip-link{position:absolute;top:-100px;left:8px;background:var(--ring);color:#000;padding:8px 16px;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;z-index:200;text-decoration:none}.skip-link:focus{top:0}
@@ -80,7 +83,7 @@ p{font-size:16px;color:#d4d4d8;line-height:1.8}
 .data-table td{padding:10px 12px;color:#d4d4d8;border-bottom:1px solid var(--card-border)}
 .data-table tr:last-child td{border-bottom:none}
 @media(max-width:640px){.data-table{font-size:12px}.data-table th,.data-table td{padding:6px 8px}}
-.highlight{margin:24px 0;padding:16px 20px;background:rgba(249,115,22,0.06);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
+.highlight{margin:24px 0;padding:16px 20px;background:rgba(13,148,136,0.12);border-left:3px solid var(--ring);border-radius:0 var(--radius-md) var(--radius-md) 0}
 .highlight h3{font-size:16px;font-weight:600;margin-bottom:6px}.highlight p{font-size:14px;color:#d4d4d8;line-height:1.7;margin:0}
 .author-note{padding:24px 28px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.10);border-radius:var(--radius-lg);margin:32px 0}
 .author-note h3{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:12px}
@@ -394,7 +397,7 @@ d3.json('reskilling-data.json').then(data=>{
 
     g.append('line').attr('x1',0).attr('x2',iw).attr('y1',y(0)).attr('y2',y(0))
       .attr('stroke','rgba(255,255,255,0.15)').attr('stroke-dasharray','4,4');
-    g.append('text').attr('x',iw-50).attr('y',y(0)-6).attr('fill','#71717a').attr('font-size','10px').text('0% earnings');
+    g.append('text').attr('x',iw-50).attr('y',y(0)-6).attr('fill','#7d7d86').attr('font-size','10px').text('0% earnings');
 
     // Zone shading
     g.append('rect').attr('x',0).attr('y',0).attr('width',x(4)).attr('height',y(0))
@@ -420,12 +423,12 @@ d3.json('reskilling-data.json').then(data=>{
     // Axes
     g.append('g').attr('transform',`translate(0,${ih})`).call(d3.axisBottom(x).ticks(10)).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
     g.append('g').call(d3.axisLeft(y).ticks(8).tickFormat(d=>(d>0?'+':'')+d+'%')).select('.domain').attr('stroke','rgba(255,255,255,0.12)');
-    g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+    g.selectAll('.tick text').attr('fill','#7d7d86').attr('font-size','11px');
     g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
 
     // Axis labels
-    svg.append('text').attr('x',margin.left+iw/2).attr('y',h-6).attr('text-anchor','middle').attr('fill','#71717a').attr('font-size','12px').text('Skills Distance (1–10)');
-    svg.append('text').attr('transform','rotate(-90)').attr('x',-(margin.top+ih/2)).attr('y',14).attr('text-anchor','middle').attr('fill','#71717a').attr('font-size','12px').text('Earnings Change (%)');
+    svg.append('text').attr('x',margin.left+iw/2).attr('y',h-6).attr('text-anchor','middle').attr('fill','#7d7d86').attr('font-size','12px').text('Skills Distance (1–10)');
+    svg.append('text').attr('transform','rotate(-90)').attr('x',-(margin.top+ih/2)).attr('y',14).attr('text-anchor','middle').attr('fill','#7d7d86').attr('font-size','12px').text('Earnings Change (%)');
 
     // Legend (below chart, outside data area)
     const leg=g.append('g').attr('transform',`translate(0,${ih+32})`);
@@ -433,8 +436,8 @@ d3.json('reskilling-data.json').then(data=>{
     leg.append('text').attr('x',20).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('A \u2192 A+ (within-zone)');
     leg.append('circle').attr('cx',160).attr('cy',0).attr('r',6).attr('fill','rgba(249,115,22,0.6)').attr('stroke','#f97316');
     leg.append('text').attr('x',172).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('A \u2192 C (cross-zone)');
-    leg.append('circle').attr('cx',310).attr('cy',0).attr('r',4).attr('fill','none').attr('stroke','#71717a');
-    leg.append('circle').attr('cx',322).attr('cy',0).attr('r',8).attr('fill','none').attr('stroke','#71717a');
+    leg.append('circle').attr('cx',310).attr('cy',0).attr('r',4).attr('fill','none').attr('stroke','#7d7d86');
+    leg.append('circle').attr('cx',322).attr('cy',0).attr('r',8).attr('fill','none').attr('stroke','#7d7d86');
     leg.append('text').attr('x',336).attr('y',4).attr('fill','#a1a1aa').attr('font-size','11px').text('Size = training duration');
   })();
 
@@ -501,7 +504,7 @@ d3.json('reskilling-data.json').then(data=>{
     g.append('g').attr('transform',`translate(0,${ih})`)
       .call(d3.axisBottom(x).ticks(6).tickFormat(d=>(d>0?'+':'')+d+'%'))
       .select('.domain').attr('stroke','rgba(255,255,255,0.12)');
-    g.selectAll('.tick text').attr('fill','#71717a').attr('font-size','11px');
+    g.selectAll('.tick text').attr('fill','#7d7d86').attr('font-size','11px');
     g.selectAll('.tick line').attr('stroke','rgba(255,255,255,0.06)');
 
     // Y axis
@@ -525,7 +528,7 @@ d3.json('reskilling-data.json').then(data=>{
     const flows=[
       {destination:'Zone A+',share_low:15,share_high:25,color:'#4ade80'},
       {destination:'Lateral moves in Zone A',share_low:10,share_high:15,color:'#4ade80'},
-      {destination:'Retirement',share_low:10,share_high:15,color:'#71717a'},
+      {destination:'Retirement',share_low:10,share_high:15,color:'#7d7d86'},
       {destination:'Zone C (care, trades, other)',share_low:5,share_high:11,color:'#f97316'},
       {destination:'Not transitioning',share_low:40,share_high:60,color:'#ef4444'}
     ];
@@ -576,7 +579,7 @@ d3.json('reskilling-data.json').then(data=>{
 
     // Legend below chart
     const sankLeg=g.append('g').attr('transform',`translate(0,${ih+16})`);
-    [{color:'#4ade80',label:'Zone A / A+ transition'},{color:'#f97316',label:'Cross-zone (Zone C)'},{color:'#71717a',label:'Natural attrition'},{color:'#ef4444',label:'Not transitioning'}].forEach((item,i)=>{
+    [{color:'#4ade80',label:'Zone A / A+ transition'},{color:'#f97316',label:'Cross-zone (Zone C)'},{color:'#7d7d86',label:'Natural attrition'},{color:'#ef4444',label:'Not transitioning'}].forEach((item,i)=>{
       const xOff=i*155;
       sankLeg.append('rect').attr('x',xOff).attr('width',10).attr('height',10).attr('rx',2).attr('fill',item.color).attr('opacity',0.85);
       sankLeg.append('text').attr('x',xOff+14).attr('y',9).attr('fill','#a1a1aa').attr('font-size','11px').text(item.label);
